@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Afacad&family=Comfortaa&display=swap');
+
+* {
+	font-family: 'Afacad', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #6c6eec;
+}
+form > select,
+form > .select,
+form > input:not([type=checkbox]),
+form > textarea,
+form > .react-toggle {
+    border-radius: 8px;
+    width: 94vw;
+    margin: 16px 2vw !important;
+    padding: 2vw !important;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 
+        4px 4px 4px 4px rgba(0, 0, 0, 0.05) inset, 
+        2px 2px 2px 2px rgba(0, 0, 0, 0.2) inset;
+
+    &:focus {
+        outline: none !important;
+        border-right: 4px solid black;
+    }
+}
+form > input {
+    padding-left: 2vw;
+}
+form > .select {
+    height: 35px;
+
+    * {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+    [class*="-menu"] {
+        background-color: #ffffff;
+    }
+}
+form > .react-toggle {
+    position: relative;
+    height: 35px;
+    background-color: #6c6eec;
+
+    * {
+        color: #000000 !important;
+        text-shadow: none !important;
+        outline: none !important;
+    }
+
+    .react-toggle-track {
+        width: 100%;
+        height: 35px;
+        background-color: #6c6eec !important;
+        color: #000000 !important;
+
+        .react-toggle-track-check,
+        .react-toggle-track-x {
+            width: 50%;
+            height: 35px;
+            line-height: 35px;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+        .react-toggle-track-x {
+            left: auto;
+            right: 0;
+        }
+    }
+
+    .react-toggle-thumb {
+        width: 50%;
+        height: 35px;
+        color: #000000;
+        box-shadow: none !important;
+        background-color: #ffffff;
+        outline: none !important;
+        border-radius: 8px;
+        border: none !important;
+
+        &:focus {
+            outline: none !important;
+        }
+    }
+}
+.react-toggle--checked .react-toggle-thumb {
+    left: 50%;
+}
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2vw 1vw;
+    border: none;
+    margin: 16px auto 80px;
+    width: 40vw;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 
+        4px 4px 4px 4px rgba(0, 0, 0, 0.05), 
+        2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+input[type=checkbox],
+label {
+    display: inline-block;
+}
+a {
+    color: #ffffff;
+}
+.range-slider {
+    width: 90vw;
+    height: 24px;
+    display: inline-block;
+    line-height: 40px;
+    margin: 16px 4vw 0 4vw;
+
+    .slider-thumb {
+        line-height: 20px;
+        text-align: center;
+        color: #fff;
+        cursor: grab;
+
+        background-color: #000000 !important;
+        border: none !important;
+        outline: none !important;
+        border-radius: 50%;
+        width: 20px !important;
+        height: 20px !important;
+        box-shadow: 
+            2px 2px 4px 4px rgba(0, 0, 0, 0.1),
+            1px 1px 2px 2px rgba(0, 0, 0, 0.3),
+            3px 3px 8px 4px #6c6eec44 inset;
+    }
+    .slider-track {
+        top: 8px;
+        bottom: 0;
+        height: 4px;
+        background-color: #ffffff;
+        border-radius: 999px;
+    }
+}
+.color-slider {
+    .slider-track-0 {
+        background: linear-gradient(to right, 
+            #ffffff 10vw,
+            #EEEDC4 20vw,
+            #ECBF7A 30vw,
+            #EBA937 40vw,
+            #C09711 50vw,
+            #FFBF00 60vw,
+            #B87333 70vw,
+            #6C4324 80vw,
+            #8B6145 90vw
+        );
+    }
+    .slider-track-1 {
+        background: linear-gradient(to left,
+            #8B6145 10vw,
+            #6C4324 20vw,
+            #B87333 30vw,
+            #FFBF00 40vw,
+            #C09711 50vw,
+            #EBA937 60vw,
+            #ECBF7A 70vw,
+            #EEEDC4 80vw,
+            #ffffff 90vw
+        );
+    }
+}
+.slider-label {
+    margin: -16px 6vw 24px 6vw;
+}
+#barrel {
+    width: 50vw;
+    margin: 10px auto;
+    display: block;
+}
+hr {
+    border: 1px solid #000000;
+}
+ul {
+    width: 80vw;
+    margin: 10px auto;
+}

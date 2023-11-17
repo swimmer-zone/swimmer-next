@@ -1,0 +1,15 @@
+{
+  "short_name": "Swimmer",
+  "name": "Swimmer React",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "110x110",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6c6eec",
+  "background_color": "#ffffff"
+}
