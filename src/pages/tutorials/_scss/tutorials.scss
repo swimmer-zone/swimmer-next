@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Afacad&family=Comfortaa&display=swap');
+@import '../../_scss/_variables.scss';
+@import '../../_scss/common.scss';
+
+
+html {
+    background-color: #222222;
+}
+
+.tutorial {
+	margin-top: 12vh;
+}
+
+.article {
+    p,
+    li {
+        & > code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+            background-color: $black;
+            padding: 0 2px;
+            color: $purple;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            letter-spacing: 2px;
+            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .codeParent {
+        max-width: 50vw !important;
+        min-width: 50vw;
+    }
+
+    sourcecode,
+    pre {
+        margin: 20px 0 20px 20px;
+        font-size: 0.8rem;
+        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.05), 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
+    }
+}
+
+
+.tutorial-overview-background {
+    background-color: #222222;
+
+    h1 {
+        color: $white;
+    }
+    p {
+        color: $white;
+        text-shadow: none;
+        align-self: center;
+        text-align: center;
+    }
+    .tutorial-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 60vw;
+        align-self: center;
+        margin-top: 50px;
+
+        a {
+            color: $white;
+            text-shadow: none;
+            text-decoration: none;
+            width: 400px;
+            padding: 8px;
+            margin: 8px;
+            background-color: $purple;
+            text-align: center;
+        }
+    }
+}

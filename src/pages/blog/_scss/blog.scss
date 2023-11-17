@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Afacad&family=Comfortaa&display=swap');
+@import '../../_scss/_variables.scss';
+@import '../../_scss/common.scss';
+
+body,
+button,
+a,
+h1 {
+    color: $black;
+}
+.blog {
+	margin-top: 12vh;
+}
+.avatar {
+    position: sticky;
+    top: 10px;
+    margin-left: -15vw;
+}
+ul.food {
+    li {
+        display: inline-block;
+        padding: 4px 8px;
+        margin: 4px;
+        border-radius: 4px;
+        background-color: $purple;
+        color: $white;
+    }
+}
