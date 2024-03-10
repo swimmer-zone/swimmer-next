@@ -221,6 +221,9 @@ const Cabinet = () => {
                 <img src="/images/cabinet/build/13.jpg" alt="Build"/>
                 <img src="/images/cabinet/build/14.jpg" alt="Build" />
                 <img src="/images/cabinet/build/15.jpg" alt="Build" />
+                <div></div>
+                <img src="/images/cabinet/build/30.jpg" alt="Build" />
+                <img src="/images/cabinet/build/31.jpg" alt="Build" />
             </section>
 
             <div className="article">
