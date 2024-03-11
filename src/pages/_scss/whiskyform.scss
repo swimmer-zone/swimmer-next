@@ -15,6 +15,7 @@ form > textarea,
 form > .react-toggle {
     border-radius: 8px;
     width: 94vw;
+    height: 43px;
     margin: 16px 2vw !important;
     padding: 2vw !important;
     border: none;
@@ -32,12 +33,15 @@ form > input {
     padding-left: 2vw;
 }
 form > .select {
-    height: 35px;
-
+    & > * {
+        margin-top: -4px;
+    }
     * {
         background: transparent;
-        border: none;
-        outline: none;
+        border: 0;
+        outline: 0;
+        padding: 0;
+        box-shadow: 0;
     }
     [class*="-menu"] {
         background-color: #ffffff;
@@ -187,4 +191,24 @@ hr {
 ul {
     width: 80vw;
     margin: 10px auto;
+}
+#success,
+.error {
+    width: 94vw;
+    color: white;
+    border-radius: 8px;
+    margin: 16px 2vw !important;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #ffffff44, #ffffff22);
+    box-shadow:
+            4px 4px 4px 4px rgba(0, 0, 0, 0.05),
+            2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#success {
+    background-color: green;
+}
+.error {
+    background-color: red;
 }

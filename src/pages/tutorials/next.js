@@ -94,7 +94,8 @@ const Blog = () => {
                     Some other data is pulled from a JSON file that is hosted within this repository as well as some
                     data from a Markdown file. I'm still searching for a solution for all of my images, this will 
                     probably be hosted in the Laravel instance in the future, but for now it also is part of the 
-                    repository.
+                    repository. I will update this tutorial with some code examples of all three variants of 
+                    fetching data as soon as possible.
                 </p>
                 <p>
                     Some useful resources:

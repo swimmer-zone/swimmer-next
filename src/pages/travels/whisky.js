@@ -196,7 +196,7 @@ console.log(filterBy)
                     <option value="date_of_tasting">Date of Tasting</option>
                 </select>
             </nav>
-            <nav key="filtering">
+            <nav key="filtering" id="filtering">
                 Filter:<br />
                 <select name="filter-country" onChange={(value) => setFilterBy({'field': 'country', 'value': value})}>
                     <option>Country ...</option>

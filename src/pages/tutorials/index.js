@@ -12,18 +12,61 @@ const Tutorials = () => {
         <Back/>
         <h1>Tutorials</h1>
         <p>
-            I've written a couple of tutorials, most of them are quite outdated, but can still be some nice 
+            I've written a couple of tutorials, most of them are quite outdated, but can still be some nice
             reference. This section is in dark mode because... dev's like dark mode :)
         </p>
+        <p>
+            The newest tutorial is about Next.js, there already is a part about getting started, but I still
+            need to figure out what I want to put in for code examples. After that I might finish the post
+            about Laravel which I previously used as a full CMS, but the new version will function as an API
+            for headless websites.
+        </p>
         <div className="list">
-            <a href="tutorials/design-patterns" title="Posted: 2010-10-16">Design patterns</a>
-            <a href="tutorials/anti-patterns" title="Posted: 2018-10-01">Anti patterns</a>
-            <a href="tutorials/sql-joins" title="Posted: 2010-11-07">SQL joins</a>
-            <a href="tutorials/vps-tutorial" title="Posted: 2009-06-07">Setting up a VPS</a>
-            <a href="tutorials/aurora-vps" title="Posted: 2014-03-02">Aurora VPS</a>
-            <a href="tutorials/codeigniter" title="Posted: 2016-01-21">CodeIgniter</a>
-            <a href="tutorials/laravel" title="Posted: 2019-05-17">Laravel</a>
-            <a href="tutorials/conky" title="Posted: 2013-04-16">Conky</a>
+            <a href="tutorials/next">
+                <span>Next</span>
+                <span>March 2024</span>
+            </a>
+            <a href="tutorials/laravel">
+                <span>Laravel</span>
+                <span>May 2019</span>
+                {/* 17 */}
+            </a>
+            <a href="tutorials/anti-patterns">
+                <span>Anti Patterns</span>
+                <span>October 2018</span>
+                {/* 01 */}
+            </a>
+            <a href="tutorials/codeigniter">
+                <span>CodeIgniter</span>
+                <span>January 2016</span>
+                {/* 21 */}
+            </a>
+            <a href="tutorials/aurora-vps">
+                <span>Aurora VPS</span>
+                <span>March 2014</span>
+                {/* 02 */}
+            </a>
+            <a href="tutorials/conky">
+                <span>Conky</span>
+                <span>April 2013</span>
+                {/* 16 */}
+            </a>
+
+            <a href="tutorials/sql-joins">
+                <span>SQL Joins</span>
+                <span>November 2010</span>
+                {/* 07 */}
+            </a>
+            <a href="tutorials/design-patterns">
+                <span>Design patterns</span>
+                <span>October 2010</span>
+                {/* 16 */}
+            </a>
+            <a href="tutorials/vps-tutorial">
+                <span>Setting up a VPS</span>
+                <span>June 2009</span>
+                {/* 07 */}
+            </a>
         </div>
     </main>);
 }

@@ -78,7 +78,11 @@ const Travels = () => {
             <title>Swimmer ♬ Travels</title>
         </Head>
         <h1>Travels</h1>
-        <p>This is a list of all my travels in descending order. I'm still trying to cut back on the amount of images, but that is quite a challenge. Especially Georgia, where we had a total of more than images. So for now those are still a work in progress. The total amount of images is currently {totalImages}.</p>
+        <p>
+            This is a list of all my travels in descending order. Cutting back on the amount of images wass quite a
+            challenge. Especially Georgia, where we had a total of more than 2000 images. The total amount of images
+            is currently {totalImages}.
+        </p>
 
         {Object.keys(travels).map(key => {
             let travel = travels[key];

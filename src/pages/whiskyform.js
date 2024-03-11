@@ -8,13 +8,11 @@ import Toggle from 'react-toggle'
 import ReactSlider from 'react-slider';
 import "react-toggle/style.css"
 import './_scss/whiskyform.scss';
-import { tastings } from '../json/index.js';
 import { Barrel } from '../Components';
 
 const WhiskyForm = () => {
 	const [ error, setError ] = useState(null);
-    // {error && <p className="error">{error}</p>}
-    // {!error && tastings.map(tasting => {})}
+    
     const [ success, setSuccess ] = useState(false);
 
     // Tastings
@@ -52,7 +50,6 @@ const WhiskyForm = () => {
 			if (error) {
 				setError('Could not fetch tastings');
 				setTastings(null);
-				console.log(error);
 			}
 			if (data) {
 				setTastings(data);
@@ -119,7 +116,6 @@ const WhiskyForm = () => {
 			if (error) {
 				setError('Could not fetch countries');
 				setCountryList(null);
-				console.log(error);
 			}
 			if (data) {
 				setCountryList(data);
@@ -163,7 +159,6 @@ const WhiskyForm = () => {
 			if (error) {
 				setError('Could not fetch regions');
 				setRegionList(null);
-				console.log(error);
 			}
 			if (data) {
 				setRegionList(data);
@@ -192,7 +187,6 @@ const WhiskyForm = () => {
 			if (error) {
 				setError('Could not fetch types');
 				setTypeList(null);
-				console.log(error);
 			}
 			if (data) {
 				setTypeList(data);
@@ -217,7 +211,10 @@ const WhiskyForm = () => {
     const [ url, setUrl ] = useState('');
 
     // Notes
-    const [ notes, setNotes ] = useState('');
+    const [notes, setNotes] = useState('');
+
+    // Location
+    const [tastingLocation, setTastingLocation] = useState('');
 
     // Flavour
     const [ isFlavourLoading, setIsFlavourLoading ] = useState(false);
@@ -231,7 +228,6 @@ const WhiskyForm = () => {
 			if (error) {
 				setError('Could not fetch flavours');
 				setFlavourList(null);
-				console.log(error);
 			}
 			if (data) {
 				setFlavourList(data);
@@ -269,7 +265,6 @@ const WhiskyForm = () => {
 			if (error) {
 				setError('Could not fetch color');
 				setColorList(null);
-				console.log(error);
 			}
 			if (data) {
 				setColorList(data);
@@ -279,26 +274,6 @@ const WhiskyForm = () => {
 
 		fetchColors();
 	}, []);
-	// useEffect(() => {
-	// 	const fetchColor = async () => {
-	// 		let { data, error } = await supabase
-	// 			.from('color')
-	// 			.select(`id, value, hex`)
-    //             .eq('id', tastingColor);
-
-	// 		if (error) {
-	// 			setError('Could not fetch color');
-	// 			setColor(null);
-	// 			console.log(error);
-	// 		}
-	// 		if (data) {
-	// 			setColor(data);
-	// 			setError(null);
-	// 		}
-	// 	};
-
-	// 	fetchColor();
-	// }, []);
 
     // Finish
     const [ finishList, setFinishList ] = useState([]);
@@ -332,60 +307,7 @@ const WhiskyForm = () => {
     const submit = async (e) => {
         e.preventDefault();
 
-        Object.keys(tastings).map(async key => {
-            let tasting = tastings[key];
-            let regionB = null;
-            console.log(tasting);
-
-            if (tasting.country == 7) {
-                regionB = tasting.region;
-            }
-
-            let input = {
-                "brand": tasting.brand,
-                "date_of_tasting": tasting.dateOfTasting,
-                "country_id": tasting.country,
-                "region_id": regionB,
-                "distillery_id": null,
-                "nearest_town": null,
-                "cask_strength": tasting.caskStrength,
-                "chill_filtered": tasting.chillFiltered,
-                "type_id": tasting.type,
-                "age": tasting.age,
-                "strength": tasting.strength,
-                "taster": tasting.taster,
-                "url": tasting.url,
-                "tasting_notes": tasting.notes,
-                "tasting_location": "",
-                "tasting_flavours": [tasting.tasting.flavour],
-                "tasting_glance": tasting.tasting.glance,
-                "tasting_color_id": tasting.tasting.color,
-                "tasting_finish_id": tasting.tasting.finish,
-                "tasting_rating": tasting.tasting.rating,
-                "tasting_would_buy": tasting.tasting.wouldBuy,
-                "user_id": 1
-            };
-
-            const { data, error } = await supabase
-                .from('tasting')
-                .insert(input);
-
-            if (error) {
-                setError('Could not insert data');
-                console.log(error);
-            }
-            if (data) {
-                setError(null);
-                setSuccess(true);
-            }
-        });
-
-		// if (!name || !email || !comment) {
-		// 	setFormError('Niet alle verplichte velden zijn ingevuld');
-		// 	return;
-		// }
-
-        const input = {
+        let newInput = {
             "brand": brand,
             "date_of_tasting": dateOfTasting,
             "country_id": country.id,
@@ -400,8 +322,8 @@ const WhiskyForm = () => {
             "taster": taster,
             "url": url,
             "tasting_notes": notes,
-            "tasting_location": "",
-            "tasting_flavours": [tastingFlavour.value],
+            "tasting_location": tastingLocation,
+            "tasting_flavours": [tastingFlavour],
             "tasting_glance": tastingGlance,
             "tasting_color_id": tastingColor,
             "tasting_finish_id": tastingFinish.id,
@@ -409,26 +331,36 @@ const WhiskyForm = () => {
             "tasting_would_buy": tastingWouldBuy,
             "user_id": 1
         };
-        console.log(input);
 
-        // const { data, error } = await supabase
-        //     .from('tasting')
-        //     .insert(input);
+        const { data, error } = await supabase
+            .from('tasting')
+            .insert(newInput);
 
-        // if (error) {
-        //     setError('Could not insert data');
-        //     console.log(error);
-        // }
-        // if (data) {
-        //     setError(null);
-        //     setSuccess(true);
-        // }
+        if (error) {
+            setError('Could not insert data');
+        } else {
+            setError(null);
+            setSuccess(true);
+
+            const timeId = setTimeout(() => {
+                setSuccess(false);
+                clearTimeout(timeId);
+            }, 5000);
+            console.log(data);
+        }
+
+		// if (!name || !email || !comment) {
+		// 	setFormError('Niet alle verplichte velden zijn ingevuld');
+		// 	return;
+		// }
     };
 
   	return (<>
         <form onSubmit={submit}>
+            <Head>
+                <title>Swimmer ♬ Whisky Tasting Form</title>
+            </Head>
             <Barrel/>
-
             <input 
                 type="text"
                 name="brand"
@@ -543,7 +475,15 @@ const WhiskyForm = () => {
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}/>
 
-            <hr/>
+            <hr />
+
+            <input
+                type="text"
+                name="location"
+                id="location"
+                placeholder="Location"
+                value={tastingLocation}
+                onChange={(e) => setTastingLocation(e.target.value)} />
 
             <CreatableSelect
                 name="flavour"
@@ -605,9 +545,10 @@ const WhiskyForm = () => {
                   }}
                 defaultChecked={tastingWouldBuy}
                 onChange={(e) => setTastingWouldBuy(e.target.checked)} />
-
-            <button id="submit">Submit</button>
-            {success && <div id="success">Record successfully inserted</div>}
+                
+                {success && <div id="success">Record successfully inserted</div>}
+                {error && <p className="error">{error}</p>}
+            <button id="submit" type="submit">Submit</button>
         </form>
     </>);
 }

@@ -162,7 +162,7 @@ nav {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
-        width: 60vw;
+        width: 70vw;
         align-self: center;
         margin-top: 50px;
 
@@ -171,14 +171,42 @@ nav {
             text-shadow: none;
             text-decoration: none;
             width: 400px;
-            padding: 8px;
+            padding: 8px 32px;
             margin: 8px;
             background-color: $purple;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.2);
+            transition: all 0.5s ease-in-out;
+
+            span:last-of-type {
+                font-size: 0.7rem !important;
+                align-self:last baseline;
+                transition: all 0.5s ease-in-out;
+                opacity: 0.5;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.4);
+
+                span:last-of-type {
+                    align-self: first baseline;
+                    opacity: 1;
+                }
+            }
         }
     }
 }
+.tutorial-overview-background {
+    a {
+        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5) !important;
 
+        &:hover {
+            box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.8) !important;
+        }
+    }
+}
 
 @media(max-width: $mobile-breakpoint) {
     .article {

@@ -4,12 +4,21 @@
 		"intro": "It's been a while since I made any music, the new tracks are a bit different than the aesthetic of the previous tracks, but I quite like it!",
         "tracks": [
             {
-                "title":"Up And Down",
-                "filename":"1319514142-swimmer-zone-up-and-down",
-                "playtime":258,
-                "bpm":120,
-                "genre":"Ambient",
-                "created_at":"2022-04-19"
+                "title": "Up And Down",
+                "filename": "1319514142-swimmer-zone-up-and-down",
+                "playtime": 258,
+                "bpm": 120,
+                "genre": "Ambient",
+                "created_at": "2022-04-19"
+            },
+            {
+                "title": "Halloween",
+                "filename": "1656725049-swimmer-zone-up-and-down",
+                "playtime": 379,
+                "bpm": 120,
+                "genre": "Techno",
+                "created_at": "2022-04-19"
+                
             },
             {
                 "title":"Mind Your Head",
