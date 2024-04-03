@@ -186,6 +186,11 @@ console.log(filterBy)
                 distillery and the whiskey museum in Dublin my interest in Irish whiskey grew as well.
             </p>
             <p><img src="/images/whisky/map.svg" alt="Regions" className="noshade" /></p>
+            <p>A couple of resources to explore whisky</p>
+            <ul>
+                <li><a href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-one-a-beginners-guide/">Whisky 101 - A beginner's guide</a></li>
+                <li><a href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-two-whiskey-around-the-world/">Whisky 101 - Whisk(e)y around the world</a></li>
+            </ul>
             <h2 id="whiskys">Whisky's</h2>
             <nav key="sorting">
                 Sort:<br />

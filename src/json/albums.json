@@ -1,7 +1,69 @@
 [
     {
+        "title": "Spotlight",
+		"intro": "These are my top 5 tracks as well as my latest creation and a live set that I created in Ableton. Use the arrows on the right and left side of the screen to browse through my other albums. Scroll down or click the social media icons to get to know more about me!",
+        "tracks": [
+            {
+                "title":"Miracles",
+                "filename":"751757779-swimmer-zone-miracles",
+                "playtime":432,
+                "bpm":0,
+                "genre":"Ambient",
+                "created_at":"2020-01-22"
+            },
+            {
+                "title":"Flam",
+                "filename":"737965993-swimmer-zone-flam",
+                "playtime":254,
+                "bpm":120,
+                "genre":"Techno",
+                "comment":"2019-10-10"
+            },
+            {
+                "title":"Swim",
+                "filename":"737965951-swimmer-zone-swim",
+                "playtime":240,
+                "bpm":120,
+                "genre":"Techno",
+                "comment":"2019-10-10"
+            },
+            {
+                "title":"Boom",
+                "filename":"740260633-swimmer-zone-boom",
+                "playtime":400,
+                "bpm":0,
+                "genre":"Psybient",
+                "created_at":"2016-09-05"
+            },
+            {
+                "title":"Space Has No Boundaries",
+                "filename":"733118227-swimmer-zone-space-has-no-boundaries",
+                "playtime":387,
+                "bpm":0,
+                "genre":"Goa",
+                "created_at":"2019-01-26"
+            },
+            {
+                "title": "Halloween",
+                "filename": "1656725049-swimmer-zone-halloween",
+                "playtime": 379,
+                "bpm": 120,
+                "genre": "Techno",
+                "created_at": "2022-04-19"
+            },
+            {
+                "title":"Live @ Swimmer's Attic",
+                "filename":"707210269-swimmer-zone-live-swimmers-space-attic-collectifest-2019",
+                "playtime":2178,
+                "bpm":0,
+                "genre":"Techno",
+                "comment":"2019-10-10"
+            }
+        ]
+    },
+    {
         "title": "The Dive",
-		"intro": "It's been a while since I made any music, the new tracks are a bit different than the aesthetic of the previous tracks, but I quite like it!",
+		"intro": "These new tracks are a bit different than the aesthetic of the previous tracks, but I quite like it!",
         "tracks": [
             {
                 "title": "Up And Down",
@@ -13,12 +75,11 @@
             },
             {
                 "title": "Halloween",
-                "filename": "1656725049-swimmer-zone-up-and-down",
+                "filename": "1656725049-swimmer-zone-halloween",
                 "playtime": 379,
                 "bpm": 120,
                 "genre": "Techno",
                 "created_at": "2022-04-19"
-                
             },
             {
                 "title":"Mind Your Head",
@@ -89,14 +150,6 @@
                 "bpm":0,
                 "genre":"Ambient",
                 "created_at":"2020-05-16"
-            },
-            {
-                "title":"Laugh",
-                "filename":"1106115613-swimmer-zone-laugh",
-                "playtime":330,
-                "bpm":0,
-                "genre":"Ambient",
-                "created_at":"2021-09-16"
             },
             {
                 "title":"Kill Bill",
@@ -343,21 +396,7 @@
                 "created_at":"2013-05-07"
             }
         ]
-    },
-    {
-        "title": "Collectifest",
-		"intro": "We organised a festival for a small group of people to be able to show our talents. I created a set of some of my favorite tracks, where it was a necessity to be able to control it while on stage. I plan to make more of them in the future, using more recent tracks or maybe more like some sort of soundscape. I hope you enjoy it! Click to the next page to view the tracklisting.",
-        "tracks": [
-            {
-                "title":"Live @ Swimmer's Attic",
-                "filename":"707210269-swimmer-zone-live-swimmers-space-attic-collectifest-2019",
-                "playtime":2178,
-                "bpm":0,
-                "genre":"Techno",
-                "comment":"2019-10-10"
-            }
-        ]
-    },
+    },    
     {
         "title": "Collectifest",
 		"intro": "This is the tracklisting of my set on the previous page.",

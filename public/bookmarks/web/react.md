@@ -1,6 +1,5 @@
 # React
 
-* [Google Drive as a CMS](https://css-tricks.com/using-google-drive-as-a-cms/)
 * [Headless CMS Comparison](https://cms-comparison.io/)
 * [Audio Player](https://dev.to/ma5ly/lets-make-a-little-audio-player-in-react-p4p)
 * [Build Your Own](https://pomb.us/build-your-own-react/)

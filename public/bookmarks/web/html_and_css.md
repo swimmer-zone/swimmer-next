@@ -34,7 +34,6 @@
 * [Item Transition Inspiration](http://tympanus.net/Development/ItemTransitions/)
 * [`@supports` will change your life](http://www.lottejackson.com/learning/supports-will-change-your-life)
 * [Pseudo and Pseudon't](https://adactio.com/journal/10000)
-* [Non-Rectangular Headers](https://css-tricks.com/creating-non-rectangular-headers/)
 * [Gradient Editor](https://gra.dient.art/)
 * [Free Vector Illustrations](https://www.pixeltrue.com/free-illustrations)
 * [Gradients](https://www.gradientmagic.com/)

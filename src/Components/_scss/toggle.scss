@@ -1,0 +1,30 @@
+@import '../../pages/_scss/_variables.scss';
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    right: 30vw;
+    width: 80px;
+    height: 200px;
+    z-index: 999999999;
+}
+
+.sun,
+.moon {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    transform: translateY(20px);
+    transition: all 0.3s ease-in-out;
+
+    svg {
+        width: 64px;
+        height: 64px;
+    }
+    path,
+    rect,
+    polygon {
+        fill: $yellow;
+    }
+}
