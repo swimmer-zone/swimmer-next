@@ -4,7 +4,7 @@
     position: absolute;
     top: 0;
     right: 30vw;
-    width: 80px;
+    width: 120px;
     height: 200px;
     z-index: 999999999;
 }
@@ -27,4 +27,11 @@
     polygon {
         fill: $yellow;
     }
+}
+
+.sun:before {
+    content: "Dark mode";
+    color: $black;
+    width: 200px;
+    font-size: 0.7rem;
 }
