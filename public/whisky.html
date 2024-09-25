@@ -29,6 +29,10 @@
                     minimumResultsForSearch: 1,
                     tags: true
                 });
+                $('#cask_type').select2({
+                    minimumResultsForSearch: 1,
+                    tags: true
+                });
 
                 $('#date_of_tasting').val(year + "-" + month + "-" + day);
 
@@ -66,21 +70,12 @@
                         .replace("DATE_OF_TASTING", $('#date_of_tasting').val())
                         .replace("COUNTRY", $('#country').val())
                         .replace("REGION", $('#region').val())
-                        .replace("NEAREST_TOWN", $('#nearest_town').val())
-                        .replace("CASK_STRENGTH", $('[name=cask_strength]:checked').val())
-                        .replace("CHILL_FILTERED", $('[name=chill_filtered]:checked').val())
                         .replace("TYPE", $('#type').val())
-                        .replace("AGE", $('#age').val())
-                        .replace("STRENGTH", $('#strength').val())
-                        .replace("TASTER", $('[name=taster]:checked').val())
-                        .replace("URL", $('#url').val())
+                        .replace("CASK_TYPE", $('#cask_type').val())
                         .replace("NOTES", $('#notes').val())
                         .replace("FLAVOUR", $('#flavour').val())
                         .replace("GLANCE", $('#glance').val())
-                        .replace("COLOR", $('#color').val())
-                        .replace("FINISH", $('#finish').val())
-                        .replace("RATING", $('#rating').val())
-                        .replace("WOULD_BUY", $('[name=would_buy]:checked').val());
+                        .replace("RATING", $('#rating').val());
 
                     $('.json_output').text(json_string);
 
@@ -90,63 +85,14 @@
                     document.execCommand("copy");
                     $temp.remove();
                 });
-                $('#glance_slider').slider({
-                    min: 0,
-                    max: 100,
-                    step: 10,
-                    value: 50,
-                    slide: function(event, ui) {
-                        $('#glance').val(ui.value);
-                        $('#glance_text').val(ui.value + "% oily");
-                    }
-                });
                 $('#rating_slider').slider({
                     min: 1,
-                    max: 5,
-                    step: .5,
-                    value: 2.5,
+                    max: 3,
+                    step: 1,
+                    value: 2,
                     slide: function(event, ui) {
                         $('#rating').val(ui.value);
                         $('#rating_text').val(ui.value + " stars");
-                    }
-                });
-                $('#color_slider').slider({
-                    min: 1,
-                    max: 9,
-                    value: 6,
-                    slide: function(event, ui) {
-                        let color = 'Amber';
-                        switch (ui.value) {
-                            case 1:
-                                color = 'Clear';
-                                break;
-                            case 2:
-                                color = 'White Wine';
-                                break;
-                            case 3:
-                                color = 'Straw';
-                                break;
-                            case 4:
-                                color = 'Honey';
-                                break;
-                            case 5:
-                                color = 'Golden';
-                                break;
-                            case 6:
-                                color = 'Amber';
-                                break;
-                            case 7:
-                                color = 'Copper';
-                                break;
-                            case 8:
-                                color = 'Mahogany';
-                                break;
-                            case 9:
-                                color = 'Dark Oak';
-                                break;
-                        }
-                        $('#color').val(color);
-                        $('#color_text').val(color);
                     }
                 });
             });
@@ -310,28 +256,6 @@
             </select>
             <input type="hidden" name="region" id="region">
 
-            <input type="text" name="nearest_town" id="nearest_town" placeholder="Nearest Town">
-
-            <div class="switch-toggle switch-3 switch-candy">
-                <input id="cask_strength_on" name="cask_strength" type="radio" value="true">
-                <label for="cask_strength_on" onclick="">Cask strength</label>
-
-                <input id="cask_strength_off" name="cask_strength" type="radio" value="false" checked>
-                <label for="cask_strength_off" onclick="">Regular</label>
-
-                <a></a>
-            </div>
-
-            <div class="switch-toggle switch-3 switch-candy">
-                <input id="chill_filtered_on" name="chill_filtered" type="radio" value="true">
-                <label for="chill_filtered_on" onclick="">Chill filtered</label>
-
-                <input id="chill_filtered_off" name="chill_filtered" type="radio" value="false" checked>
-                <label for="chill_filtered_off" onclick="">Not filtered</label>
-
-                <a></a>
-            </div>
-
             <select name="type" id="type">
                 <option>-- Select Type --</option>
                 <option value="Single Malt">Single Malt</option>
@@ -347,78 +271,21 @@
                 <li>See: <a href="https://grimsdyke.com/whisky-types/" target="_blank">whisky types</a></li>
             </ul>
 
-            <input type="number" inputmode="numeric" name="age" id="age" placeholder="How many years has it aged in the cask">
-
-            <input type="number" inputmode="numeric" name="strength" id="strength" min="40" max="100" placeholder="Alcohol level in %">
-
-            <div class="switch-toggle switch-3 switch-candy">
-                <input id="taster_on" name="taster" type="radio" value="true">
-                <label for="taster_on" onclick="">Taster</label>
-
-                <input id="taster_off" name="taster" type="radio" value="false" checked>
-                <label for="taster_off" onclick="">Regular bottle</label>
-
-                <a></a>
-            </div>
-
-            <input type="text" name="url" id="url" placeholder="URL: Preferably https://www.heijdenwijnimport.nl/">
-            <ul>
-                <li><a href="https://www.heijdenwijnimport.nl/" target="_blank">Van der Heijden</a></li>
-                <li><a href="https://www.topdrinks.nl/" target="_blank">Topdrinks</a></li>
-                <li><a href="https://www.drankgigant.nl/" target="_blank">Drankgigant</a></li>
-                <li><a href="https://www.gall.nl/" target="_blank">Gall & Gall</a></li>
-                <li><a href="https://whisky-me.com/">Whisky Me</a></li>
-            </ul>
-
             <textarea name="notes" id="notes" placeholder="Some notes..."></textarea>
 
-            <hr>
-
-            <select name="flavour" id="flavour" multiple>
-                <option>-- Select Flavour --</option>
-                <option value="Dark Fruit">Dark Fruit</option>
-                <option value="Floral">Floral</option>
-                <option value="Spicy">Spicy</option>
-                <option value="Cereal">Cereal</option>
-                <option value="Peaty">Peaty</option>
-                <option value="Malty">Malty</option>
-                <option value="Toffee">Toffee</option>
-                <option value="Nutty">Nutty</option>
-                <option value="Woody">Woody</option>
-                <option value="Chocolate">Chocolate</option>
-                <option value="Citrus">Citrus</option>
-            </select>
-
-            <div id="glance_slider" class="slider"></div>
-            <input type="hidden" name="glance" id="glance" value="50">
-            <input type="text" name="glance_text" id="glance_text" value="50% oily" readonly>
-
-            <div id="color_slider" class="slider"></div>
-            <input type="hidden" name="color" id="color" value="Amber">
-            <input type="text" name="color_text" id="color_text" value="Amber" readonly>
-
-            <select name="finish" id="finish">
-                <option>-- Select Finish --</option>
-                <option value="Clean">Clean</option>
-                <option value="Sweet">Sweet</option>
-                <option value="Sour">Sour</option>
-                <option value="Salty">Salty</option>
-                <option value="Bitter">Bitter</option>
+            <select name="cask_type" id="cask_type" multiple>
+                <option>American Oak</option>
+                <option>Canadian Oak</option>
+                <option>Wine</option>
+                <option>Sherry</option>
+                <option>Port</option>
+                <option>Bourbon</option>
             </select>
 
             <div id="rating_slider" class="slider"></div>
-            <input type="hidden" name="rating" id="rating" value="2.5">
-            <input type="text" name="rating_text" id="rating_text" value="2.5 stars" readonly>
+            <input type="hidden" name="rating" id="rating" value="2">
+            <input type="text" name="rating_text" id="rating_text" value="2 stars" readonly>
 
-            <div class="switch-toggle switch-3 switch-candy">
-                <input id="would_buy_on" name="would_buy" type="radio" value="true">
-                <label for="would_buy_on" onclick="">Would buy again</label>
-
-                <input id="would_buy_off" name="would_buy" type="radio" value="false" checked>
-                <label for="would_buy_off" onclick="">Not again</label>
-
-                <a></a>
-            </div>
             <button id="generate">Copy JSON</button>
         </form>
         <div class="json_output"></div>
@@ -428,23 +295,11 @@
         "date_of_tasting": "DATE_OF_TASTING",
         "country": "COUNTRY",
         "region": "REGION",
-        "nearest_town": "NEAREST_TOWN",
-        "cask_strength": CASK_STRENGTH,
-        "chill_filtered": CHILL_FILTERED,
         "type": "TYPE",
-        "age": "AGE",
-        "strength": "STRENGTH",
-        "taster": TASTER,
-        "url": "URL",
+        "cask_type": "CASK_TYPE",
         "notes": "NOTES",
-        "tasting": {
-            "flavour": "FLAVOUR",
-            "glance": "GLANCE",
-            "color": "COLOR",
-            "finish": "FINISH",
-            "rating": "RATING",
-            "would_buy": WOULD_BUY
-        }
+        "flavour": "FLAVOUR",
+        "rating": "RATING"
     }
         </div>
     </body>
