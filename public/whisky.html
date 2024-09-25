@@ -68,13 +68,12 @@
                     let json_string = $('.json_input').text()
                         .replace("BRAND", $('#brand').val())
                         .replace("DATE_OF_TASTING", $('#date_of_tasting').val())
+                        .replace("LOCATION_OF_TASTING", $('#location_of_tasting').val())
                         .replace("COUNTRY", $('#country').val())
                         .replace("REGION", $('#region').val())
                         .replace("TYPE", $('#type').val())
                         .replace("CASK_TYPE", $('#cask_type').val())
                         .replace("NOTES", $('#notes').val())
-                        .replace("FLAVOUR", $('#flavour').val())
-                        .replace("GLANCE", $('#glance').val())
                         .replace("RATING", $('#rating').val());
 
                     $('.json_output').text(json_string);
@@ -91,8 +90,14 @@
                     step: 1,
                     value: 2,
                     slide: function(event, ui) {
+                        if (ui.value == 1) {
+                            $('#rating_text').val("No");
+                        } else if (ui.value == 2) {
+                            $('#rating_text').val("Maybe");
+                        } else if (ui.value == 3) {
+                            $('#rating_text').val("Yes");
+                        }
                         $('#rating').val(ui.value);
-                        $('#rating_text').val(ui.value + " stars");
                     }
                 });
             });
@@ -234,6 +239,7 @@
             <input type="text" name="brand" id="brand" placeholder="Brand / Distillery name">
 
             <input type="date" name="date_of_tasting" id="date_of_tasting">
+            <input type="date" name="location_of_tasting" id="location_of_tasting">
 
             <select name="country" id="country">
                 <option>-- Select Country --</option>
@@ -293,12 +299,12 @@
     {
         "brand": "BRAND",
         "date_of_tasting": "DATE_OF_TASTING",
+        "location_of_tasting": "LOCATION_OF_TASTING",
         "country": "COUNTRY",
         "region": "REGION",
         "type": "TYPE",
         "cask_type": "CASK_TYPE",
         "notes": "NOTES",
-        "flavour": "FLAVOUR",
         "rating": "RATING"
     }
         </div>
