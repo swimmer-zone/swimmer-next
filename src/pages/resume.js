@@ -32,31 +32,6 @@ const Resume = () => {
             <div className="timeline__item">
                 <div className="timeline__item-header">
                     <button className={expanded ? 'timeline__arrow timeline__arrow--expanded' : 'timeline__arrow'} type="button">
-                        <svg className="timeline__arrow-icon" viewBox="0 0 24 24" width="24">
-                            <use href="#arrow" />
-                        </svg>
-                    </button>
-                    <span className="timeline__dot"></span>
-                    <span className="timeline__meta">
-                        <time className="timeline__date" dateTime="2022-09">
-                            <span className="tag">study</span> September 2022 - Now
-                        </time><br/>
-                        <strong className="timeline__title">
-                            Avans+, Amsterdam<br/>Bachelor Software Engineering
-                        </strong>
-                    </span>
-                </div>
-                <div className={expanded ? 'timeline__item-body timeline__item-body--expanded' : 'timeline__item-body'} role="region">
-                    <div className="timeline__item-body-content">
-                        <p className="timeline__item-p">
-                            Information Technology
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className="timeline__item">
-                <div className="timeline__item-header">
-                    <button className={expanded ? 'timeline__arrow timeline__arrow--expanded' : 'timeline__arrow'} type="button">
                         <svg className="timeline__arrow-icon" viewBox="0 0 24 24">
                             <use href="#arrow" />
                         </svg>
@@ -75,6 +50,31 @@ const Resume = () => {
                     <div className="timeline__item-body-content">
                         <p className="timeline__item-p">
                             PHP Programmer, Development and maintenance Magento, Custom modules for clients
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div className="timeline__item">
+                <div className="timeline__item-header">
+                    <button className={expanded ? 'timeline__arrow timeline__arrow--expanded' : 'timeline__arrow'} type="button">
+                        <svg className="timeline__arrow-icon" viewBox="0 0 24 24" width="24">
+                            <use href="#arrow" />
+                        </svg>
+                    </button>
+                    <span className="timeline__dot"></span>
+                    <span className="timeline__meta">
+                        <time className="timeline__date" dateTime="2022-09">
+                            <span className="tag">study</span> September 2022 - November 2024
+                        </time><br/>
+                        <strong className="timeline__title">
+                            Avans+, Amsterdam<br/>Software Engineering
+                        </strong>
+                    </span>
+                </div>
+                <div className={expanded ? 'timeline__item-body timeline__item-body--expanded' : 'timeline__item-body'} role="region">
+                    <div className="timeline__item-body-content">
+                        <p className="timeline__item-p">
+                            Information Technology<br/>Bachelor's Degree
                         </p>
                     </div>
                 </div>
