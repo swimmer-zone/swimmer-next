@@ -140,7 +140,7 @@ const Resume = () => {
                             <span className="tag">study</span> September 2004 - June 2007
                         </time><br/>
                         <strong className="timeline__title">
-                            Fontys, Venlo<br/>Bachelor Mechatronics
+                            Fontys, Venlo<br/>Mechatronics
                         </strong>
                     </span>
                 </div>
@@ -148,7 +148,7 @@ const Resume = () => {
                     <div className="timeline__item-body-content">
                         <p className="timeline__item-p">
                             Informatica, Elektronics, Mechanics<br/>
-                            Propaedeutic year's certificate
+                            Propaedeutic year's certificate (for masters degree)
                         </p>
                     </div>
                 </div>
