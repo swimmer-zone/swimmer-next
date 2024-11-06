@@ -67,7 +67,7 @@ const Resume = () => {
                             <span className="tag">study</span> September 2022 - November 2024
                         </time><br/>
                         <strong className="timeline__title">
-                            Avans+, Amsterdam<br/>Software Engineering
+                            Avans+, Amsterdam [HBO Software Engineering]
                         </strong>
                     </span>
                 </div>
@@ -140,7 +140,7 @@ const Resume = () => {
                             <span className="tag">study</span> September 2004 - June 2007
                         </time><br/>
                         <strong className="timeline__title">
-                            Fontys, Venlo<br/>Mechatronics
+                            Fontys, Venlo [HBO Mechatronics]
                         </strong>
                     </span>
                 </div>
