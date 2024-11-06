@@ -247,7 +247,7 @@ const Resume = () => {
                     <div className="timeline__item-body-content">
                         <p className="timeline__item-p">
                             Process Technology, Electronics, VAPRO B<br/>
-                            Level 4 certificate
+                            Level 4 degree
                         </p>
                     </div>
                 </div>
@@ -273,7 +273,7 @@ const Resume = () => {
                     <div className="timeline__item-body-content">
                         <p className="timeline__item-p">
                             Nature & Technology<br/>
-                            MAVO certificate
+                            MAVO degree
                         </p>
                     </div>
                 </div>
