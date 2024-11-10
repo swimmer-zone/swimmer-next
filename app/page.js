@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Me, Music, Intro, Social, Logo, Toggle, Water } from '../src/Components';
+import { Me, Music, Intro, Social, Logo, Water } from '../src/Components';
 import '../src/pages/_scss/home.scss';
 import packageJson from '../package.json';
 
@@ -12,21 +12,17 @@ const Home = () => {
         console.log('test')
     }
 
-  	return (<main className={darkMode ? 'dark' : 'light'}>
-        <header>
-            {darkMode && <div className="stars"></div>}
+  	return (<main>
+        <Music />
+        <Intro />
+        <footer id="footer">            
             <Logo />
-            <Toggle onClick={handleSetDarkMode} darkMode={darkMode}/>
-
             <Social location="header" />
             <Water />
-        </header>
-        <Music />
-        <footer id="footer">
-            <Intro />
 
             <p className="copy">
-                &copy; Swimmer 2005&thinsp;/&thinsp;{(new Date().getFullYear())} - Version {packageJson.version}
+                v{packageJson.version}<br/>
+                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
             </p>
             <Me />
         </footer>

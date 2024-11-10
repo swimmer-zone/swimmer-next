@@ -79,7 +79,6 @@
 * [Sour Cream and Herb Mashed Potatoes](https://nourishedkitchen.com/sour-cream-and-herb-mashed-potatoes/)
 * [Roast Pears with Ginger and Cardamom](https://nourishedkitchen.com/roast-pears-with-ginger-and-cardamom/)
 * [This Cauliflower Tabbouleh recipe is the answer to weekly meal prep.](https://nourishedkitchen.com/cauliflower-tabbouleh/)
-* [Asparagus Almondine Recipe](https://www.gimmesomeoven.com/asparagus-almondine-recipe/)
 
 
 ## Gimme Some Oven
@@ -89,6 +88,8 @@
 * [Thai Chicken Noodle Soup Recipe](https://www.gimmesomeoven.com/thai-chicken-noodle-soup-recipe/)
 * [Sweet Potato Avocado Kale Salad Recipe](https://www.gimmesomeoven.com/sweet-potato-avocado-kale-salad-with-chipotle-tahini-dressing/)
 * [Tahini Sauce Recipe](https://www.gimmesomeoven.com/tahini-sauce-recipe/)
+* [Asparagus Almondine Recipe](https://www.gimmesomeoven.com/asparagus-almondine-recipe/)
+* [Butternut Squash And Tortellini Soup](https://www.gimmesomeoven.com/butternut-squash-sausage-and-tortellini-soup/)
 
 
 ## Dassana’s Veg Recipes
@@ -133,16 +134,23 @@
 * [Korean Strawberry Milk](https://therecipecritic.com/korean-strawberry-milk/)
 * [Chalupas](https://therecipecritic.com/chalupas/)
 * [Lava Flow Drink](https://therecipecritic.com/lava-flow-drink/)
+* [Creamy Tuscan Garlic Sauce](https://therecipecritic.com/creamy-tuscan-garlic-sauce/)
+* [Slow Cooker Swedish Meatballs](https://therecipecritic.com/slow-cooker-swedish-meatballs/)
 
 
 ## Ekoplaza
 
 * [Cashew Burger met Zeewiertapenade](https://www.ekoplaza.nl/nl/recepten/detail/cashew-bonenburger-met-zeewiertapenade)
-* [S[eculaas met Cheesecake]](https://www.ekoplaza.nl/nl/recepten/detail/speculaas-cheese-cake)
+* [Speculaas met Cheesecake]](https://www.ekoplaza.nl/nl/recepten/detail/speculaas-cheese-cake)
 * [Waterkers met Doperwtensoep](https://www.ekoplaza.nl/nl/recepten/detail/waterkers-doperwtensoep)
 * [Noedels met Spruitjes en Kimchi](https://www.ekoplaza.nl/nl/recepten/detail/noedels-met-spruitjes-paprika-en-kimchi)
 * [Pastinaakgratin met Brie](https://www.ekoplaza.nl/nl/recepten/detail/pastinaakgratin-met-brie)
 * [Rode Linzen met Bloemkool en Pompoen](https://www.ekoplaza.nl/nl/recepten/detail/rode-linzen-met-bloemkool-en-pompoen)
+
+
+## AllerHande
+
+* [Green Goddess Salad](https://www.ah.nl/allerhande/recept/R-R1197114/green-goddess-salad)
 
 
 ## Vegrecipes of India

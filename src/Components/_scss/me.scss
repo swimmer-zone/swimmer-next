@@ -1,16 +1,22 @@
 @import '../../pages/_scss/_variables.scss';
 
 .diving {
-	position: sticky;
-	bottom: 0;
-	left: calc(100vw - 400px);
-	height: 400px;
-	width: 500px;
+    position: fixed;
+    bottom: 0;
+    right: 8vw;
+    width: 250px;
+    height: 200px;
 	filter: drop-shadow(5px 5px 3px #00000022);
 	animation-name: dive;
 	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-in-out;
+	z-index: 9999;
+
+	img {
+		width: 250px;
+		height: 200px;
+	}
 }
 
 @keyframes dive {
@@ -27,7 +33,7 @@
 
 .me {
 	position: fixed;
-	bottom: 0;
+	bottom: 16vh;
 	left: calc(100vw - 400px);
 	height: 500px;
 	width: 450px;

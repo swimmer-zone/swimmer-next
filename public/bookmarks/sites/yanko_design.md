@@ -25,3 +25,6 @@
 * [This inflatable mattress turns your vehicle’s front seat into a cozy sleeping space when outdoor!](https://www.yankodesign.com/2021/10/22/this-inflatable-mattress-turns-your-vehicles-front-seat-into-a-cozy-sleeping-space-when-outdoor/)
 * [Back at the office with noisy coworkers? This privacy hood keeps sounds and nosy people away](https://www.yankodesign.com/2021/10/21/back-at-the-office-with-noisy-coworkers-this-privacy-hood-keeps-sounds-and-nosy-people-away/)
 * [This hilariously functional keyboard helps fix the terrible UI/UX of video-calling apps](https://www.yankodesign.com/2021/08/31/this-hilariously-functional-keyboard-helps-fix-the-terrible-ui-ux-of-video-calling-apps/)
+* [Meet the A-Frame Club](https://www.yankodesign.com/2023/09/24/meet-the-a-frame-club-a-series-of-prefabricated-a-frame-cabins-in-a-snowflake-pattern/)
+* [Teenage Engineering Laptop](https://www.yankodesign.com/2024/03/16/this-teenage-engineering-inspired-laptop-is-a-creative-sound-engineers-dream-come-true/)
+* [Tiny Rapid Deploy Pocket Knife](https://www.yankodesign.com/2024/04/12/this-tiny-rapid-deploy-tactical-pocket-knife-is-like-the-napoleon-of-edc/)

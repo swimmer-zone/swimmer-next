@@ -2,14 +2,14 @@ html {
 	font-size: 20px;
 }
 body,
-button,
-a {
+button {
 	font-family: 'Afacad', sans-serif;
 	overflow-x: hidden;
 	font-size: 1rem;
     letter-spacing: 0.1rem;
     color: white;
     text-shadow: 2px 2px 4px #00000033;
+    background-color: #111111;
 }
 ul,
 ol {
@@ -99,7 +99,7 @@ img {
     max-width: 600px;
     margin-bottom: 4vh;
 
-    &:not(.noshade) {
+    &.shade {
         box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2), 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     }
 
@@ -144,15 +144,16 @@ nav {
 .overview-background {
     display: flex;
     flex-direction: column;
+    margin-bottom: 32vh;
 
     h1 {
         width: 40vw;
-        color: $black;
+        color: #eeeeee;
         text-align: center;
     }
     p {
         width: 40vw;
-        color: $black;
+        color: #eeeeee;
         text-shadow: none;
         align-self: center;
         text-align: center;

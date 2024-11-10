@@ -1,7 +1,8 @@
 'use client';
 import Head from 'next/head';
-import { Back } from '../../Components';
+import { Back, Logo, Me, Social, Water } from '../../Components';
 import './_scss/diy.scss';
+import packageJson from '../../../package.json';
 
 const Tutorials = () => {
 
@@ -24,6 +25,17 @@ const Tutorials = () => {
                 {/* 17 */}
             </a>
         </div>
+        <footer id="footer">            
+            <Logo />
+            <Social location="header" />
+            <Water />
+
+            <p className="copy">
+                v{packageJson.version}<br/>
+                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
+            </p>
+            <Me />
+        </footer>
     </main>);
 }
 

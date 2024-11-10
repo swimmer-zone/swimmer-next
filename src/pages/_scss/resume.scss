@@ -155,11 +155,12 @@ p {
 /* Expanded state */
 .timeline__item-body--expanded {
 	height: auto;
-}
-.timeline__item-body--expanded .timeline__item-body-content {
-	opacity: 1;
-	visibility: visible;
-	transition-delay: $trans-dur, 0s;
+	
+	.timeline__item-body-content {
+		opacity: 1;
+		visibility: visible;
+		transition-delay: $trans-dur, 0s;
+	}
 }
 .timeline__arrow--expanded .timeline__arrow-icon {
 	transform: rotate(0);
@@ -174,7 +175,7 @@ p {
 	letter-spacing: 1px;
 	background-color: $purple;
 	color: white;
-	padding-inline: 2px;
+	padding: 2px 4px;
 	border-radius: 4px;
 	display: inline-block;
 	line-height: 1rem;
@@ -188,7 +189,7 @@ p {
 	gap: 2vw;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 80px 0;
+	margin: 80px 0 32vh 0;
 
 	& > div {
 		background-color: #dddddd;
@@ -197,7 +198,7 @@ p {
 		width: 30vw;
 		min-width: 300px;
 		padding: 0 40px 20px 40px;
-		margin-bottom: 20px;
+		margin-bottom: 40vh;
 	}
 }
 
@@ -215,4 +216,8 @@ p {
 	.diving {
 		display: none;
 	}
+}
+
+#bubbles .bubble {
+	background-color: $white;
 }

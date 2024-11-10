@@ -1,7 +1,8 @@
 'use client';
 import Head from 'next/head';
-import { Back } from '../../Components';
+import { Back, Intro, Me, Social, Logo, Water } from '../../Components';
 import './_scss/tutorials.scss';
+import packageJson from '../../../package.json';
 
 const Tutorials = () => {
 
@@ -13,7 +14,7 @@ const Tutorials = () => {
         <h1>Tutorials</h1>
         <p>
             I've written a couple of tutorials, most of them are quite outdated, but can still be some nice
-            reference. This section is in dark mode because... dev's like dark mode :)
+            reference.
         </p>
         <p>
             The newest tutorial is about Next.js, there already is a part about getting started, but I still
@@ -68,6 +69,18 @@ const Tutorials = () => {
                 {/* 07 */}
             </a>
         </div>
+        
+        <footer id="footer">            
+            <Logo />
+            <Social location="header" />
+            <Water />
+
+            <p className="copy">
+                v{packageJson.version}<br/>
+                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
+            </p>
+            <Me />
+        </footer>
     </main>);
 }
 

@@ -1,63 +1,33 @@
 @import '../../pages/_scss/_variables.scss';
 
 #waves {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 3840px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 24vh;
+    z-index: 999;
 
 	path {
-		will-change: auto;
-		animation: oceanWave 15s;
-		animation-timing-function: linear;
-		animation-iteration-count: infinite;
 		filter: drop-shadow(5px 5px 3px #6c6eec88);
-		transform: translateZ(0);
-
-		&:nth-child(2) {
-			animation-delay: 2s;
-		}
-		&:nth-child(3) {
-			animation-delay: 6s;
-		}
-		&:nth-child(4) {
-			animation-play-state: paused;
-		}
-	}
-}
-
-@keyframes oceanWave {
-	0% {
-		d: path("M0,160 C320,80,640,80,960,160 C1280,240,1600,240,1920,160 C2240,80,2560,80,2280,160 C3300,240,3520,240,3840,160 L3840 1080 L0 1080");
-	}
-	25% {
-		d: path("M0,80 C320,80,640,242,960,242 C1280,242,1600,80,1920,80 C2240,80,2560,242,2280,242 C3300,242,3520,80,3840,80 L3840 1080 L0 1080");
-	}
-	50% {
-		d: path("M0,160 C320,240,640,240,960,160 C1280,80,1600,80,1920,160 C2240,240,2560,240,2280,160 C3300,80,3520,80,3840,160 L3840 1080 L0 1080");
-	}
-	75% {
-		d: path("M0,242 C320,242,640,80,960,80 C1280,80,1600,242,1920,242 C2240,242,2560,80,2280,80 C3300,80,3520,242,3840,242 L3840 1080 L0 1080");
-	}
-	100% {
-		d: path("M0,160 C320,80,640,80,960,160 C1280,240,1600,240,1920,160 C2240,80,2560,80,2280,160 C3300,240,3520,240,3840,160 L3840 1080 L0 1080");
 	}
 }
 
 #bubbles {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	bottom: 0;
-	left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 24vh;
+    overflow: hidden;
+    bottom: 0;
+    left: 0;
+	z-index: 9999;
 
 	.bubble {
 		position: absolute;
 		bottom: 0;
 		width: 40px;
 		height: 40px;
-		background: #ffffff;
+		background: #111111;
 		border-radius: 50%;
 		opacity: 0.5;
 		will-change: auto;
@@ -133,5 +103,19 @@
 			animation-duration: 5s;
 			animation-delay: 3s;
 		}
+	}
+}
+
+@keyframes floating {
+	0% {
+		bottom: -100px;
+		transform: translateX(0);
+	}
+	50% {
+		transform: translateX(100px);
+	}
+	100% {
+		bottom: 1080px;
+		transform: translateX(-200px);
 	}
 }
