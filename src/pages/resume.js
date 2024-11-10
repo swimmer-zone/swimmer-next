@@ -1,8 +1,9 @@
 'use client';
 import { useState } from 'react';
 import Head from 'next/head';
-import { Back, Portrait } from '../Components';
+import { Back, Portrait, Me, Social, Logo, Water } from '../Components';
 import './_scss/resume.scss';
+import packageJson from '../../package.json';
 
 const Resume = () => {
     const [ expanded, setExpanded ] = useState(false);
@@ -384,6 +385,17 @@ const Resume = () => {
                 <span className="tag">Python</span>
             </div>
         </div>
+        
+        <footer id="footer">            
+            <Logo />
+            <Social location="header" />
+            <Water noBubbles="true"/>
+
+            <p className="copy">
+                v{packageJson.version}<br/>
+                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
+            </p>
+        </footer>
     </main>);
 }
 

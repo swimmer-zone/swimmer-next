@@ -1,7 +1,8 @@
 'use client';
 import Head from 'next/head';
-import { Back } from '../../Components';
+import { Back, Intro, Me, Social, Logo, Water } from '../../Components';
 import './_scss/travels.scss';
+import packageJson from '../../../package.json';
 
 // 2024-01-08
 // 2023-02-20
@@ -95,6 +96,18 @@ const Travels = () => {
        
         <Back/>
         <p className="mobile">There are a lot of images involved in my travel blogs, so it is highly recommended to not view it on a mobile phone.</p>
+        
+        <footer id="footer">            
+            <Logo />
+            <Social location="header" />
+            <Water />
+
+            <p className="copy">
+                v{packageJson.version}<br/>
+                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
+            </p>
+            <Me />
+        </footer>
     </main>);
 }
 

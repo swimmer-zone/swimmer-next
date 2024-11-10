@@ -4,19 +4,20 @@
 a.homeButton {
 	display: block;
 	position: fixed;
-	bottom: 20px;
+	bottom: 24vh;
 	right: 20px;
 	transition: all .3s linear;
 	z-index: 1;
 	padding: 10px;
 	height: 100px;
 	width: 100px;
-	background-color: $purple;
+	background-color: #6c6eec44;
+	border: 2px solid  $purple;
 	border-radius: 50%;
 	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
 
 	svg {
-		fill: #ffffff;
+		fill: $purple;
 		display: inline-block;
 		vertical-align: middle;
 		width: 50px;

@@ -12,3 +12,4 @@
 * [NIKE unveils the NIKE GO FlyEase, an easy-on, easy off no-lace sneaker](https://www.designboom.com/design/nike-go-flyease-hands-off-no-lace-02-02-2021/)
 * [davit and mary jilavyan envision tiny 'dolmen shelters' as hotels built into the stone](https://www.designboom.com/architecture/davit-mary-jilavyan-tiny-dolmen-shelters-hotel-stone-11-08-2020/)
 * [see UNESCO world heritage sites from above with these amazing aerial photographs](https://www.designboom.com/art/unesco-world-heritage-sites-aerial-photos-11-06-2020/)
+* [Honeycomb House](https://www.designboom.com/architecture/peter-haimerl-architektur-honeycomb-clusterwohnen-wabenhaus-germany-04-07-2024/)

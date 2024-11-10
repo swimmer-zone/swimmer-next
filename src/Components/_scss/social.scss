@@ -4,19 +4,20 @@
 .social {
 	&.header {
 		position: fixed;
-		top: 20px;
-		right: 4vw;
+		bottom: 40px;
+		left: 4vw;
 		display: flex;
 		justify-content: flex-end;
 		flex-wrap: wrap;
-		z-index: 110;
-		width: 320px;
+		z-index: 99999;
+		width: 320px
 	}
 
 	a {
 		position: relative;
 		width: 64px;
 		height: 64px;
+		border-bottom: 0;
 
 		svg {
 			width: 40px;

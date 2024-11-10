@@ -1,7 +1,8 @@
 'use client';
 import Head from 'next/head';
-import { Back } from '../../Components';
+import { Back, Intro, Me, Social, Logo, Water } from '../../Components';
 import './_scss/blog.scss';
+import packageJson from '../../../package.json';
 
 const Blog = () => {
 
@@ -300,6 +301,18 @@ const Blog = () => {
             </div>
         </section>
         <Back />
+        
+        <footer id="footer">            
+            <Logo />
+            <Social location="header" />
+            <Water />
+
+            <p className="copy">
+                v{packageJson.version}<br/>
+                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
+            </p>
+            <Me />
+        </footer>
     </main>);
 }
 

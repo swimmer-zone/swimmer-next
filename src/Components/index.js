@@ -10,7 +10,6 @@ import Music from './Music.js';
 import Portrait from './Portrait.js';
 import Rating from './Rating.js';
 import Social from './Social.js';
-import Toggle from './Toggle.js';
 import Travels from './Travels.js';
 import Tutorials from './Tutorials.js';
 import Water from './Water.js';
@@ -28,7 +27,6 @@ export {
     Portrait, 
     Rating, 
     Social, 
-    Toggle, 
     Travels, 
     Tutorials, 
     Water
