@@ -6,8 +6,8 @@ a.homeButton {
 	position: fixed;
 	bottom: 24vh;
 	right: 20px;
+	z-index: 99999;
 	transition: all .3s linear;
-	z-index: 1;
 	padding: 10px;
 	height: 100px;
 	width: 100px;
