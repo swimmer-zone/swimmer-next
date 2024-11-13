@@ -80,6 +80,10 @@ button {
     color: #eeeeee;
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
+	text-decoration: underline;
+	text-decoration-color: #ffc917aa;
+	text-underline-offset: 4px;
+	text-decoration-style: dotted;
 
 	&:hover {
 		color: $yellow;
@@ -94,6 +98,8 @@ footer {
     width: 100vw;
     height: 40vh;
 	z-index: 999;
+	background: linear-gradient(to bottom, #11111100, #111111ff);
+	pointer-events: none;
 
 	h2 {
 		font-family: 'Indie Flower', 'Afacad', sans-serif;
@@ -103,14 +109,9 @@ footer {
 	}
 	a {
 		color: $black;
-		border-bottom: 1px solid #ffffff66;
 		line-height: 16px;
 		display: inline-block;
-
-		&:hover {
-			color: $black;
-			border-bottom: 1px solid $white;
-		}
+		pointer-events: all;
 	}
 }
 
@@ -127,8 +128,13 @@ footer {
 		padding-top: 0;
 	}
 
+	.intro {
+		margin-top: 2vh !important;
+	}
+
 	footer {
 		padding: 1vh 1vw;
+		height: 60vh;
 
 		h2 {
 			padding-left: 1vw;
@@ -141,7 +147,7 @@ footer {
 		}
 
 	    .copy {
-	    	margin-top: 4vh;
+	    	display: none;
 	    }
 	}
 }

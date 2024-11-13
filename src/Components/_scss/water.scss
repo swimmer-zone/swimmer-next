@@ -119,3 +119,9 @@
 		transform: translateX(-200px);
 	}
 }
+
+@media(max-width: $mobile-breakpoint) {
+	#waves {
+		height: 8vh;
+	}
+}
