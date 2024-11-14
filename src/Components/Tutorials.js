@@ -1,9 +1,9 @@
 import React from 'react';
-import './_scss/tutorials.scss';
+import './_scss/menubutton.scss';
 
 const Tuturials = () => {
     return (<>
-    	<a href="/tutorials" className="tutorialsButton">
+    	<a href="/tutorials" className="tutorialsButton" title="Tutorials">
 			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 				<path d="M433.985,443.717l-89.55-191.894c0-7.466,0-199.236,0-210.69h20.564c11.358,0,20.567-9.208,20.567-20.567
 					S376.358,0,364.999,0c-7.995,0-207.944,0-217.996,0c-11.358,0-20.567,9.208-20.567,20.567s9.208,20.567,20.567,20.567h20.564

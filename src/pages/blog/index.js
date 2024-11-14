@@ -7,7 +7,7 @@ import packageJson from '../../../package.json';
 const Blog = () => {
 
 	return (<main>
-        <Head>o
+        <Head>
             <title>Swimmer ♬ Blog</title>
         </Head>
         <Back/>

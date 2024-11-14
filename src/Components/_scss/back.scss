@@ -2,37 +2,8 @@
 @import '../../pages/_scss/_variables.scss';
 
 a.homeButton {
-	display: block;
-	position: fixed;
 	bottom: 24vh;
 	right: 20px;
-	z-index: 99999;
-	transition: all .3s linear;
-	padding: 10px;
-	height: 100px;
-	width: 100px;
-	background-color: #6c6eec44;
-	border: 2px solid  $purple;
-	border-radius: 50%;
-	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
-
-	svg {
-		fill: $purple;
-		display: inline-block;
-		vertical-align: middle;
-		width: 50px;
-		margin: 15px;
-	}
-	span {
-		display: inline-block;
-		height: 28px;
-		vertical-align: middle;
-	}
-
-	&:hover {
-		transform: scale(1.1);
-		cursor: pointer;
-	}
 }
 
 @media(max-width: $mobile-breakpoint) {
