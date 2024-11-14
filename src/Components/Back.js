@@ -1,4 +1,5 @@
 import React from 'react';
+import './_scss/menubutton.scss';
 import './_scss/back.scss';
 
 const Back = () => {

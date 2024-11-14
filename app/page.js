@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { Me, Music, Intro, Social, Logo, Water } from '../src/Components';
+import { Me, Music, Intro, Social, Logo, Water, DIY, Travels, Tutorials, Blog, Resume } from '../src/Components';
 import '../src/pages/_scss/home.scss';
 import packageJson from '../package.json';
 
@@ -18,6 +18,13 @@ const Home = () => {
         <footer id="footer">            
             <Logo />
             <Social location="header" />
+            
+            <Travels/>
+            <DIY/>
+            <Tutorials/>
+            <Blog/>
+            <Resume/>
+
             <Water />
 
             <p className="copy">

@@ -107,8 +107,12 @@ footer {
 		margin-top: -45px;
 		text-shadow: 2px 2px 2px #6c6eecff;
 	}
+	ul {
+		position: fixed;
+		left: 36vw;
+		bottom: 4vh;
+	}
 	a {
-		color: $black;
 		line-height: 16px;
 		display: inline-block;
 		pointer-events: all;
