@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { Back, Code, Tutorials } from '../../Components';
-import './_scss/tutorials.scss';
+import { Footer, Menu, Code } from '../../Components';
+import '../_scss/common.scss';
     
 const codeString_1 = `<?php
 // Connect to the database
@@ -136,13 +136,18 @@ const codeString_11 = `<?php
 class ControllerPhotos extends Controller {}`;
 
 const Blog = () => {
+	const toggleMenu = () => {
+        document.body.classList.remove('show-menu');
+    };
 
 	return (<main>
+		<div class="container">
+            <Menu active="tutorials"/>
+			<div className="content-wrap" onClick={toggleMenu}>
+				<div className="content">
         <Head>
             <title>Swimmer ♬ Tutorials</title>
         </Head>
-        <Back/>
-        <Tutorials/>
         <section className="tutorial">
             <img className="avatar" src="../images/tutorials/design-patterns.png" alt="Avatar"/>
             <div className="article">
@@ -289,6 +294,10 @@ const Blog = () => {
                 <div className="footnote" id="note-2">2) These patterns are found in Head First: Design Patterns</div>
             </div>
         </section>
+                    <Footer/>
+                </div>
+            </div>
+        </div>
     </main>);
 }
 

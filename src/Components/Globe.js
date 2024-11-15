@@ -726,4 +726,4 @@ const Globe = () => {
     </>);
 }
 
-export default Back;
+export default Globe;

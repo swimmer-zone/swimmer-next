@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { Back, Code, Tutorials } from '../../Components';
-import './_scss/tutorials.scss';
+import { Footer, Menu, Code } from '../../Components';
+import '../_scss/common.scss';
 
 const codeString_1 = `su - root
 # Enter password twice to login as root
@@ -377,187 +377,196 @@ mkdir /var/subdomains/roundcube.swimmer.zone/programs/js/tiny_mce
 cp -rf * /var/subdomains/roundcube.swimmer.zone/programs/js/tiny_mce`;
 
 const Blog = () => {
+	const toggleMenu = () => {
+        document.body.classList.remove('show-menu');
+    };
 
 	return (<main>
-        <Head>
-            <title>Swimmer ♬ Tutorials</title>
-        </Head>
-        <Back/>
-        <Tutorials/>
-        <section className="tutorial">
-            <img className="avatar" src="../images/tutorials/aurora-vps.png" alt="Avatar" />
-            <div className="article">
-                <h1>Aurora VPS</h1>
-                <h2>Table of Contents</h2>
-                <ul>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#web-server">Web Server</a>
-                        <ul>
-                            <li><a href="#ftp-server">FTP Server</a></li>
-                            <li><a href="#php">PHP</a></li>
-                            <li><a href="#phppgadmin">PHPpgAdmin</a></li>
-                            <li><a href="#apache-config">Apache Config</a></li>
-                            <li><a href="#phpsysinfo">PHPSysInfo</a></li>
-                            <li><a href="#cronjobs">Cronjobs</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#mail-server">Mail Server</a>
-                        <ul>
-                            <li><a href="#postfix">Postfix</a></li>
-                            <li><a href="#dovecot">Dovecot</a></li>
-                            <li><a href="#roundCube">RoundCube</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#to-conclude">To Conclude</a></li>
-                </ul>
-                <h2 id="introduction">Introduction</h2>
-                <p>
-                    This article describes the setup of a server on the new Aurora cloud. After creating an instance, 
-                    you can mount an image to a virtual setup disk, I chose the Debian 7 (Wheezy) image. When 
-                    installing, you can choose between a couple of templates. I chose Webserver; SQL-server; Fileserver 
-                    and system components. The fileserver didn't seem to be necessary, because first off we have to 
-                    install an FTP server. Then we can upload the files of the website.
-                </p>
-                <p>
-                    I've never installed a mail server before, so this part can contain some inconsistencies. I'll use 
-                    <em>swimmer.zone</em> as default domain, evidently this has to be substituted with your domain, 
-                    just like the rest of this article. It may be useful to restart the server between operations, to 
-                    see errors right away, when you can still use them.
-                </p>
+		<div class="container">
+            <Menu active="tutorials"/>
+			<div className="content-wrap" onClick={toggleMenu}>
+				<div className="content">
+                    <Head>
+                        <title>Swimmer ♬ Tutorials</title>
+                    </Head>
+                    <section className="tutorial">
+                        <img className="avatar" src="../images/tutorials/aurora-vps.png" alt="Avatar" />
+                        <div className="article">
+                            <h1>Aurora VPS</h1>
+                            <h2>Table of Contents</h2>
+                            <ul>
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#web-server">Web Server</a>
+                                    <ul>
+                                        <li><a href="#ftp-server">FTP Server</a></li>
+                                        <li><a href="#php">PHP</a></li>
+                                        <li><a href="#phppgadmin">PHPpgAdmin</a></li>
+                                        <li><a href="#apache-config">Apache Config</a></li>
+                                        <li><a href="#phpsysinfo">PHPSysInfo</a></li>
+                                        <li><a href="#cronjobs">Cronjobs</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#mail-server">Mail Server</a>
+                                    <ul>
+                                        <li><a href="#postfix">Postfix</a></li>
+                                        <li><a href="#dovecot">Dovecot</a></li>
+                                        <li><a href="#roundCube">RoundCube</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#to-conclude">To Conclude</a></li>
+                            </ul>
+                            <h2 id="introduction">Introduction</h2>
+                            <p>
+                                This article describes the setup of a server on the new Aurora cloud. After creating an instance, 
+                                you can mount an image to a virtual setup disk, I chose the Debian 7 (Wheezy) image. When 
+                                installing, you can choose between a couple of templates. I chose Webserver; SQL-server; Fileserver 
+                                and system components. The fileserver didn't seem to be necessary, because first off we have to 
+                                install an FTP server. Then we can upload the files of the website.
+                            </p>
+                            <p>
+                                I've never installed a mail server before, so this part can contain some inconsistencies. I'll use 
+                                <em>swimmer.zone</em> as default domain, evidently this has to be substituted with your domain, 
+                                just like the rest of this article. It may be useful to restart the server between operations, to 
+                                see errors right away, when you can still use them.
+                            </p>
 
-                <h2 id="web-server">Web Server</h2>
-                <p>
-                    I wrote this article, because the setup of a web server can take a lot of time, mostly because every 
-                    component has its own configuration files which have to be edited. Some may easily drown in this pile 
-                    of information, just like myself. So I wrote it mostly for myself as some sort of documentation of the 
-                    needed steps. It was a small effort to write this in a <em>wiki</em>-like shape for this tutorial. 
-                    Installing a web server is not a frequent task, so it's easy to forget.
-                </p>
-                <h3 id="ftp-server">FTP Server</h3>
-                <p>
-                    Setting up an FTP server, add an user and give this user permissions to write the right directories. 
-                    The files can't be uploaded yet though, they won't be interpreted as PHP files but as plain text, so 
-                    sensitive data can be released.
-                </p>
-                <Code input={codeString_1} language="bash" />
-                
-                <h3 id="php">PHP</h3>
-                <p>
-                    So now we install PHP, to parse the files the right way. Now we can upload the PHP files. Because we 
-                    chose the Web server and SQL server in the pre-install, Apache and PostgreSQL are already installed. 
-                    PHP automatically installs its dependencies to PostgreSQL.
-                </p>
-                <Code input={codeString_2} language="bash" />
+                            <h2 id="web-server">Web Server</h2>
+                            <p>
+                                I wrote this article, because the setup of a web server can take a lot of time, mostly because every 
+                                component has its own configuration files which have to be edited. Some may easily drown in this pile 
+                                of information, just like myself. So I wrote it mostly for myself as some sort of documentation of the 
+                                needed steps. It was a small effort to write this in a <em>wiki</em>-like shape for this tutorial. 
+                                Installing a web server is not a frequent task, so it's easy to forget.
+                            </p>
+                            <h3 id="ftp-server">FTP Server</h3>
+                            <p>
+                                Setting up an FTP server, add an user and give this user permissions to write the right directories. 
+                                The files can't be uploaded yet though, they won't be interpreted as PHP files but as plain text, so 
+                                sensitive data can be released.
+                            </p>
+                            <Code input={codeString_1} language="bash" />
+                            
+                            <h3 id="php">PHP</h3>
+                            <p>
+                                So now we install PHP, to parse the files the right way. Now we can upload the PHP files. Because we 
+                                chose the Web server and SQL server in the pre-install, Apache and PostgreSQL are already installed. 
+                                PHP automatically installs its dependencies to PostgreSQL.
+                            </p>
+                            <Code input={codeString_2} language="bash" />
 
-                <h3 id="phppgadmin">PHPpgAdmin</h3>
-                <p>
-                    To add and administrate databases, we install PHPpgAdmin as a web interface for PostgreSQL. Then we 
-                    log in on the postgres console to add an user.
-                </p>
-                <Code input={codeString_3} language="bash" />
-                <p>
-                    Ctrl+D to leave the postgres console. Because we are still logged in as user 'postgres', we have to 
-                    return to user 'root' to execute the next steps. Now we have to find a couple of configuration files 
-                    and add or edit the following lines:
-                </p>
-                <Code input={codeString_4} language="bash" />
-                <p>
-                    It's possible you get a 403 page when trying to login on 
-                    <a href="https://[ip address]/phppgadmin/">https://[ip address]/phppgadmin/</a> so we're going to 
-                    prevent that:
-                </p>
-                <Code input={codeString_5} language="bash" />
+                            <h3 id="phppgadmin">PHPpgAdmin</h3>
+                            <p>
+                                To add and administrate databases, we install PHPpgAdmin as a web interface for PostgreSQL. Then we 
+                                log in on the postgres console to add an user.
+                            </p>
+                            <Code input={codeString_3} language="bash" />
+                            <p>
+                                Ctrl+D to leave the postgres console. Because we are still logged in as user 'postgres', we have to 
+                                return to user 'root' to execute the next steps. Now we have to find a couple of configuration files 
+                                and add or edit the following lines:
+                            </p>
+                            <Code input={codeString_4} language="bash" />
+                            <p>
+                                It's possible you get a 403 page when trying to login on 
+                                <a href="https://[ip address]/phppgadmin/">https://[ip address]/phppgadmin/</a> so we're going to 
+                                prevent that:
+                            </p>
+                            <Code input={codeString_5} language="bash" />
 
-                <h3 id="apache-config">Apache config</h3>
-                <p>
-                    In Apache we use different virtual hosts, these can be spread out in different files, if they are in 
-                    the <code>sites-enabled</code> directory. You can find this in <code>/etc/apache2</code>. In our 
-                    <code>.htaccess</code> files, <em>Rewrite Engine</em> is used, so we have to enable this in 
-                    <code>mods-enabled</code>. The files are already available in the <code>mods-available</code> 
-                    directory, so we only have to create a <em>symlink</em>.
-                </p>            
-                <Code input={codeString_6} language="bash" />
-                
-                <h3 id="phpsysinfo">PHPSysInfo</h3>
-                <p>
-                    To monitor our system through a web interface, we install PHPSysInfo and create a <em>symlink</em> to 
-                    make it available to the outside:
-                </p>
-                <Code input={codeString_7} language="bash" />
-                
-                <h3 id="cronjobs">Cronjobs</h3>
-                <p>
-                    For optional cronjobs I use a single PHP file that's executed every hour. In the PHP file is 
-                    determined which tasks have to be executed at that given time.
-                </p>
-                <Code input={codeString_8} language="bash" />
+                            <h3 id="apache-config">Apache config</h3>
+                            <p>
+                                In Apache we use different virtual hosts, these can be spread out in different files, if they are in 
+                                the <code>sites-enabled</code> directory. You can find this in <code>/etc/apache2</code>. In our 
+                                <code>.htaccess</code> files, <em>Rewrite Engine</em> is used, so we have to enable this in 
+                                <code>mods-enabled</code>. The files are already available in the <code>mods-available</code> 
+                                directory, so we only have to create a <em>symlink</em>.
+                            </p>            
+                            <Code input={codeString_6} language="bash" />
+                            
+                            <h3 id="phpsysinfo">PHPSysInfo</h3>
+                            <p>
+                                To monitor our system through a web interface, we install PHPSysInfo and create a <em>symlink</em> to 
+                                make it available to the outside:
+                            </p>
+                            <Code input={codeString_7} language="bash" />
+                            
+                            <h3 id="cronjobs">Cronjobs</h3>
+                            <p>
+                                For optional cronjobs I use a single PHP file that's executed every hour. In the PHP file is 
+                                determined which tasks have to be executed at that given time.
+                            </p>
+                            <Code input={codeString_8} language="bash" />
 
-                <h2 id="mail-server">Mail server</h2>
-                <p>
-                    To make our VPS function as a mail server, we have to install three packages, first Postfix for the 
-                    SMTP protocol. Then Dovecot for the POP3 protocol and then RoundCube to access our e-mail through a 
-                    web interface. This is still experimental, so it wouldn't hurt to make a snapshot of the system, 
-                    when this option is available.
-                </p>
+                            <h2 id="mail-server">Mail server</h2>
+                            <p>
+                                To make our VPS function as a mail server, we have to install three packages, first Postfix for the 
+                                SMTP protocol. Then Dovecot for the POP3 protocol and then RoundCube to access our e-mail through a 
+                                web interface. This is still experimental, so it wouldn't hurt to make a snapshot of the system, 
+                                when this option is available.
+                            </p>
 
-                <h3 id="postfix">Postfix</h3>
-                <p>
-                    Installation of Postfix, for this a couple of configuration files have to be edited. Some of the 
-                    lines have to be added and if a file doesn't exist already, it has to be created. At the end, 
-                    <code>virtual.db</code> has to be edited or created and Postfix has to be restarted.
-                </p>
-                <Code input={codeString_9} language="bash" />
-                
-                <h3 id="dovecot">Dovecot</h3>
-                <p>
-                    Install Dovecot and again, edit some configuration files:
-                </p>
-                <Code input={codeString_10} language="bash" />
+                            <h3 id="postfix">Postfix</h3>
+                            <p>
+                                Installation of Postfix, for this a couple of configuration files have to be edited. Some of the 
+                                lines have to be added and if a file doesn't exist already, it has to be created. At the end, 
+                                <code>virtual.db</code> has to be edited or created and Postfix has to be restarted.
+                            </p>
+                            <Code input={codeString_9} language="bash" />
+                            
+                            <h3 id="dovecot">Dovecot</h3>
+                            <p>
+                                Install Dovecot and again, edit some configuration files:
+                            </p>
+                            <Code input={codeString_10} language="bash" />
 
-                <h3 id="roundCube">RoundCube</h3>
-                <p>
-                    First the pgsql package to prevent Roundcube from installing MySQL as a dependency.
-                </p>
-                <Code input={codeString_11} language="bash" />
+                            <h3 id="roundCube">RoundCube</h3>
+                            <p>
+                                First the pgsql package to prevent Roundcube from installing MySQL as a dependency.
+                            </p>
+                            <Code input={codeString_11} language="bash" />
 
-                <p>
-                    Setting up a mail server brought me a lot of trouble, so while debugging, it's possible I forget 
-                    documenting some of the steps. Below a couple of steps which may be useful. In 
-                    <code>/var/log/roundcube/errors</code> errors can be found and these can lead to 
-                    <code>/var/log/auth.log</code>, <code>/var/log/mail.log</code>, <code>/var/log/dovecot.log</code> 
-                    or <code>/var/log/dovecot-deliver.log</code>. The last one and the second last one have to be added 
-                    to <code>/etc/dovecot/dovecot.conf</code>. A summary of all configuration lines you can view with 
-                    <code>dovecot -n</code>, my current setup is like this, pay special attention to the 
-                    <code>auth_debug</code> section.
-                </p>            
-                <Code input={codeString_12} language="bash" />
+                            <p>
+                                Setting up a mail server brought me a lot of trouble, so while debugging, it's possible I forget 
+                                documenting some of the steps. Below a couple of steps which may be useful. In 
+                                <code>/var/log/roundcube/errors</code> errors can be found and these can lead to 
+                                <code>/var/log/auth.log</code>, <code>/var/log/mail.log</code>, <code>/var/log/dovecot.log</code> 
+                                or <code>/var/log/dovecot-deliver.log</code>. The last one and the second last one have to be added 
+                                to <code>/etc/dovecot/dovecot.conf</code>. A summary of all configuration lines you can view with 
+                                <code>dovecot -n</code>, my current setup is like this, pay special attention to the 
+                                <code>auth_debug</code> section.
+                            </p>            
+                            <Code input={codeString_12} language="bash" />
 
-                <p>
-                    The settings above can help prevent the following notices: 
-                    <code>IMAP Error. Wrong startup greeting (localhost:110)</code> (this can mean not the right 
-                    listeners are configured). <code>IMAP Error. AUTHENTICATE PLAIN: Authentication failed.</code> 
-                    (this one I solved by editing userdb and passdb). The last error I haven't been able to trace yet: 
-                    <code>IMAP Error. Empty startup greeting (localhost:110)</code>.
-                </p>
-                <p>
-                    Some problems can appear with Roundcube, because we copied the Roundcube directory to the web root. 
-                    Some symlinks can be broken if they point to a relative path. In my case jQuery, jQuery UI and 
-                    TinyMCE couldn't be loaded:
-                </p>
-                <Code input={codeString_13} language="bash" />
-                <p>
-                    After following the steps above it has to be possible to login, though not the right identities are 
-                    installed yet. So it's only possible to login as ****@localhost. 
-                </p>
-                <h2 id="to-conclude">To Conclude</h2>
-                <p>
-                    If we've executed all these steps, we have a working web server with PHP and PostgreSQL and maybe a 
-                    mail server with protocols incoming and outgoing e-mail and a web interface to make it accessible. 
-                    I think it's always a good idea to make a snapshot in an initial state when everything works as it 
-                    should.
-                </p>
+                            <p>
+                                The settings above can help prevent the following notices: 
+                                <code>IMAP Error. Wrong startup greeting (localhost:110)</code> (this can mean not the right 
+                                listeners are configured). <code>IMAP Error. AUTHENTICATE PLAIN: Authentication failed.</code> 
+                                (this one I solved by editing userdb and passdb). The last error I haven't been able to trace yet: 
+                                <code>IMAP Error. Empty startup greeting (localhost:110)</code>.
+                            </p>
+                            <p>
+                                Some problems can appear with Roundcube, because we copied the Roundcube directory to the web root. 
+                                Some symlinks can be broken if they point to a relative path. In my case jQuery, jQuery UI and 
+                                TinyMCE couldn't be loaded:
+                            </p>
+                            <Code input={codeString_13} language="bash" />
+                            <p>
+                                After following the steps above it has to be possible to login, though not the right identities are 
+                                installed yet. So it's only possible to login as ****@localhost. 
+                            </p>
+                            <h2 id="to-conclude">To Conclude</h2>
+                            <p>
+                                If we've executed all these steps, we have a working web server with PHP and PostgreSQL and maybe a 
+                                mail server with protocols incoming and outgoing e-mail and a web interface to make it accessible. 
+                                I think it's always a good idea to make a snapshot in an initial state when everything works as it 
+                                should.
+                            </p>
+                        </div>
+                    </section>
+                    <Footer/>
+                </div>
             </div>
-        </section>
+        </div>
     </main>);
 }
 

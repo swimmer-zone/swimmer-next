@@ -1,8 +1,7 @@
 'use client';
 import Head from 'next/head';
-import { Back, Intro, Me, Social, Logo, Water } from '../../Components';
-import './_scss/travels.scss';
-import packageJson from '../../../package.json';
+import { Footer, Menu } from '../../Components';
+import '../_scss/travels.scss';
 
 // 2024-01-08
 // 2023-02-20
@@ -13,6 +12,9 @@ import packageJson from '../../../package.json';
 // 2008-05-19
 
 const Travels = () => {
+	const toggleMenu = () => {
+        document.body.classList.remove('show-menu');
+    };
 
     const travels = [
         {
@@ -75,39 +77,33 @@ const Travels = () => {
     })
 
     return (<main className="travel-overview-background overview-background">
-        <Head>
-            <title>Swimmer ♬ Travels</title>
-        </Head>
-        <h1>Travels</h1>
-        <p>
-            This is a list of all my travels in descending order. Cutting back on the amount of images wass quite a
-            challenge. Especially Georgia, where we had a total of more than 2000 images. The total amount of images
-            is currently {totalImages}.
-        </p>
+		<div class="container">
+            <Menu active="travels"/>
+			<div className="content-wrap" onClick={toggleMenu}>
+				<div className="content">
+                    <Head>
+                        <title>Swimmer ♬ Travels</title>
+                    </Head>
+                    <h1>Travels</h1>
+                    <p>
+                        This is a list of all my travels in descending order. Cutting back on the amount of images wass quite a
+                        challenge. Especially Georgia, where we had a total of more than 2000 images. The total amount of images
+                        is currently {totalImages}.
+                    </p>
 
-        {Object.keys(travels).map(key => {
-            let travel = travels[key];
+                    {Object.keys(travels).map(key => {
+                        let travel = travels[key];
 
-            return (<a href={'travels/' + travel.destination} className="banner" style={{ 'backgroundImage': 'url(/images/' + travel.destination + '/panorama.jpg)' }}>
-                <h2>{travel['title']}</h2>
-                <small>Posted: {travel.posted} {travel.description}<br />{travel.images} images</small>
-            </a>);
-        })}
-       
-        <Back/>
-        <p className="mobile">There are a lot of images involved in my travel blogs, so it is highly recommended to not view it on a mobile phone.</p>
-        
-        <footer id="footer">            
-            <Logo />
-            <Social location="header" />
-            <Water />
-
-            <p className="copy">
-                v{packageJson.version}<br/>
-                &copy; 2005&thinsp;/&thinsp;{(new Date().getFullYear())}
-            </p>
-            <Me />
-        </footer>
+                        return (<a href={'travels/' + travel.destination} className="banner" style={{ 'backgroundImage': 'url(/images/' + travel.destination + '/panorama.jpg)' }}>
+                            <h2>{travel['title']}</h2>
+                            <small>Posted: {travel.posted} {travel.description}<br />{travel.images} images</small>
+                        </a>);
+                    })}
+                
+                    <Footer/>
+				</div>
+			</div>
+		</div>
     </main>);
 }
 

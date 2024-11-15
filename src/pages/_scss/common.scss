@@ -1,15 +1,21 @@
+@import './_variables.scss';
+
 html {
 	font-size: 20px;
+    overflow-x: hidden;
 }
 body,
-button {
+button,
+a {
 	font-family: 'Afacad', sans-serif;
-	overflow-x: hidden;
 	font-size: 1rem;
     letter-spacing: 0.1rem;
-    color: white;
+    color: $light;
     text-shadow: 2px 2px 4px #00000033;
-    background-color: #111111;
+    background-color: $darkest;
+}
+a {
+    background: none;
 }
 ul,
 ol {
@@ -19,19 +25,19 @@ ol {
     color: $black;
     display: inline-block;
     vertical-align: top;
-    margin: 8vh 4vw;
+    margin: 8vh 4vw 0 16vw;
     width: 160px;
     position: fixed;
     box-shadow: none !important;
 }
 h1 {
-    font-size: 5rem;
-    color: #ffffff;
+    font-size: 3rem;
+    color: $purple;
     text-shadow: none;
     align-self: center;
 }
 .article {
-    margin: 0 24vw 40vh 20vw;
+    margin: 0 24vw 40vh 40vw;
     height: auto !important;
     display: inline-block;
     vertical-align: top;
@@ -39,6 +45,31 @@ h1 {
 
     * {
         max-width: 50vw;
+    }
+    p,
+    li {
+        & > code {
+            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+            background-color: $black;
+            padding: 0 2px;
+            color: $purple;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            letter-spacing: 2px;
+            box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
+        }
+    }
+
+    .codeParent {
+        max-width: 50vw !important;
+        min-width: 50vw;
+    }
+
+    sourcecode,
+    pre {
+        margin: 20px 0 20px 20px;
+        font-size: 0.8rem;
+        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.05), 1px 1px 10px 1px rgba(0, 0, 0, 0.05);
     }
 }
 h1,
@@ -51,6 +82,16 @@ p,
 ul,
 ol {
     margin-bottom: 4vh;
+}
+ul.tags {
+    li {
+        display: inline-block;
+        padding: 4px 8px;
+        margin: 4px;
+        border-radius: 4px;
+        background-color: $purple;
+        color: $white;
+    }
 }
 blockquote {
     border-left: 4px solid $light;
@@ -86,7 +127,7 @@ table {
             padding: 4px;
 
             &:not(:first-of-type) {
-                background-color: $light;
+                background-color: $dark;
             }
             &.right {
                 text-align: right;
@@ -135,25 +176,28 @@ nav {
         margin: 4px;
         padding: 8px;
         width: 160px;
-        background-color: #000000;
-        color: #6c6eec;
+        background-color: $black;
+        color: $purple;
         border: 0;
     }
 }
-
-.overview-background {
+.content {
     display: flex;
     flex-direction: column;
     margin-bottom: 32vh;
+}
+.overview-background {
+    overflow-x: hidden;
+    min-height: 100vh;
 
     h1 {
         width: 40vw;
-        color: #eeeeee;
+        color: $purple;
         text-align: center;
     }
     p {
         width: 40vw;
-        color: #eeeeee;
+        color: $lighter;
         text-shadow: none;
         align-self: center;
         text-align: center;
@@ -199,15 +243,6 @@ nav {
         }
     }
 }
-.tutorial-overview-background {
-    a {
-        box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.5) !important;
-
-        &:hover {
-            box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.8) !important;
-        }
-    }
-}
 
 @media(max-width: $mobile-breakpoint) {
     .article {
@@ -215,6 +250,9 @@ nav {
         margin: 2vw;
         padding: 0;
 
+        a {
+            color: $lighter;
+        }
         * {
             max-width: 90vw;
         }

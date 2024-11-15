@@ -1,15 +1,20 @@
 import Head from 'next/head';
-import { Back, Code, Tutorials } from '../../Components';
-import './_scss/tutorials.scss';
+import {Footer, Menu, Code } from '../../Components';
+import '../_scss/common.scss';
 
 const Blog = () => {
+	const toggleMenu = () => {
+        document.body.classList.remove('show-menu');
+    };
 
 	return (<main>
+		<div class="container">
+            <Menu active="tutorials"/>
+			<div className="content-wrap" onClick={toggleMenu}>
+				<div className="content">
         <Head>
             <title>Swimmer ♬ Tutorials</title>
         </Head>
-        <Back/>
-        <Tutorials/>
         <section className="tutorial">
             <img className="avatar" src="../images/tutorials/codeigniter.png" alt="Avatar"/>
             <div className="article">
@@ -76,6 +81,10 @@ const Blog = () => {
                 </p>
             </div>
         </section>
+                    <Footer/>
+                </div>
+            </div>
+        </div>
     </main>);
 }
 

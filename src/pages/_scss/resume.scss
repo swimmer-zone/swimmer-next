@@ -31,6 +31,7 @@ body {
 	overflow-x: hidden;
 	font-size: 1rem;
 	letter-spacing: 0.1rem;
+	background-color: $darkest;
 }
 
 h1, 
@@ -58,9 +59,11 @@ p {
 	background-color: $fg;
 	border-radius: 0.25em;
 	color: $bg;
+	border: 1px solid $purple;
 	cursor: pointer;
 	padding: 0.375em 0.75em;
 	transition: background-color calc($trans-dur) / 2 linear, color $trans-dur;
+	outline: none;
 
 	&:hover {
 		background-color: hsl($hue, 10%, 50%);
@@ -88,6 +91,7 @@ p {
 	height: 2em;
 	transition: background-color calc($trans-dur / 2) linear, color $trans-dur;
 	appearance: none;
+	color: $light;
 }
 .timeline__arrow-icon {
 	display: block;
@@ -96,10 +100,12 @@ p {
 	transition: transform $trans-dur $trans-timing;
 	width: 100%;
 	height: auto;
+	color: $light;
 }
 .timeline__date {
 	font-size: 0.833em;
 	line-height: 2.4;
+	color: $light;
 }
 .timeline__dot {
 	background-color: currentColor;
@@ -111,13 +117,14 @@ p {
 	position: relative;
 	width: 0.75em;
 	height: 0.75em;
+	color: $light;
 }
 .timeline__item {
 	position: relative;
 	padding-bottom: 2.25em;
 }
 .timeline__item:not(:last-child):before {
-	background-color: currentColor;
+	background-color: $light;
 	content: "";
 	display: block;
 	position: absolute;
@@ -138,8 +145,9 @@ p {
 	height: 0;
 }
 .timeline__item-body-content {
-	background-color: #dddddd;
+	background-color: $dark;
 	box-shadow: 2px 2px 8px 8px #aaaaaa22;
+	color: $light;
 	opacity: 0;
 	padding: 0.5em 0.75em;
 	visibility: hidden;
@@ -151,6 +159,7 @@ p {
 .timeline__title {
 	font-size: 1.5em;
 	line-height: 1.333;
+	color: $light;
 }
 /* Expanded state */
 .timeline__item-body--expanded {
@@ -192,8 +201,8 @@ p {
 	margin: 80px 0 32vh 0;
 
 	& > div {
-		background-color: #dddddd;
-		box-shadow: 2px 2px 8px 8px #aaaaaa22;
+		background-color: $dark;
+		color: $light;
 		border-radius: 10px;
 		width: 30vw;
 		min-width: 300px;
@@ -201,23 +210,6 @@ p {
 		margin-bottom: 40vh;
 	}
 }
-
 .diving {
-	position: absolute !important;
-	top: 20vh;
-	right: 2vw;
-
-	img {
-		width: 300px;
-	}
-}
-
-@media(max-width: $mobile-breakpoint) {
-	.diving {
-		display: none;
-	}
-}
-
-#bubbles .bubble {
-	background-color: $white;
+	display: none;
 }

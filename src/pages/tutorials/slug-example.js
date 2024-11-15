@@ -2,8 +2,8 @@ import ReactMarkdown from 'react-markdown';
 import { useParams } from 'next/navigation';
 import Head from 'next/head';
 import Async from 'react-async';
-import { Back, Tutorials } from '../../Components';
-import './_scss/tutorials.scss';
+import { Menu } from '../../Components';
+import '../_scss/common.scss';
 
 const Blog = () => {
 	let params = useParams();
@@ -17,8 +17,6 @@ const Blog = () => {
         <Head>
             <title>Swimmer ♬ Tutorials</title>
         </Head>
-        <Back/>
-        <Tutorials/>
         <Async promiseFn={loadTutorial}>
             <Async.Loading>Loading...</Async.Loading>
             <Async.Fulfilled>
@@ -35,7 +33,6 @@ const Blog = () => {
                 {error => `Something went wrong: ${error.message}`}
             </Async.Rejected>
         </Async>
-        <Back />
     </main>);
 }
 

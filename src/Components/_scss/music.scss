@@ -12,6 +12,7 @@
 	.previousButton,
 	.nextButton {
 		border-bottom: 0;
+
 		polygon {
 			fill: $purple;
 		}
@@ -104,7 +105,6 @@
 			margin-left: -80px;
 
 			&::before {
-				// font-weight: bold;
 				display: inline-block;
 				width: 100px;
 				text-align: right;
@@ -171,7 +171,7 @@
 		line-height: 0;
 		display: block;
 		position: absolute;
-		top: 20%;
+		top: 32%;
 		transform: translateY(-50%);
 		transition: all .3s linear;
 		z-index: 1;
@@ -185,11 +185,9 @@
 			cursor: pointer;
 		}
 	}
-
 	a.previousButton {
 		left: 20px;
 	}
-
 	a.nextButton {
 		right: 20px;
 	}
@@ -205,19 +203,15 @@
 	&.hidden {
 		visibility: hidden;
 	}
-
 	&.previous {
 		left: -100%;
 	}
-
 	&.current {
 		left: 0;
 	}
-
 	&.next {
 		left: 100%;
 	}
-
 	&.animateIn {
 		transition: all 2s ease;
 
@@ -227,14 +221,12 @@
 			visibility: visible;
 		}
 	}
-
 	&.animateOut {
 		transition: all 2s ease;
 
 		&.previous {
 			left: 100%;
 		}
-
 		&.next {
 			left: -100%;
 		}
@@ -246,19 +238,16 @@
 		transform: translateY(-20px);
 		opacity: 0;
 	}
-
 	ul {
 		transition: all 0.6s ease;
 		transform: translateY(40px);
 		opacity: 0;
 	}
-
 	.cover-wrapper {
 		transition: all 0.9s ease;
 		transform: rotate(20deg) scale(0.5);
 		opacity: 0;
 	}
-
 	&.animateIn.previous,
 	&.current,
 	&.animateIn.next {
@@ -268,20 +257,17 @@
 			transition-delay: .9s;
 			opacity: 1;
 		}
-
 		ul {
 			transform: translateX(0);
 			transition-delay: 1.2s;
 			opacity: 1;
 		}
-
 		.cover-wrapper {
 			transform: rotate(0deg) scale(1);
 			transition-delay: 1.5s;
 			opacity: 1;
 		}
 	}
-
 	&.animateOut {
 		h2,
 		p,
@@ -292,7 +278,6 @@
 	}
 }
 
-
 @media(max-width: $mobile-breakpoint) {
 	.music {
 		height: 100vh !important;
@@ -302,11 +287,9 @@
 		a.nextButton {
 			top: 4vh;
 		}
-
 		.slider {
 			height: 100vh;
 		}
-
 		article {
 			padding: 0 1vw 1vh 1vw;
 
@@ -318,7 +301,6 @@
 					display: none;
 				}
 			}
-
 			.cover-wrapper {
 				position: absolute;
 				left: 24vw;
@@ -331,11 +313,9 @@
 					height: 8vw;
 				}
 			}
-
 			p {
 				font-size: 0.7rem;
 			}
-
 			.tracklist {
 				padding: 0 2vw 1vh 1vw;
 				margin-left: 1vw;
@@ -347,11 +327,9 @@
 					left: 40vw;
 					margin-top: 1.5vh;
 				}
-
 				p {
 					display: none;
 				}
-			
 				ul {
 					position: static;
 					left: 8vw;
