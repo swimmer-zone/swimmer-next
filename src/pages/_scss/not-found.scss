@@ -8,21 +8,19 @@ button {
     font-size: 1rem;
     letter-spacing: 0.1rem;
 }
-
 html {
     font-size: 20px;
 }
-
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $black;
+    background-color: $darkest;
 }
-
 h1 {
     font-size: 4rem;
-    color: $black;
+    color: $light;
     text-shadow: 2px 2px 2px #6c6eec44;
     font-weight: 200;
     padding: 0;
@@ -45,70 +43,15 @@ h1 {
             padding-right: 40px;
         }
         &:nth-of-type(2) {
-            border-left: 1px solid $black;
+            border-left: 1px solid $light;
         }
     }
 
     #logo {
         position: static;
     }
-    #logo_bubbles {
-        display: none;
-    }
     p {
         margin-bottom: 0;
-    }
-    .homeButton {
-        width: 80px;
-        height: 80px;
-    }
-    .bubble_1 {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        bottom: 140px;
-        right: 90px;
-        background-color: $purple;
-        border-radius: 50%;
-        padding: 0;
-    	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.16);
-        opacity: 0.4;
-    }
-    .bubble_2 {
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        bottom: 190px;
-        right: 40px;
-        background-color: $purple;
-        border-radius: 50%;
-        padding: 0;
-        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.12);
-        opacity: 0.6;
-    }
-    .bubble_3 {
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        bottom: 235px;
-        right: 80px;
-        background-color: $purple;
-        border-radius: 50%;
-        padding: 0;
-    	box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.11);
-        opacity: 0.5;
-    }
-    .bubble_4 {
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        bottom: 280px;
-        right: 60px;
-        background-color: $purple;
-        border-radius: 50%;
-        padding: 0;
-        box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.09);
-        opacitiy: 0.8;
+        color: $light;
     }
 }
-

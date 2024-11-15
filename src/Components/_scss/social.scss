@@ -10,14 +10,15 @@
 		justify-content: flex-end;
 		flex-wrap: wrap;
 		z-index: 99999;
-		width: 320px
+		width: 320px;
+		overflow: hidden;
 	}
-
 	a {
 		position: relative;
 		width: 64px;
 		height: 64px;
 		border-bottom: 0;
+		background: none;
 
 		svg {
 			width: 40px;
@@ -25,7 +26,6 @@
 			margin: 20px 10px;
 			fill: $purple;
 		}
-
 		&::after,
 		&::before {
 			content: "";
@@ -41,7 +41,6 @@
 			opacity: 0;
 			pointer-events: none;
 		}
-
 		&:hover::after {
 			animation-name: anim-3, anim-1;
 			animation-duration: 5s, 2s;
@@ -49,7 +48,6 @@
 			animation-timing-function: ease, linear;
 			animation-fill-mode: forwards;
 		}
-
 		&:hover::before {
 			animation-name: anim-3, anim-2;
 			animation-duration: 5s, 2s;
@@ -105,8 +103,8 @@
 			width: 90vw;
 			display: flex;
 			justify-content: space-between;
+			overflow: unset;
 		}
-
 		a {
 			width: 36px;
 			height: 36px;

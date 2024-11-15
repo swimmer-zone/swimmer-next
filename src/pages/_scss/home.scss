@@ -14,8 +14,8 @@ html {
 }
 
 body {
-    background-color: #111111;
-    color: #dddddd;
+    background-color: $darkest;
+    color: $light;
 	margin: 0;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -43,8 +43,7 @@ ol {
 
 #root {
 	& > header,
-	& > section,
-	& > footer {
+	& > section {
 		width: 100vw;
 	    box-sizing: border-box;
 		position: relative;
@@ -63,21 +62,11 @@ ol {
 			pointer-events: all;
 		}
 	}
-
-	& > footer {
-		height: 120vh;
-
-		a,
-		button,
-		.cover-wrapper {
-			pointer-events: all;
-		}
-	}
 }
 
 a,
 button {
-    color: #eeeeee;
+    color: $lighter;
 	text-decoration: none;
 	transition: all 0.5s ease-in-out;
 	text-decoration: underline;
@@ -91,67 +80,18 @@ button {
 	}
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 40vh;
-	z-index: 999;
-	background: linear-gradient(to bottom, #11111100, #111111ff);
-	pointer-events: none;
-
-	h2 {
-		font-family: 'Indie Flower', 'Afacad', sans-serif;
-		color: $black;
-		margin-top: -45px;
-		text-shadow: 2px 2px 2px #6c6eecff;
-	}
-	ul {
-		position: fixed;
-		left: 36vw;
-		bottom: 4vh;
-	}
-	a {
-		line-height: 16px;
-		display: inline-block;
-		pointer-events: all;
-	}
-}
-
 @media(max-width: $mobile-breakpoint) {
 	h1 {
 		font-size: 2rem;
 		max-width: 80vw;
 	}
-	
 	h2 {
 		font-size: 1.5rem;
 		margin-bottom: 1vh;
 		margin-top: 0;
 		padding-top: 0;
 	}
-
 	.intro {
 		margin-top: 2vh !important;
-	}
-
-	footer {
-		padding: 1vh 1vw;
-		height: 60vh;
-
-		h2 {
-			padding-left: 1vw;
-		}
-
-	    ul {
-			margin-left: 2vw;
-			font-size: 0.7rem;
-			width: 90vw;
-		}
-
-	    .copy {
-	    	display: none;
-	    }
 	}
 }

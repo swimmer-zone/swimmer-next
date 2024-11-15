@@ -1,6 +1,6 @@
 import Head from 'next/head';
-import { Back, Code, Tutorials } from '../../Components';
-import './_scss/tutorials.scss';
+import {Footer, Menu, Code } from '../../Components';
+import '../_scss/common.scss';
 
     
 const codeString_1 = `background yes
@@ -227,13 +227,18 @@ TEXT
 \${offset 20}\${color0}\${execi 60 python ~/conkywidgets/twitter.py htimeline5}`;
 
 const Blog = () => {
+	const toggleMenu = () => {
+        document.body.classList.remove('show-menu');
+    };
 
 	return (<main>
+		<div class="container">
+            <Menu active="tutorials"/>
+			<div className="content-wrap" onClick={toggleMenu}>
+				<div className="content">
         <Head>
             <title>Swimmer ♬ Tutorials</title>
         </Head>
-        <Back/>
-        <Tutorials/>
         <section className="tutorial">
             <img className="avatar" src="../images/tutorials/conky.png" alt="Avatar"/>
             <div className="article">
@@ -312,6 +317,10 @@ const Blog = () => {
                 <a href="https://forums.linuxmint.com/viewtopic.php?f=60&t=30209&p=392703&hilit=conky+sector+11#p392703">Some other examples</a>
             </div>
         </section>
+                    <Footer/>
+                </div>
+            </div>
+        </div>
     </main>);
 }
 

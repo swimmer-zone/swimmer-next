@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Afacad&family=Comfortaa&display=swap');
-@import '../../_scss/_variables.scss';
-@import '../../_scss/common.scss';
+@import './_variables.scss';
+@import './common.scss';
 
 .travel-background {
     position: fixed;
@@ -11,7 +11,9 @@
     height: 100vw;
     background-size: auto 100vh;
 }
-
+.content {
+    background-attachment: fixed;
+}
 .article {
     background-color: #00000088;
     background: linear-gradient(to top, transparent 0, #00000088 80px);
@@ -20,7 +22,6 @@
         max-width: 32vw;
     }
 }
-
 .title {
     display: flex;
     gap: 10px;
@@ -33,12 +34,10 @@
         padding: 0;
         flex-grow: 2;
     }
-
     .stars {
         padding-top: 10px;
         margin-right: 20px;
     }
-
     a.buy {
         background-color: $purple;
         color: $white;
@@ -58,7 +57,6 @@
         }
     }
 }
-
 .whisky-wrapper {
     position: relative;
     width: calc(32vw + 400px);
@@ -71,7 +69,6 @@
         width: 400px;
     }
 }
-
 .travel-overview-background {
     .banner {
         display: flex;
@@ -99,11 +96,9 @@
             transition: all 0.5s;
             color: #ffffff;
         }
-
         &:nth-of-type(5) {
             background-size: auto 112%;
         }
-
         &:hover {
             box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.4);
 
@@ -116,17 +111,14 @@
         }
     }
 }
-
 #filtering {
     display: none;
 }
-
 .mobile {
     display: none;
 }
 
 @media(max-width: $mobile-breakpoint) {
-
     .whisky-wrapper {
         height: auto;
         padding: 40px 1vw;
@@ -134,7 +126,6 @@
         h2 {
             margin-left: 1vw;
         }
-
         .whisky-map,
         .whisky-origin,
         .whisky-tasting {
@@ -148,16 +139,6 @@
                 width: 80vw;
                 height: auto;
             }
-        }
-    }
-
-    .travel-overview-background {
-        display: none !important;
-
-        .mobile,
-        h1 {
-            display: block !important;
-            width: 100vw !important;
         }
     }
 }

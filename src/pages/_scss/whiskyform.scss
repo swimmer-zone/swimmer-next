@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Afacad&family=Comfortaa&display=swap');
+@import './_variables.scss';
 
 * {
 	font-family: 'Afacad', sans-serif;
@@ -6,7 +7,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #6c6eec;
+    background-color: $purple;
 }
 form > select,
 form > .select,
@@ -19,14 +20,14 @@ form > .react-toggle {
     margin: 16px 2vw !important;
     padding: 2vw !important;
     border: none;
-    background-color: #ffffff;
+    background-color: $white;
     box-shadow: 
         4px 4px 4px 4px rgba(0, 0, 0, 0.05) inset, 
         2px 2px 2px 2px rgba(0, 0, 0, 0.2) inset;
 
     &:focus {
         outline: none !important;
-        border-right: 4px solid black;
+        border-right: 4px solid $black;
     }
 }
 form > input {
@@ -44,25 +45,24 @@ form > .select {
         box-shadow: 0;
     }
     [class*="-menu"] {
-        background-color: #ffffff;
+        background-color: $white;
     }
 }
 form > .react-toggle {
     position: relative;
     height: 35px;
-    background-color: #6c6eec;
+    background-color: $purple;
 
     * {
-        color: #000000 !important;
+        color: $black !important;
         text-shadow: none !important;
         outline: none !important;
     }
-
     .react-toggle-track {
         width: 100%;
         height: 35px;
-        background-color: #6c6eec !important;
-        color: #000000 !important;
+        background-color: $purple !important;
+        color: $black !important;
 
         .react-toggle-track-check,
         .react-toggle-track-x {
@@ -78,13 +78,12 @@ form > .react-toggle {
             right: 0;
         }
     }
-
     .react-toggle-thumb {
         width: 50%;
         height: 35px;
-        color: #000000;
+        color: $black;
         box-shadow: none !important;
-        background-color: #ffffff;
+        background-color: $white;
         outline: none !important;
         border-radius: 8px;
         border: none !important;
@@ -98,8 +97,8 @@ form > .react-toggle {
     left: 50%;
 }
 button {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: $black;
+    color: $white;
     padding: 2vw 1vw;
     border: none;
     margin: 16px auto 80px;
@@ -115,7 +114,7 @@ label {
     display: inline-block;
 }
 a {
-    color: #ffffff;
+    color: $white;
 }
 .range-slider {
     width: 90vw;
@@ -127,10 +126,10 @@ a {
     .slider-thumb {
         line-height: 20px;
         text-align: center;
-        color: #fff;
+        color: $white;
         cursor: grab;
 
-        background-color: #000000 !important;
+        background-color: $black !important;
         border: none !important;
         outline: none !important;
         border-radius: 50%;
@@ -145,7 +144,7 @@ a {
         top: 8px;
         bottom: 0;
         height: 4px;
-        background-color: #ffffff;
+        background-color: $white;
         border-radius: 999px;
     }
 }
@@ -186,7 +185,7 @@ a {
     display: block;
 }
 hr {
-    border: 1px solid #000000;
+    border: 1px solid $black;
 }
 ul {
     width: 80vw;
@@ -195,7 +194,7 @@ ul {
 #success,
 .error {
     width: 94vw;
-    color: white;
+    color: $white;
     border-radius: 8px;
     margin: 16px 2vw !important;
     padding: 8px;
