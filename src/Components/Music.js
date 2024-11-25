@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Slider from './Slider';
 import './_scss/music.scss';
 import { albums } from '../json';

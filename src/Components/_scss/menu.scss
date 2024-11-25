@@ -54,11 +54,11 @@
 	position: fixed;
 	z-index: 1001;
 	width: 340px;
-	height: 340px;
+	height: 380px;
 	background: $yellow;
 	color: $darkest;
 	padding: 2em;
-	transform: translate3d(-340px, -340px, 0);
+	transform: translate3d(-340px, -380px, 0);
 	transition: transform 0.3s;
 	box-sizing: border-box;
 }

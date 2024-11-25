@@ -1,5 +1,5 @@
 import React from 'react';
-import {Me,  Social, Logo, Water } from '../Components';
+import { Me, Social, Logo, Water } from '../Components';
 import './_scss/footer.scss';
 import packageJson from '../../package.json';
 

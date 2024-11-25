@@ -8,7 +8,7 @@ const Home = () => {
     };
 
   	return (<main className="home">
-		<div class="container">
+		<div className="container">
             <Menu active="home"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">		

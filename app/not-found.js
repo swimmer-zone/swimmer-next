@@ -9,14 +9,14 @@ export default function NotFound() {
     };
 
     return (<main>
-		<div class="container">
+		<div className="container">
             <Menu active="blog"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">
                     <Head>
                         <title>Swimmer ♬ 404</title>
                     </Head>
-                    <div class="error">
+                    <div className="error">
                         <div>
                             <Logo />
                         </div>

@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import './_scss/menu.scss';
 
 const Menu = ({ active }) => {
@@ -16,7 +15,13 @@ const Menu = ({ active }) => {
 		bodyEl.classList.add('show-menu');
 	};
 
-	let home = '', resume = '', blog = '', tutorials = '', diy = '', travels = '';
+	let home = '',
+		resume = '',
+		blog = '',
+		tutorials = '',
+		diy = '',
+		travels = '',
+		whisky = '';
 
 	switch (active) {
 		case 'home': home = 'active'; break;
@@ -25,6 +30,7 @@ const Menu = ({ active }) => {
 		case 'tutorials': tutorials = 'active'; break;
 		case 'diy': diy = 'active'; break;
 		case 'travels': travels = 'active'; break;
+		case 'whisky': whisky = 'active'; break;
 	}
 
     return (<>
@@ -49,6 +55,12 @@ const Menu = ({ active }) => {
 						</svg>
 						<span>My Travels</span>
 					</a>
+					<a href="/whisky" className={travels}>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+							<path d="M24 19.999l-5.713-5.713 13.713-10.286-4-4-17.141 6.858-5.397-5.397c-1.556-1.556-3.728-1.928-4.828-0.828s-0.727 3.273 0.828 4.828l5.396 5.396-6.858 17.143 4 4 10.287-13.715 5.713 5.713v7.999h4l2-6 6-2v-4l-7.999 0z"></path>
+						</svg>
+						<span>Whisky</span>
+					</a>
 					<a href="/diy" className={diy}>
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.568 482.568">
 							<path d="M116.993,203.218c13.4-1.8,26.8,2.8,36.3,12.3l24,24l22.7-22.6l-32.8-32.7c-5.1-5.1-5.1-13.4,0-18.5s13.4-5.1,18.5,0      l32.8,32.8l22.7-22.6l-24.1-24.1c-9.5-9.5-14.1-23-12.3-36.3c4-30.4-5.7-62.2-29-85.6c-23.8-23.8-56.4-33.4-87.3-28.8      c-4.9,0.7-6.9,6.8-3.4,10.3l30.9,30.9c14.7,14.7,14.7,38.5,0,53.1l-19,19c-14.7,14.7-38.5,14.7-53.1,0l-31-30.9      c-3.5-3.5-9.5-1.5-10.3,3.4c-4.6,30.9,5,63.5,28.8,87.3C54.793,197.518,86.593,207.218,116.993,203.218z"></path><path d="M309.193,243.918l-22.7,22.6l134.8,134.8c5.1,5.1,5.1,13.4,0,18.5s-13.4,5.1-18.5,0l-134.8-134.8l-22.7,22.6l138.9,138.9      c17.6,17.6,46.1,17.5,63.7-0.1s17.6-46.1,0.1-63.7L309.193,243.918z"></path><path d="M361.293,153.918h59.9l59.9-119.7l-29.9-29.9l-119.8,59.8v59.9l-162.8,162.3l-29.3-29.2l-118,118      c-24.6,24.6-24.6,64.4,0,89s64.4,24.6,89,0l118-118l-29.9-29.9L361.293,153.918z"></path>
@@ -70,7 +82,7 @@ const Menu = ({ active }) => {
 				</div>
 			</nav>
 		</div>
-		<button class="menu-button" id="open-button" onClick={toggleMenu}></button>
+		<button className="menu-button" id="open-button" onClick={toggleMenu}></button>
 	</>);
 }
 

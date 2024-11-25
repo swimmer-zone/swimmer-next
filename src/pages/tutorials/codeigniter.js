@@ -8,7 +8,7 @@ const Blog = () => {
     };
 
 	return (<main>
-		<div class="container">
+		<div className="container">
             <Menu active="tutorials"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">

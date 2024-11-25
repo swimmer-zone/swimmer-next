@@ -303,10 +303,10 @@ const Globe = () => {
     }
 
     return (<>
-        <div class="page">
-            <div class="globe-wrapper">
+        <div className="page">
+            <div className="globe-wrapper">
                 <canvas id="globe-3d"></canvas>
-                <div class="info"><span></span></div>
+                <div className="info"><span></span></div>
             </div>
         </div>
 

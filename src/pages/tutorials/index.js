@@ -9,7 +9,7 @@ const Tutorials = () => {
     };
 
     return (<main className="tutorial-overview-background overview-background">
-		<div class="container">
+		<div className="container">
             <Menu active="tutorials"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">

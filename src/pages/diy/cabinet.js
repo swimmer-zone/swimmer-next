@@ -9,7 +9,7 @@ const Cabinet = () => {
     };
 
     return(<main>
-		<div class="container">
+		<div className="container">
             <Menu active="diy"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">

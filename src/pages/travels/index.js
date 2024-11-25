@@ -77,7 +77,7 @@ const Travels = () => {
     })
 
     return (<main className="travel-overview-background overview-background">
-		<div class="container">
+		<div className="container">
             <Menu active="travels"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">
