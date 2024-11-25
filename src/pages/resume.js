@@ -15,7 +15,7 @@ const Resume = () => {
     };
 
     return (<main>
-		<div class="container">
+		<div className="container">
             <Menu active="resume"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">	
