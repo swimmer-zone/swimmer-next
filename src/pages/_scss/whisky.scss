@@ -1,4 +1,5 @@
 @import './_variables.scss';
+@import './common.scss';
 
 * {
 	font-family: 'Afacad', sans-serif;
@@ -8,7 +9,6 @@
 body {
     background-color: $darkest;
     overflow-x: hidden;
-    overflow-y: scroll;
 }
 h2 {
     color: $purple;
@@ -170,4 +170,87 @@ ul {
     box-shadow: 4px 4px 16px 4px #6c6eecaa, 2px 2px 4px 2px #6c6eec44;
     overflow: hidden;
     font-size: 16px;
+}
+
+.title {
+    margin: 100px 0 20px 0;
+
+    h2 {
+        color: $purple;
+        margin: 0;
+        padding: 0;
+        flex-grow: 2;
+    }
+    h3 {
+        color: $purple;
+        margin: 0;
+        padding: 0;
+        flex-grow: 2;
+        font-size: 1.2rem;
+    }
+    .stars {
+        padding-top: 10px;
+        margin-right: 20px;
+    }
+}
+.whisky-wrapper {
+    position: relative;
+    width: calc(32vw + 400px);
+
+    .whisky-map {
+        position: absolute;
+        left: 32vw;
+        top: 0;
+        display: inline-block;
+        width: 400px;
+    }
+    a.buy {
+        background-color: $purple;
+        color: $lighter;
+        border-radius: 4px;
+        width: 60px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+        transition: all .3s linear;
+        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2), 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        align-self: flex-end;
+        padding: 2px 8px;
+
+        &:hover {
+            background-color: $purple-dark;
+            box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2), 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.rsm-marker path {
+    width: 16px;
+    height: 16px;
+}
+
+@media(max-width: $mobile-breakpoint) {
+    .whisky-wrapper {
+        height: auto;
+        padding: 40px 1vw;
+
+        h2 {
+            margin-left: 1vw;
+        }
+        .whisky-map,
+        .whisky-origin,
+        .whisky-tasting {
+            width: 94vw;
+            margin: 20px 1vw;
+        }
+        .whisky-map {
+            margin-top: 0;
+
+            .map {
+                width: 80vw;
+                height: auto;
+            }
+        }
+    }
 }

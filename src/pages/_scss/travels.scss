@@ -21,53 +21,6 @@
         max-width: 32vw;
     }
 }
-.title {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    margin: 100px 0 20px 0;
-
-    h2 {
-        color: $purple;
-        margin: 0;
-        padding: 0;
-        flex-grow: 2;
-    }
-    .stars {
-        padding-top: 10px;
-        margin-right: 20px;
-    }
-    a.buy {
-        background-color: $purple;
-        color: $white;
-        border-radius: 4px;
-        width: 60px;
-        height: 30px;
-        text-align: center;
-        font-weight: bold;
-        transition: all .3s linear;
-        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2), 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
-        text-decoration: none;
-        align-self: flex-end;
-
-        &:hover {
-            background-color: $purple-dark;
-            box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2), 1px 1px 20px 1px rgba(0, 0, 0, 0.3);
-        }
-    }
-}
-.whisky-wrapper {
-    position: relative;
-    width: calc(32vw + 400px);
-
-    .whisky-map {
-        position: absolute;
-        left: 32vw;
-        top: 0;
-        display: inline-block;
-        width: 400px;
-    }
-}
 .travel-overview-background {
     .banner {
         display: flex;
@@ -106,37 +59,6 @@
             }
             small {
                 margin-top: 10px;
-            }
-        }
-    }
-}
-#filtering {
-    display: none;
-}
-.mobile {
-    display: none;
-}
-
-@media(max-width: $mobile-breakpoint) {
-    .whisky-wrapper {
-        height: auto;
-        padding: 40px 1vw;
-
-        h2 {
-            margin-left: 1vw;
-        }
-        .whisky-map,
-        .whisky-origin,
-        .whisky-tasting {
-            width: 94vw;
-            margin: 20px 1vw;
-        }
-        .whisky-map {
-            margin-top: 0;
-
-            .map {
-                width: 80vw;
-                height: auto;
             }
         }
     }
