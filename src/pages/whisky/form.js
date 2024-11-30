@@ -4,7 +4,15 @@ import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 import ReactSlider from 'react-slider';
 import Head from 'next/head';
-import { Barrel, Footer, Menu } from '../Components';
+import { Barrel, Footer, Menu } from '../../Components';
+import  {
+    whisky_cask_type,
+    whisky_country,
+    whisky_finish,
+    whisky_flavour,
+    whisky_region,
+    whisky_type
+} from '../../json';
 import './_scss/whisky.scss';
 
 const Whisky = () => {
@@ -27,20 +35,6 @@ const Whisky = () => {
     // Strength
     const [ strength, setStrength ] = useState('');
 
-    // Country
-    const jsonCountries = [
-        { value: "Scotland", label: "Scotland" },
-        { value: "Ireland", label: "Ireland" },
-        { value: "United States", label: "United States" },
-        { value: "Canada", label: "Canada" },
-        { value: "Australia", label: "Australia" },
-        { value: "Japan", label: "Japan" },
-        { value: "The Netherlands", label: "The Netherlands" },
-        { value: "Israel", label: "Israel" },
-        { value: "Taiwan", label: "Taiwan" },
-        { value: "India", label: "India" },
-        { value: "Germany", label: "Germany" }
-    ];
   
     const handleCreateCountry = (inputValue) => {
         setIsCountryLoading(true);
@@ -62,40 +56,10 @@ const Whisky = () => {
         setCountry(input);
     }
     const [ country, setCountry ] = useState('');
-    
-    // Region
-    const jsonRegions = [
-        { value: "highland", label: "Highland" },
-        { value: "lowland", label: "Lowland" },
-        { value: "speyside", label: "Speyside" },
-        { value: "islay", label: "Islay" },
-        { value: "islands", label: "Islands" },
-        { value: "campbeltown", label: "Campbeltown" }
-    ];
     const [ region, setRegion ] = useState('');
-    
-    // Type
-    const jsonTypes = [
-        { value: "Single Malt", label: "Single Malt" },
-        { value: "Single Grain", label: "Single Grain" },
-        { value: "Blended Malt", label: "Blended Malt" },
-        { value: "Blended Grain", label: "Blended Grain" },
-        { value: "Blended Scotch", label: "Blended Scotch" },
-        { value: "Tenessee", label: "Tenessee" },
-        { value: "Bourbon", label: "Bourbon" },
-        { value: "Rye", label: "Rye" }
-    ];
     const [ type, setType ] = useState('');
     
     // Cask type
-    const jsonCaskTypes = [
-        { value: "Bourbon", label: "Bourbon" },
-        { value: "Sherry", label: "Sherry" },
-        { value: "Port", label: "Port" },
-        { value: "Wine", label: "Wine" },
-        { value: "American Oak", label: "American Oak" },
-        { value: "Canadian Oak", label: "Canadian Oak" }
-    ];
     const [ caskType, setCaskType ] = useState('');
 
     // Date of Tasting
@@ -132,14 +96,8 @@ const Whisky = () => {
         { value: "Single Malt", label: "Single Malt" },
     ];
     const [ finish, setFinish ] = useState('');
-
-    // Notes
-    const [notes, setNotes] = useState('');
-
-    // Rating
+    const [ notes, setNotes ] = useState('');
     const [ rating, setRating ] = useState(2.5);
-
-    // Submit
     const [ input, setInput ] = useState('');
     const submit = async (e) => {
         e.preventDefault();
@@ -202,7 +160,7 @@ const Whisky = () => {
                             name="country"
                             className="select"
                             placeholder="Select country..."
-                            options={jsonCountries} 
+                            options={whisky_country} 
                             value={country}
                             onChange={(newCountry) => handleCountryChange(newCountry)}
                             isClearable
@@ -212,7 +170,7 @@ const Whisky = () => {
                             name="region"
                             className="select"
                             placeholder="Select region..."
-                            options={jsonRegions}
+                            options={whisky_region}
                             value={region}
                             onChange={(option) => setRegion(option)}/>}
 
@@ -220,7 +178,7 @@ const Whisky = () => {
                             name="type"
                             className="select"
                             placeholder="Select type..."
-                            options={jsonTypes}
+                            options={whisky_type}
                             value={type}
                             onChange={(option) => setType(option)}/>
                         <ul>
@@ -230,7 +188,7 @@ const Whisky = () => {
                             name="cask_type"
                             className="select"
                             placeholder="Select cask type..."
-                            options={jsonCaskTypes}
+                            options={whisky_cask_type}
                             value={caskType}
                             onChange={(option) => setCaskType(option)}/>
 
@@ -255,8 +213,9 @@ const Whisky = () => {
                             name="flavour"
                             className="select"
                             placeholder="Select flavours..."
-                            options={jsonFlavours} 
+                            options={whisky_flavour} 
                             isClearable
+                            isMulti
                             onChange={(newValue) => setFlavour(newValue)}
                             onCreateOption={handleCreateFlavour}
                             value={flavour}/>
@@ -264,7 +223,7 @@ const Whisky = () => {
                             name="finish"
                             className="select"
                             placeholder="Select finish..."
-                            options={jsonFinishes}
+                            options={whisky_finish}
                             value={finish}
                             onChange={(option) => setFinish(option)}/>
                         <textarea
