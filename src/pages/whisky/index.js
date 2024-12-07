@@ -35,25 +35,17 @@ const Whisky = () => {
                         <h2 id="introduction">Introduction</h2>
                         <p key="intro">
                             My love for whisky began quite some time ago when I went to the liquor store and let them
-                            advise me a whisky
-                            that was not too peaty and I came home with the Tomatin Legacy, which was more of the spicy
-                            and fruity kind
-                            (vanilla and citrus). It really took off when I went to <a
-                            href="/travels/uk#edinburgh">Edinburgh</a> and visited the
-                            whisky museum. From that moment on I've tried {whisky_tasting.length} whisky's, starting
-                            with Scotch, but
-                            after visiting the Teeling distillery and the whiskey museum in <a
-                            href="/travels/uk#dublin">Dublin</a> my
-                            interest in Irish whiskey grew as well.
+                            advise me a whisky that was not too peaty and I came home with the Tomatin Legacy, which was
+                            more of the spicy and fruity kind (vanilla and citrus). It really took off when I went to
+                            <a href="/travels/uk#edinburgh">Edinburgh</a> and visited the whisky museum. From that
+                            moment on I've tried {whisky_tasting.length} whisky's, starting with Scotch, but after
+                            visiting the Teeling distillery and the whiskey museum in
+                            <a href="/travels/uk#dublin">Dublin</a> my interest in Irish whiskey grew as well.
                         </p>
                         <p>A couple of resources to explore whisky</p>
                         <ul>
-                            <li><a
-                                href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-one-a-beginners-guide/">Whisky
-                                101 - A beginner's guide</a></li>
-                            <li><a
-                                href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-two-whiskey-around-the-world/">Whisky
-                                101 - Whisk(e)y around the world</a></li>
+                            <li><a href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-one-a-beginners-guide/">Whisky 101 - A beginner's guide</a></li>
+                            <li><a href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-two-whiskey-around-the-world/">Whisky 101 - Whisk(e)y around the world</a></li>
                         </ul>
 
                         <h2 id="cask_types">Possible cask types</h2>

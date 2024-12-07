@@ -94,7 +94,7 @@ const Travels = () => {
                     {Object.keys(travels).map(key => {
                         let travel = travels[key];
 
-                        return (<a href={'travels/' + travel.destination} className="banner" style={{ 'backgroundImage': 'url(/images/' + travel.destination + '/panorama.jpg)' }}>
+                        return (<a href={'travels/' + travel.destination} className="banner" style={{ 'backgroundImage': 'url(/images/' + travel.destination + '/panorama.jpeg)' }}>
                             <h2>{travel['title']}</h2>
                             <small>Posted: {travel.posted} {travel.description}<br />{travel.images} images</small>
                         </a>);

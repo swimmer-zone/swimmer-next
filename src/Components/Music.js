@@ -13,6 +13,19 @@ function countDown(duration, time) {
 }
 
 const Music = () => {
+    import parse from 'id3-parser';
+    import { convertFileToBuffer, fetchFileAsBuffer } from 'id3-parser/lib/util';
+
+// You have a File instance in browser
+    convertFileToBuffer(file).then(parse).then(tag => {
+        console.log(tag);
+    });
+// Or a remote mp3 file url
+    fetchFileAsBuffer(url).then(parse).then(tag => {
+        console.log(tag);
+    });
+
+
     const player = useRef(null);
     const [ state, setState ] = useState({
         currentTrack: null,
@@ -46,7 +59,7 @@ const Music = () => {
 	      			return(
 						<article key={"album_" + key} id={"album_" + key}>
 							<div className="cover-wrapper">
-								<img src={"/images/albums/" + album.title.toLowerCase().replace(/ /g, '-') + ".jpg"} alt="cover" className="cover" />
+								<img src={"/images/albums/" + album.title.toLowerCase().replace(/ /g, '-') + ".jpeg"} alt="cover" className="cover" />
 							</div>
 							<div className="tracklist" data-set={key}>
 
