@@ -12,7 +12,7 @@ const Europe = () => {
 		<div className="container">
             <Menu active="travels"/>
 			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content" style={{'backgroundImage': 'url(/images/europe/panorama.jpg)'}}>
+				<div className="content" style={{'backgroundImage': 'url(/images/europe/panorama.jpeg)'}}>
                     <Head>
                         <title>Swimmer ♬ Travels through Europe</title>
                     </Head>
@@ -344,8 +344,8 @@ const Europe = () => {
                             <li>A car, this has all the same arguments.</li>
                         </ul>
                         <p>
-                            <img src="/images/europe/map_before.jpg" alt="Before"/>
-                            <img src="/images/europe/map.jpg" alt="After"/>
+                            <img src="/images/europe/map_before.jpeg" alt="Before"/>
+                            <img src="/images/europe/map.jpeg" alt="After"/>
                         </p>
                         <p>Below a list of places I spent the nights:</p>
                         <ul>

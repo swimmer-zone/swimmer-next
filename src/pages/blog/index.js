@@ -140,7 +140,7 @@ const Blog = () => {
                                 To explain the RAID principle, using RAID5 as an example with images 
                                 from <a href="https://gathering.tweakers.net">Gathering of Tweakers</a>:
                             </p>
-                            {/* <img src="/images/blogs/one-terabyte_raid5.jpg" alt="RAID5"/> */}
+                            {/* <img src="/images/blogs/one-terabyte_raid5.jpeg" alt="RAID5"/> */}
                             <p>
                                 Assuming there are four disks, every disk has three parts with data and the fourth part 
                                 contains the checksum of that fourth part of the other three disks. If one of the drives 
@@ -278,8 +278,8 @@ const Blog = () => {
                             <p>
                                 My students room:
                             </p>
-                            <img src="/images/blogs/some-history_kamer.jpg" alt="Room 1"/>
-                            <img src="/images/blogs/some-history_plaatjes.jpg" alt="Room 2"/>
+                            <img src="/images/blogs/some-history_kamer.jpeg" alt="Room 1"/>
+                            <img src="/images/blogs/some-history_plaatjes.jpeg" alt="Room 2"/>
                             <p>
                                 Previous logo's:
                             </p>

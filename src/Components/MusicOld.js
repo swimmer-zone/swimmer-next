@@ -5,7 +5,7 @@ import { albums } from '../json';
 
 function countDown(duration, time) {
     if (!isNaN(time)) {
-        let timeLeft = duration - time;
+        var timeLeft = duration - time;
         return (
             Math.floor(timeLeft / 60) + ":" + ("0" + Math.floor(timeLeft % 60)).slice(-2)
         );
@@ -13,19 +13,6 @@ function countDown(duration, time) {
 }
 
 const Music = () => {
-    import parse from 'id3-parser';
-    import { convertFileToBuffer, fetchFileAsBuffer } from 'id3-parser/lib/util';
-
-// You have a File instance in browser
-    convertFileToBuffer(file).then(parse).then(tag => {
-        console.log(tag);
-    });
-// Or a remote mp3 file url
-    fetchFileAsBuffer(url).then(parse).then(tag => {
-        console.log(tag);
-    });
-
-
     const player = useRef(null);
     const [ state, setState ] = useState({
         currentTrack: null,

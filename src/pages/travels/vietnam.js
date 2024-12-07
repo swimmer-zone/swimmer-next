@@ -12,7 +12,7 @@ const Vietnam = () => {
 		<div className="container">
             <Menu active="travels"/>
 			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content" style={{'backgroundImage': 'url(/images/vietnam/panorama.jpg)'}}>
+				<div className="content" style={{'backgroundImage': 'url(/images/vietnam/panorama.jpeg)'}}>
                     <Head>
                         <title>Swimmer ♬ Travels to Vietnam</title>
                     </Head>

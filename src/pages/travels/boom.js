@@ -12,7 +12,7 @@ const Boom = () => {
 		<div className="container">
             <Menu active="travels"/>
 			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content" style={{'backgroundImage': 'url(/images/boom/panorama.jpg)'}}>
+				<div className="content" style={{'backgroundImage': 'url(/images/boom/panorama.jpeg)'}}>
                     <Head>
                         <title>Swimmer ♬ Travels to festivals</title>
                     </Head>

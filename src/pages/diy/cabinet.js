@@ -110,13 +110,13 @@ const Cabinet = () => {
                         </div>
                     
                         <section className="hexagon-gallery">
-                            <img src="/images/cabinet/build/01.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/02.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/03.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/04.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/05.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/06.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/07.jpg" alt="Build"/>
+                            <img src="/images/cabinet/build/01.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/02.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/03.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/04.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/05.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/06.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/07.jpeg" alt="Build"/>
                         </section>
 
                         <table className="article">
@@ -218,17 +218,17 @@ const Cabinet = () => {
                         </div>
 
                         <section className="hexagon-gallery">
-                            <img src="/images/cabinet/build/08.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/09.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/10.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/11.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/12.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/13.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/14.jpg" alt="Build" />
-                            <img src="/images/cabinet/build/15.jpg" alt="Build" />
+                            <img src="/images/cabinet/build/08.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/09.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/10.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/11.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/12.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/13.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/14.jpeg" alt="Build" />
+                            <img src="/images/cabinet/build/15.jpeg" alt="Build" />
                             <div></div>
-                            <img src="/images/cabinet/build/30.jpg" alt="Build" />
-                            <img src="/images/cabinet/build/31.jpg" alt="Build" />
+                            <img src="/images/cabinet/build/30.jpeg" alt="Build" />
+                            <img src="/images/cabinet/build/31.jpeg" alt="Build" />
                         </section>
 
                         <div className="article">
@@ -272,20 +272,20 @@ const Cabinet = () => {
                         </div>
 
                         <section className="hexagon-gallery">
-                            <img src="/images/cabinet/build/16.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/17.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/18.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/19.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/20.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/21.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/22.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/23.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/24.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/25.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/26.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/27.jpg" alt="Build"/>
-                            <img src="/images/cabinet/build/28.jpg" alt="Build" />
-                            <img src="/images/cabinet/build/29.jpg" alt="Build"/>
+                            <img src="/images/cabinet/build/16.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/17.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/18.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/19.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/20.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/21.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/22.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/23.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/24.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/25.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/26.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/27.jpeg" alt="Build"/>
+                            <img src="/images/cabinet/build/28.jpeg" alt="Build" />
+                            <img src="/images/cabinet/build/29.jpeg" alt="Build"/>
                         </section>
                     </section>
                     <footer id="footer">

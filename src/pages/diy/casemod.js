@@ -57,22 +57,22 @@ const Casemod = () => {
                                 I tried my old GPU, but no signal either. I was afraid the main board was broken, that has happened 
                                 before, but after some searching it became clear that it all was because of a loose memory strip.
                             </p>
-                            <img src="/images/casemod/2009_pc_01.jpg" alt="Casemod" className="rounded"/>
-                            <img src="/images/casemod/2009_pc_02.jpg" alt="Casemod" className="rounded"/>
-                            <img src="/images/casemod/2009_pc_03.jpg" alt="Casemod" className="rounded"/>
-                            <img src="/images/casemod/2009_pc_04.jpg" alt="Casemod" className="rounded"/>
+                            <img src="/images/casemod/2009_pc_01.jpeg" alt="Casemod" className="rounded"/>
+                            <img src="/images/casemod/2009_pc_02.jpeg" alt="Casemod" className="rounded"/>
+                            <img src="/images/casemod/2009_pc_03.jpeg" alt="Casemod" className="rounded"/>
+                            <img src="/images/casemod/2009_pc_04.jpeg" alt="Casemod" className="rounded"/>
 
                             <h2>Some other projects</h2>
-                            <img src="/images/casemod/2003_delfzijl_01.jpg" alt="Kamer Delfzijl" className="rounded"/>
-                            <img src="/images/casemod/2006_tafeltje_01.jpg" alt="Tafeltje" className="rounded"/>
-                            <img src="/images/casemod/2006_venlo_01.jpg" alt="Kamer Venlo" className="rounded"/>
-                            <img src="/images/casemod/2009_kastje_01.jpg" alt="Audiomeubel" className="rounded"/>
-                            <img src="/images/casemod/2009_kastje_02.jpg" alt="Audiomeubel" className="rounded"/>
-                            <img src="/images/casemod/2009_plank_01.jpg" alt="Plank" className="rounded"/>
-                            <img src="/images/casemod/2009_tafel_01.jpg" alt="Tafel" className="rounded"/>
-                            <img src="/images/casemod/2012_pc_01.jpg" alt="PC" className="rounded"/>
-                            <img src="/images/casemod/2017_bar_01.jpg" alt="Bar" className="rounded"/>
-                            <img src="/images/casemod/2017_terras_01.jpg" alt="Lounge" className="rounded"/>
+                            <img src="/images/casemod/2003_delfzijl_01.jpeg" alt="Kamer Delfzijl" className="rounded"/>
+                            <img src="/images/casemod/2006_tafeltje_01.jpeg" alt="Tafeltje" className="rounded"/>
+                            <img src="/images/casemod/2006_venlo_01.jpeg" alt="Kamer Venlo" className="rounded"/>
+                            <img src="/images/casemod/2009_kastje_01.jpeg" alt="Audiomeubel" className="rounded"/>
+                            <img src="/images/casemod/2009_kastje_02.jpeg" alt="Audiomeubel" className="rounded"/>
+                            <img src="/images/casemod/2009_plank_01.jpeg" alt="Plank" className="rounded"/>
+                            <img src="/images/casemod/2009_tafel_01.jpeg" alt="Tafel" className="rounded"/>
+                            <img src="/images/casemod/2012_pc_01.jpeg" alt="PC" className="rounded"/>
+                            <img src="/images/casemod/2017_bar_01.jpeg" alt="Bar" className="rounded"/>
+                            <img src="/images/casemod/2017_terras_01.jpeg" alt="Lounge" className="rounded"/>
                         </div>
                     </section>
                     <Footer/>

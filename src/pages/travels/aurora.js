@@ -12,7 +12,7 @@ const Aurora = () => {
 		<div className="container">
             <Menu active="travels"/>
 			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content" style={{'backgroundImage': 'url(/images/aurora/panorama.jpg)'}}>
+				<div className="content" style={{'backgroundImage': 'url(/images/aurora/panorama.jpeg)'}}>
                     <Head>
                         <title>Swimmer ♬ Travels to find Aurora</title>
                     </Head>

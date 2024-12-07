@@ -12,7 +12,7 @@ const Whisky = () => {
 		<div className="container">
             <Menu active="travels"/>
 			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content" style={{'backgroundImage': 'url(/images/uk/panorama.jpg)'}}>
+				<div className="content" style={{'backgroundImage': 'url(/images/uk/panorama.jpeg)'}}>
                     <Head>
                         <title>Swimmer ♬ Travels to Edinburgh and discovers whisky</title>
                     </Head>
