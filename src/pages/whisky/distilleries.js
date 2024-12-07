@@ -1,8 +1,16 @@
-import React from "react";
-import { ComposableMap, Geographies, Geography, Marker, Graticule, ZoomableGroup } from "react-simple-maps";
-import  { whisky_distillery } from '../../json';
+'use client';
+import React from 'react';
+import {
+    ComposableMap,
+    Geographies,
+    Geography,
+    Graticule,
+    Marker,
+    ZoomableGroup
+} from '../../Components/Maps';
+import { whisky_distillery } from '../../json';
 import Head from 'next/head';
-import '../_scss/whisky.scss';
+import '../_scss/whisky-distilleries.scss';
 import { Footer, Menu } from '../../Components';
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";

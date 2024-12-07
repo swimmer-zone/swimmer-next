@@ -7,7 +7,7 @@ import './_scss/resume.scss';
 const Resume = () => {
     const [ expanded, setExpanded ] = useState(false);
 
-    const handleSetexpanded = () => {
+    const handleSetExpanded = () => {
         setExpanded(!expanded)
     }
 	const toggleMenu = () => {
@@ -27,11 +27,11 @@ const Resume = () => {
                             <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" />
                         </symbol>
                     </svg>
-                    <h1>- Resume of Sander Hartman -</h1>
+                    <h1><span>Resume</span> <span>of</span> <span>Sander Hartman</span></h1>
                     <Portrait />
                     <div id="timeline" className="timeline">
                         <div className="btn-group">
-                            <button className="btn" type="button" onClick={handleSetexpanded}>Expand / Collapse</button>
+                            <button className="btn" type="button" onClick={handleSetExpanded}>Expand / Collapse</button>
                         </div>
                         <div className="timeline__item">
                             <div className="timeline__item-header">

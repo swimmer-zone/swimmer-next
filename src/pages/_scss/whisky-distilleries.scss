@@ -1,0 +1,10 @@
+body {
+  overflow: hidden;
+}
+.rsm-marker path {
+  width: 16px;
+  height: 16px;
+}
+path:focus {
+  outline: none;
+}

@@ -13,7 +13,7 @@ import  {
     whisky_region,
     whisky_type
 } from '../../json';
-import './_scss/whisky.scss';
+import '../_scss/whisky.scss';
 
 const Whisky = () => {
 	const toggleMenu = () => {

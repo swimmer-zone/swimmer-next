@@ -1,9 +1,11 @@
 [
-    { "id": "1", "value": "", "name": "Teeling", "coordinates": [-6.277199, 53.3377848], "markerOffset": -5},
-    { "id": "2", "value": "", "name": "Titanic", "coordinates": [-5.9017181, 54.6144302], "markerOffset": -5},
-    { "id": "3", "value": "", "name": "Millstone", "coordinates": [4.9365256, 51.4447173], "markerOffset": -5},
-    { "id": "3", "value": "", "name": "Tomatin", "coordinates": [-4.0114366, 57.3396646], "markerOffset": -5},
-    { "id": "4", "value": "", "name": "Glenfiddich", "coordinates": [-3.131235, 57.4547645], "markerOffset": -10},
-    { "id": "5", "value": "", "name": "Adelphi", "coordinates": [-3.5057922,56.044223], "markerOffset": -5},
-    { "id": "5", "value": "", "name": "Penderyn", "coordinates": [-3.9504171,53.0702671], "markerOffset": -5}
+    { "id": 1, "value": "", "name": "Teeling", "coordinates": [-6.277199, 53.3377848], "markerOffset": -5},
+    { "id": 2, "value": "", "name": "Titanic", "coordinates": [-5.9017181, 54.6144302], "markerOffset": -5},
+    { "id": 3, "value": "", "name": "Millstone", "coordinates": [4.9365256, 51.4447173], "markerOffset": -5},
+    { "id": 3, "value": "", "name": "Tomatin", "coordinates": [-4.0114366, 57.3396646], "markerOffset": -5},
+    { "id": 4, "value": "", "name": "Glenfiddich", "coordinates": [-3.131235, 57.4547645], "markerOffset": -10},
+    { "id": 5, "value": "", "name": "Adelphi", "coordinates": [-3.5057922, 56.044223], "markerOffset": -5},
+    { "id": 6, "value": "", "name": "Penderyn", "coordinates": [-3.9504171, 53.0702671], "markerOffset": -5},
+    { "id": 7, "value": "", "name": "Teelenperi", "coordinates": [25.6954449, 60.9640953], "markerOffset": -5},
+    { "id": 8, "value": "", "name": "Milk & Honey", "coordinates": [34.8171518, 31.9864053], "markerOffset": -5}
 ]

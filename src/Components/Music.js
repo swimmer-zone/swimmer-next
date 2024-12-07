@@ -5,7 +5,7 @@ import { albums } from '../json';
 
 function countDown(duration, time) {
     if (!isNaN(time)) {
-        var timeLeft = duration - time;
+        let timeLeft = duration - time;
         return (
             Math.floor(timeLeft / 60) + ":" + ("0" + Math.floor(timeLeft % 60)).slice(-2)
         );
