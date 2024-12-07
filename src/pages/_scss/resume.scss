@@ -26,7 +26,6 @@ button {
 body {
 	height: 100vh;
 	transition: background-color $trans-dur, color $trans-dur;
-	font-family: 'Afacad', sans-serif;
 	overflow-x: hidden;
 	font-size: 1rem;
 	letter-spacing: 0.1rem;
@@ -35,18 +34,18 @@ body {
 
 h1, 
 h2 {
-	font-size: 4rem;
-	color: $purple;
-	font-weight: 200;
 	margin: 0 0 3rem;
 	padding-top: 1.5rem;
 	text-align: center;
 }
 h1 {
+	font-size: 4rem;
 	text-shadow: 2px 2px 8px #aaaaaa22;
+	color: $purple;
+	font-weight: 200;
 }
 h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	color: $white;
 	margin-bottom: 2vh;
 	font-weight: 300;
@@ -197,7 +196,8 @@ p {
 	gap: 2vw;
 	justify-content: center;
 	flex-wrap: wrap;
-	margin: 80px 0 32vh 0;
+	margin: 80px 0 80vh 0;
+	border-bottom: 60vh solid $darkest;
 
 	& > div {
 		background-color: $dark;
@@ -206,9 +206,20 @@ p {
 		width: 30vw;
 		min-width: 300px;
 		padding: 0 40px 20px 40px;
-		margin-bottom: 40vh;
 	}
 }
 .diving {
 	display: none;
+}
+
+@media(max-width: $mobile-breakpoint) {
+	h1 {
+		span {
+			display: block;
+		}
+		span:nth-of-type(2) {
+			font-size: 1.5rem;
+		}
+		font-size: 2.5rem;
+	}
 }
