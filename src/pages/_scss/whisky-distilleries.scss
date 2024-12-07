@@ -1,10 +1,15 @@
+* {
+    font-family: 'Afacad', sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
 body {
-  overflow: hidden;
+    overflow: hidden;
 }
 .rsm-marker path {
-  width: 16px;
-  height: 16px;
+    width: 16px;
+    height: 16px;
 }
 path:focus {
-  outline: none;
+    outline: none;
 }

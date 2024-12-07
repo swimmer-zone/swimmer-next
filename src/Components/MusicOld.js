@@ -45,36 +45,38 @@ const Music = () => {
 
 	      			return(
 						<article key={"album_" + key} id={"album_" + key}>
-							<div className="cover-wrapper">
-								<img src={"/images/albums/" + album.title.toLowerCase().replace(/ /g, '-') + ".jpeg"} alt="cover" className="cover" />
+							<div className="cover-wrapper" key={"cover_wrapper_" + key}>
+								<img src={"/images/albums/" + album.title.toLowerCase().replace(/ /g, '-') + ".jpeg"} alt="cover" className="cover" key={"cover_" + key} />
 							</div>
-							<div className="tracklist" data-set={key}>
+							<div className="tracklist" data-set={key} key={"tl_" + key}>
 
-								<h2 key={key}>
+								<h2 key={"h2_" + key}>
 									{album.title}
 								</h2>
 
-								<p>{album.intro}</p>
+								<p key={"p_" + key}>{album.intro}</p>
 
-								<ul>
+								<ul key={"ul_" + key}>
 									{Object.keys(album.tracks).map(trackKey => {
 										let track = album.tracks[trackKey];
 										let scName = 'https://feeds.soundcloud.com/stream/' + track.filename + '.mp3';
+                                        scName = '/audio/' + track.local + '.mp3';
 										let playTime = Math.floor(track.playtime / 60) + ":" + ("0" + Math.floor(track.playtime % 60)).slice(-2);
 
 										if (state.currentTime && state.currentTrack === scName) {
-											timer = <span className="duration">{timeLeft}</span>
+											timer = <span key={key + '_timer_' + track.local} className="duration">{timeLeft}</span>
 										}
 										else {
-											timer = <span 
+											timer = <span
+                                                    key={key + '_timer_' + track.local}
 													data-seconds="{track.playtime}" 
 													className="duration">{playTime}</span>
 										}
 
 										return (<>
-											<li key={track.filename}>
-												<span className="a">
-													<button 
+											<li key={key + '_li_' + track.local}>
+												<span className="a" key={key + '_span_' + track.local}>
+													<button key={key + '_btn_' + track.local}
 														data-permalink={track.title}
 														onClick={() => {
 															if (state.currentTrack === scName && !player.current.paused) {
