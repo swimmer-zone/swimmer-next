@@ -97,7 +97,7 @@ const Whisky = () => {
                                 <div className="title">
                                     <h2 key={tasting.id + '_title'}>{tasting.brand}</h2>
                                     <h3 key={tasting.id + '_name'}>{tasting.name}</h3>
-                                    <Rating value={tasting.tasting_rating}/>
+                                    <Rating value={tasting.rating}/>
                                 </div>
 
                                 <div className="whisky-wrapper" key={tasting.id + '_wrapper'}>

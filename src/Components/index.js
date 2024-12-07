@@ -6,7 +6,7 @@ import Intro from './Intro.js';
 import Logo from './Logo.js';
 import Me from './Me.js';
 import Menu from './Menu.js';
-import Music from './Music.js';
+import Music from './MusicOld.js';
 import Portrait from './Portrait.js';
 import Rating from './Rating.js';
 import Social from './Social.js';
