@@ -277,6 +277,31 @@
 	}
 }
 
+.rhap_volume-controls,
+.rhap_additional-controls {
+	display: none;
+}
+.rhap_progress-bar {
+	height: 2px;
+	background-color: $lighter;
+}
+.rhap_progress-indicator {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: $purple;
+	margin-top: -4px;
+}
+.rhap_progress-filled {
+	height: 2px;
+	background-color: $purple;
+}
+.rhap_main-controls button {
+	background-color: $darkest;
+	color: $purple;
+	border: none;
+}
+
 @media(max-width: $mobile-breakpoint) {
 	.music {
 		height: 100vh !important;
