@@ -14,6 +14,7 @@ import  {
     whisky_type
 } from '../../json';
 import '../_scss/whisky.scss';
+import '../_scss/whisky-form.scss';
 
 const Whisky = () => {
 	const toggleMenu = () => {
