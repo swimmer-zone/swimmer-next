@@ -20,7 +20,186 @@ const Distilleries = () => {
         document.body.classList.remove('show-menu');
     };
 
-    const highlighted = ["SCO"];
+    const visited = [
+        "United Kingdom",
+        "Norway",
+        "France",
+        "Thailand",
+        "Vietnam",
+        "Poland",
+        "Austria",
+        "Hungary",
+        "Romania",
+        "Germany",
+        "Bulgaria",
+        "Greece",
+        "Turkey",
+        "Switzerland",
+        "Luxembourg",
+        "Belgium",
+        "Netherlands",
+        "Portugal",
+        "Spain",
+        "Ireland",
+        "Italy",
+        "Denmark",
+        "Iceland",
+        "Georgia",
+        "Finland",
+        "Serbia",
+        "Slovakia",
+        "Czechia"
+// Fiji
+// Tanzania
+// W. Sahara
+// Canada
+// United States of America
+// Kazakhstan
+// Uzbekistan
+// Papua New Guinea
+// Indonesia
+// Argentina
+// Chile
+// Dem. Rep. Congo
+// Somalia
+// Kenya
+// Sudan
+// Chad
+// Haiti
+// Dominican Rep.
+// Russia
+// Bahamas
+// Falkland Is.
+// Greenland
+// Fr. S. Antarctic Lands
+// Timor-Leste
+// South Africa
+// Lesotho
+// Mexico
+// Uruguay
+// Brazil
+// Bolivia
+// Peru
+// Colombia
+// Panama
+// Costa Rica
+// Nicaragua
+// Honduras
+// El Salvador
+// Guatemala
+// Belize
+// Venezuela
+// Guyana
+// Suriname
+// Ecuador
+// Puerto Rico
+// Jamaica
+// Cuba
+// Zimbabwe
+// Botswana
+// Namibia
+// Senegal
+// Mali
+// Mauritania
+// Benin
+// Niger
+// Nigeria
+// Cameroon
+// Togo
+// Ghana
+// Côte d'Ivoire
+// Guinea
+// Guinea-Bissau
+// Liberia
+// Sierra Leone
+// Burkina Faso
+// Central African Rep.
+// Congo
+// Gabon
+// Eq. Guinea
+// Zambia
+// Malawi
+// Mozambique
+// eSwatini
+// Angola
+// Burundi
+// Israel
+// Lebanon
+// Madagascar
+// Palestine
+// Gambia
+// Tunisia
+// Algeria
+// Jordan
+// United Arab Emirates
+// Qatar
+// Kuwait
+// Iraq
+// Oman
+// Vanuatu
+// Cambodia
+// Laos
+// Myanmar
+// North Korea
+// South Korea
+// Mongolia
+// India
+// Bangladesh
+// Bhutan
+// Nepal
+// Pakistan
+// Afghanistan
+// Tajikistan
+// Kyrgyzstan
+// Turkmenistan
+// Iran
+// Syria
+// Armenia
+// Sweden
+// Belarus
+// Ukraine
+// Moldova
+// Lithuania
+// Latvia
+// Estonia
+// Albania
+// Croatia
+// New Caledonia
+// Solomon Is.
+// New Zealand
+// Australia
+// Sri Lanka
+// China
+// Taiwan
+// Azerbaijan
+// Philippines
+// Malaysia
+// Brunei
+// Slovenia
+// Eritrea
+// Japan
+// Paraguay
+// Yemen
+// Saudi Arabia
+// Antarctica
+// N. Cyprus
+// Cyprus
+// Morocco
+// Egypt
+// Libya
+// Ethiopia
+// Djibouti
+// Somaliland
+// Uganda
+// Rwanda
+// Bosnia and Herz.
+// Macedonia
+// Montenegro
+// Kosovo
+// Trinidad and Tobago
+// S. Sudan
+    ];
+
     return (<main>
         <div className="container">
             <Menu active="whisky"/>
@@ -39,19 +218,18 @@ const Distilleries = () => {
                             scale: 500
                         }}
                     >
-                        <ZoomableGroup center={[10, 45]} zoom={9}>
+                        <ZoomableGroup center={[10, 45]} zoom={1}>
                             <Graticule stroke="#222222"/>
                             <Geographies geography={geoUrl}>
                                 {({geographies}) =>
                                     geographies.map((geo) => {
-                                        const isHighlighted = highlighted.indexOf(geo.id) !== -1;
+                                        console.log(geo.properties.name);
+                                        const isHighlighted = visited.includes(geo.properties.name);
+                                        console.log(isHighlighted);
                                         return (<Geography
                                             style={{
-                                                default: {
-                                                    fill: "#6c6eec",
-                                                },
                                                 hover: {
-                                                    fill: "#888888",
+                                                    fill: "#aaaaaa",
                                                 },
                                                 pressed: {
                                                     fill: "#aaaaaa",
@@ -60,18 +238,18 @@ const Distilleries = () => {
                                             key={geo.rsmKey}
                                             geography={geo}
                                             stroke="#111111"
-                                            fill={isHighlighted ? "#eeeeee" : "#6c6eec"}
+                                            fill={isHighlighted ? "#888888" : "#6c6eec"}
                                         />)
                                     })
                                 }
                             </Geographies>
                             {whisky_distillery.map(({name, coordinates, markerOffset}) => (
-                                <Marker key={name} coordinates={coordinates} style={{width: "16px", height: "16px"}}>
-                                    <circle r="3" fill="#ffc917" />
+                                <Marker key={name} coordinates={coordinates} style={{width: "4px", height: "4px"}}>
+                                    <circle r="1" fill="#ffc917" />
                                     <text
                                         textAnchor="middle"
                                         y={markerOffset}
-                                        style={{fontFamily: "Afacad", fontSize: "8px", fill: "#dddddd", letterSpacing: 0}}
+                                        style={{fontFamily: "Afacad", fontSize: "2px", fill: "#dddddd", letterSpacing: 0}}
                                     >
                                         {name}
                                     </text>
