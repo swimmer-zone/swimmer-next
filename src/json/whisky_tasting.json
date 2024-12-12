@@ -10,11 +10,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-06",
       "location": "Whisky Museum, Edinburgh",
-      "flavour": [
-        "Woody",
-        "Spicey",
-        "Grassy"
-      ],
+      "flavour": "Woody, Spicy, Grassy",
       "finish": "Salty",
       "notes": "Double Cask",
       "rating": 3,
@@ -32,11 +28,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-06",
       "location": "Whisky Museum, Edinburgh",
-      "flavour": [
-        "Toffee",
-        "Dark Fruit",
-        "Woody"
-      ],
+      "flavour": "Toffee, Dark Fruit, Woody",
       "finish": "Bitter",
       "notes": null,
       "rating": 2,
@@ -54,10 +46,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-10",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Woody"
-      ],
+      "flavour": "Peaty, Woody",
       "finish": "Clean",
       "notes": null,
       "rating": 4,
@@ -75,9 +64,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-10",
       "location": "Whisky Museum, Edinburgh",
-      "flavour": [
-        "Spicy"
-      ],
+      "flavour": "Spicy",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -95,11 +82,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-23",
       "location": "Home",
-      "flavour": [
-        "Fruity",
-        "Apple",
-        "Malty"
-      ],
+      "flavour": "Fruity, Apple, Malty",
       "finish": "Clean",
       "notes": null,
       "rating": 3,
@@ -117,10 +100,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-23",
       "location": "Home",
-      "flavour": [
-        "Fruity",
-        "Spicy"
-      ],
+      "flavour": "Fruity, Spicy",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -138,10 +118,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-25",
       "location": "Whisky Museum, Edinburgh",
-      "flavour": [
-        "Dark Fruit",
-        "Oak"
-      ],
+      "flavour": "Dark Fruit, Oak",
       "finish": "Spicy",
       "notes": "Three cask matured. Links to a different one: Smokey 10 rather than Original 10.",
       "rating": 3,
@@ -159,9 +136,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-25",
       "location": "Home",
-      "flavour": [
-        "Woody"
-      ],
+      "flavour": "Woody",
       "finish": "Salty",
       "notes": "Unchill filtered",
       "rating": 4,
@@ -179,10 +154,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-26",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Nutty"
-      ],
+      "flavour": "Peaty, Nutty",
       "finish": "Spicy",
       "notes": null,
       "rating": 3.5,
@@ -200,10 +172,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-26",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Cereal"
-      ],
+      "flavour": "Peaty, Cereal",
       "finish": "Salty",
       "notes": null,
       "rating": 3,
@@ -221,10 +190,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-27",
       "location": "Home",
-      "flavour": [
-        "Dark Fruit",
-        "Woody"
-      ],
+      "flavour": "Dark Fruit, Woody",
       "finish": "Sour",
       "notes": null,
       "rating": 2,
@@ -242,9 +208,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-04-27",
       "location": "Home",
-      "flavour": [
-        "Dark Fruit"
-      ],
+      "flavour": "Dark Fruit",
       "finish": "Salty",
       "notes": null,
       "rating": 2.5,
@@ -262,10 +226,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Smokey",
-        "Dark Fruit"
-      ],
+      "flavour": "Smokey, Dark Fruit",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -283,10 +244,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Fruity",
-        "Floral"
-      ],
+      "flavour": "Fruity, Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 1,
@@ -304,10 +262,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Smokey",
-        "Woody"
-      ],
+      "flavour": "Smokey, Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -325,11 +280,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Marmelade",
-        "Cocoa",
-        "Stroopwafel"
-      ],
+      "flavour": "Marmelade, Cocoa, Stroopwafel",
       "finish": "Sweet",
       "notes": null,
       "rating": 2,
@@ -347,11 +298,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Citrus",
-        "Vanilla"
-      ],
+      "flavour": "Peaty, Citrus, Vanilla",
       "finish": "Salty",
       "notes": "Could have mixed up with the Finlaggan below",
       "rating": 3,
@@ -369,11 +316,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Malty",
-        "Woody"
-      ],
+      "flavour": "Peaty, Malty, Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -391,11 +334,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-03",
       "location": "Home",
-      "flavour": [
-        "Apple",
-        "Melon",
-        "Honey"
-      ],
+      "flavour": "Apple, Melon, Honey",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -413,11 +352,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Woody",
-        "Fruity",
-        "Coconut"
-      ],
+      "flavour": "Woody, Fruity, Coconut",
       "finish": "Spicy",
       "notes": null,
       "rating": 3.5,
@@ -435,12 +370,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Dark Chocolate",
-        "Fruity",
-        "Nutmeg",
-        "Vanilla"
-      ],
+      "flavour": "Dark Chocolate, Fruity, Nutmeg, Vanilla",
       "finish": "Sweet",
       "notes": null,
       "rating": 4.5,
@@ -458,10 +388,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Floral",
-        "Fruity"
-      ],
+      "flavour": "Floral, Fruity",
       "finish": "Spicy",
       "notes": null,
       "rating": 4,
@@ -479,11 +406,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Apple",
-        "Vanilla",
-        "Coconut"
-      ],
+      "flavour": "Apple, Vanilla, Coconut",
       "finish": "Sweet",
       "notes": "Tasted: Aultmore 2009 The Ultimate Selection Cask",
       "rating": 3,
@@ -501,11 +424,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Honey",
-        "Cinnamon",
-        "Toffee"
-      ],
+      "flavour": "Honey, Cinnamon, Toffee",
       "finish": "Sweet",
       "notes": null,
       "rating": 2,
@@ -523,11 +442,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Citrus",
-        "Apple",
-        "Vanilla"
-      ],
+      "flavour": "Citrus, Apple, Vanilla",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -545,10 +460,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-05",
       "location": "Home",
-      "flavour": [
-        "Vanilla",
-        "Citrus"
-      ],
+      "flavour": "Vanilla, Citrus",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -566,10 +478,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-25",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Flower"
-      ],
+      "flavour": "Peaty, Flower",
       "finish": "Sweet",
       "notes": null,
       "rating": 4.5,
@@ -587,10 +496,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-06-25",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Coconut"
-      ],
+      "flavour": "Peaty, Coconut",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -608,13 +514,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-08-30",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Woody",
-        "Citrus",
-        "Melon",
-        "Coconut"
-      ],
+      "flavour": "Peaty, Woody, Citrus, Melon, Coconut",
       "finish": "Spicy",
       "notes": null,
       "rating": 3,
@@ -632,10 +532,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-02",
       "location": "Home",
-      "flavour": [
-        "Fruity",
-        "Apple"
-      ],
+      "flavour": "Fruity, Apple",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -653,9 +550,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-02",
       "location": "Home",
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Salty",
       "notes": null,
       "rating": 1,
@@ -673,9 +568,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-03",
       "location": "Home",
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 2,
@@ -693,9 +586,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Fruity"
-      ],
+      "flavour": "Fruity",
       "finish": "Spicy",
       "notes": null,
       "rating": 2.5,
@@ -713,9 +604,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Cereal"
-      ],
+      "flavour": "Cereal",
       "finish": "Sweet",
       "notes": "Triple Distilled",
       "rating": 2.5,
@@ -733,9 +622,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Fruity"
-      ],
+      "flavour": "Fruity",
       "finish": "Sweet",
       "notes": "Triple Cask",
       "rating": 1.5,
@@ -753,10 +640,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Fruity",
-        "Smokey"
-      ],
+      "flavour": "Fruity, Smokey",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -774,9 +658,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Cereal"
-      ],
+      "flavour": "Cereal",
       "finish": "Spicy",
       "notes": null,
       "rating": 3,
@@ -794,9 +676,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Alcohol"
-      ],
+      "flavour": "Alcohol",
       "finish": "Sweet",
       "notes": null,
       "rating": 1,
@@ -814,10 +694,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Smokey",
-        "Grassy"
-      ],
+      "flavour": "Smokey, Grassy",
       "finish": "Clean",
       "notes": null,
       "rating": 3.5,
@@ -835,10 +712,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Woody"
-      ],
+      "flavour": "Peaty, Woody",
       "finish": "Clean",
       "notes": null,
       "rating": 3.5,
@@ -856,11 +730,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-09-04",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Fruity",
-        "Spicy"
-      ],
+      "flavour": "Peaty, Fruity, Spicy",
       "finish": "Clean",
       "notes": "Irish Poitin",
       "rating": 4,
@@ -878,11 +748,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-23",
       "location": "Home",
-      "flavour": [
-        "Smokey",
-        "Vanilla",
-        "Salty"
-      ],
+      "flavour": "Smokey, Vanilla, Salty",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -900,9 +766,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-23",
       "location": "Home",
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -920,10 +784,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-23",
       "location": "Home",
-      "flavour": [
-        "Sweet",
-        "Sharp"
-      ],
+      "flavour": "Sweet, Sharp",
       "finish": "Sweet",
       "notes": null,
       "rating": 1,
@@ -941,9 +802,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-23",
       "location": "Home",
-      "flavour": [
-        "Grassy"
-      ],
+      "flavour": "Grassy",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -961,10 +820,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-23",
       "location": "Home",
-      "flavour": [
-        "Ginger",
-        "Peaty"
-      ],
+      "flavour": "Ginger, Peaty",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -982,10 +838,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-24",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Pineapple"
-      ],
+      "flavour": "Peaty, Pineapple",
       "finish": "Sweet",
       "notes": null,
       "rating": 4,
@@ -1003,10 +856,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-24",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Citrus"
-      ],
+      "flavour": "Peaty, Citrus",
       "finish": "Salty",
       "notes": null,
       "rating": 4,
@@ -1024,9 +874,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-25",
       "location": "Home",
-      "flavour": [
-        "Woody"
-      ],
+      "flavour": "Woody",
       "finish": "Salty",
       "notes": "Christmas lights",
       "rating": 3,
@@ -1044,11 +892,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-26",
       "location": "Home",
-      "flavour": [
-        "Vanilla",
-        "Pear",
-        "Fudge"
-      ],
+      "flavour": "Vanilla, Pear, Fudge",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1066,12 +910,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-26",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Citrus",
-        "Oatmeal",
-        "Pineapple"
-      ],
+      "flavour": "Peaty, Citrus, Oatmeal, Pineapple",
       "finish": "Spicy",
       "notes": null,
       "rating": 3,
@@ -1089,10 +928,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-26",
       "location": "Home",
-      "flavour": [
-        "Cherries",
-        "Chocolate"
-      ],
+      "flavour": "Cherries, Chocolate",
       "finish": "Spicy",
       "notes": null,
       "rating": 3.5,
@@ -1110,11 +946,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-26",
       "location": "Home",
-      "flavour": [
-        "Chocolate",
-        "Nutty",
-        "Apple"
-      ],
+      "flavour": "Chocolate, Nutty, Apple",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1132,11 +964,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-27",
       "location": "Home",
-      "flavour": [
-        "Floral",
-        "Peaty",
-        "Cherry"
-      ],
+      "flavour": "Floral, Peaty, Cherry",
       "finish": "Salty",
       "notes": null,
       "rating": 3,
@@ -1154,10 +982,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-27",
       "location": "Home",
-      "flavour": [
-        "Pineapple",
-        "Coffee"
-      ],
+      "flavour": "Pineapple, Coffee",
       "finish": "Sweet",
       "notes": null,
       "rating": 4,
@@ -1175,11 +1000,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-27",
       "location": "Home",
-      "flavour": [
-        "Fruity",
-        "Vanilla",
-        "Coconut"
-      ],
+      "flavour": "Fruity, Vanilla, Coconut",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -1197,10 +1018,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-30",
       "location": "Home",
-      "flavour": [
-        "Red Fruit",
-        "Vanilla"
-      ],
+      "flavour": "Red Fruit, Vanilla",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -1218,9 +1036,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-30",
       "location": "Home",
-      "flavour": [
-        "Banana"
-      ],
+      "flavour": "Banana",
       "finish": "Sweet",
       "notes": null,
       "rating": 1.5,
@@ -1238,9 +1054,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-30",
       "location": "Home",
-      "flavour": [
-        "Peaty"
-      ],
+      "flavour": "Peaty",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1258,10 +1072,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-31",
       "location": "Mick & Janine",
-      "flavour": [
-        "Pear",
-        "Dry Fruit"
-      ],
+      "flavour": "Pear, Dry Fruit",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1279,14 +1090,7 @@
       "cask_type": "",
       "date_of_tasting": "2022-12-31",
       "location": "Mick & Janine",
-      "flavour": [
-        "Apple",
-        "Pear",
-        "Nutmeg",
-        "Cocoa",
-        "Nutty",
-        "Peaty"
-      ],
+      "flavour": "Apple, Pear, Nutmeg, Cocoa, Nutty, Peaty",
       "finish": "Sweet",
       "notes": null,
       "rating": 4,
@@ -1304,10 +1108,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-13",
       "location": "Home",
-      "flavour": [
-        "Peaty",
-        "Apple"
-      ],
+      "flavour": "Peaty, Apple",
       "finish": "Sweet",
       "notes": "Non-chill filtered",
       "rating": 4,
@@ -1325,9 +1126,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-18",
       "location": "Teeling Distillery, Dublin",
-      "flavour": [
-        "Red Fruit"
-      ],
+      "flavour": "Red Fruit",
       "finish": "Sweet",
       "notes": null,
       "rating": 4.5,
@@ -1345,11 +1144,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-18",
       "location": "Teeling Distillery, Dublin",
-      "flavour": [
-        "Vanilla",
-        "Spicy",
-        "Raisin"
-      ],
+      "flavour": "Vanilla, Spicy, Raisin",
       "finish": "Sweet",
       "notes": null,
       "rating": 4.5,
@@ -1367,11 +1162,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-18",
       "location": "Teeling Distillery, Dublin",
-      "flavour": [
-        "Chocolate",
-        "Spicy",
-        "Fruity"
-      ],
+      "flavour": "Chocolate, Spicy, Fruity",
       "finish": "Spicy",
       "notes": null,
       "rating": 4.5,
@@ -1389,11 +1180,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-18",
       "location": "Teeling Distillery, Dublin",
-      "flavour": [
-        "Fruity",
-        "Grapefruit",
-        "Mango"
-      ],
+      "flavour": "Fruity, Grapefruit, Mango",
       "finish": "Spicy",
       "notes": null,
       "rating": 4.5,
@@ -1411,9 +1198,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-18",
       "location": "Teeling Distillery, Dublin",
-      "flavour": [
-        "Peaty"
-      ],
+      "flavour": "Peaty",
       "finish": "Sweet",
       "notes": null,
       "rating": 4.5,
@@ -1431,11 +1216,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-23",
       "location": "Arctic Guesthouse, Rovaniemi",
-      "flavour": [
-        "Peaty",
-        "Malty",
-        "Woody"
-      ],
+      "flavour": "Peaty, Malty, Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1453,13 +1234,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-23",
       "location": "Olivers Pub, Rovaniemi",
-      "flavour": [
-        "Spicy",
-        "Peaty",
-        "Peach",
-        "Plum",
-        "Pear"
-      ],
+      "flavour": "Spicy, Peaty, Peach, Plum, Pear",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -1477,10 +1252,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-25",
       "location": "Wetherspoon, Dublin",
-      "flavour": [
-        "Spicy",
-        "Citrus"
-      ],
+      "flavour": "Spicy, Citrus",
       "finish": "Spicy",
       "notes": null,
       "rating": 3,
@@ -1498,11 +1270,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-25",
       "location": "Wetherspoon, Dublin",
-      "flavour": [
-        "Floral",
-        "Malty",
-        "Citrus"
-      ],
+      "flavour": "Floral, Malty, Citrus",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -1520,9 +1288,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-25",
       "location": "Wetherspoon, Dublin",
-      "flavour": [
-        "Woody"
-      ],
+      "flavour": "Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 1.5,
@@ -1540,10 +1306,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-25",
       "location": "Wetherspoon, Dublin",
-      "flavour": [
-        "Spicy",
-        "Woody"
-      ],
+      "flavour": "Spicy, Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -1561,10 +1324,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-31",
       "location": "Home",
-      "flavour": [
-        "Cereal",
-        "Fruity"
-      ],
+      "flavour": "Cereal, Fruity",
       "finish": "Salty",
       "notes": null,
       "rating": 3,
@@ -1582,11 +1342,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-01-31",
       "location": "Home",
-      "flavour": [
-        "Malty",
-        "Red Fruit",
-        "Peaty"
-      ],
+      "flavour": "Malty, Red Fruit, Peaty",
       "finish": "Salty",
       "notes": null,
       "rating": 3,
@@ -1604,10 +1360,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-02-05",
       "location": "Home",
-      "flavour": [
-        "Malty",
-        "Woody"
-      ],
+      "flavour": "Malty, Woody",
       "finish": "Salty",
       "notes": null,
       "rating": 2.5,
@@ -1625,10 +1378,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-02-10",
       "location": "Home",
-      "flavour": [
-        "Malty",
-        "Peaty"
-      ],
+      "flavour": "Malty, Peaty",
       "finish": "Clean",
       "notes": "",
       "rating": 3.5,
@@ -1646,9 +1396,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-21",
       "location": null,
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 2,
@@ -1666,9 +1414,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-21",
       "location": null,
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 1.5,
@@ -1686,10 +1432,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-21",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Peaty"
-      ],
+      "flavour": "Dark Fruit, Peaty",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1707,10 +1450,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-21",
       "location": null,
-      "flavour": [
-        "Peaty",
-        "Malty"
-      ],
+      "flavour": "Peaty, Malty",
       "finish": "Salty",
       "notes": null,
       "rating": 3.5,
@@ -1728,10 +1468,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-21",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Peaty"
-      ],
+      "flavour": "Spicy, Peaty",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -1749,9 +1486,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-21",
       "location": null,
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 1.5,
@@ -1769,10 +1504,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-24",
       "location": null,
-      "flavour": [
-        "Peaty",
-        "Chocolate"
-      ],
+      "flavour": "Peaty, Chocolate",
       "finish": "Salty",
       "notes": null,
       "rating": 2.5,
@@ -1790,10 +1522,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-24",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Chocolate"
-      ],
+      "flavour": "Dark Fruit, Chocolate",
       "finish": "Salty",
       "notes": null,
       "rating": 3,
@@ -1811,9 +1540,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-03-24",
       "location": null,
-      "flavour": [
-        "Dark Fruit"
-      ],
+      "flavour": "Dark Fruit",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -1831,11 +1558,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-12",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Peaty",
-        "Peach"
-      ],
+      "flavour": "Spicy, Peaty, Peach",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -1853,10 +1576,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Strawberry"
-      ],
+      "flavour": "Dark Fruit, Strawberry",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -1874,11 +1594,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Nutty",
-        "Woody",
-        "Donut"
-      ],
+      "flavour": "Nutty, Woody, Donut",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -1896,10 +1612,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Malty",
-        "Pepper"
-      ],
+      "flavour": "Malty, Pepper",
       "finish": "Salty",
       "notes": null,
       "rating": 2.5,
@@ -1917,11 +1630,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Coffee",
-        "Salt",
-        "Licorice"
-      ],
+      "flavour": "Coffee, Salt, Licorice",
       "finish": "Sweet",
       "notes": null,
       "rating": 1.5,
@@ -1939,10 +1648,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Floral"
-      ],
+      "flavour": "Dark Fruit, Floral",
       "finish": "Salty",
       "notes": null,
       "rating": 2.5,
@@ -1960,10 +1666,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Coconut",
-        "Corn"
-      ],
+      "flavour": "Coconut, Corn",
       "finish": "Sweet",
       "notes": null,
       "rating": 2,
@@ -1981,10 +1684,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-28",
       "location": null,
-      "flavour": [
-        "Nutty",
-        "Corn"
-      ],
+      "flavour": "Nutty, Corn",
       "finish": "Salty",
       "notes": null,
       "rating": 2,
@@ -2002,11 +1702,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Cereal",
-        "Fruity"
-      ],
+      "flavour": "Spicy, Cereal, Fruity",
       "finish": "Spicy",
       "notes": null,
       "rating": 3.5,
@@ -2024,10 +1720,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Spicy"
-      ],
+      "flavour": "Dark Fruit, Spicy",
       "finish": "Spicy",
       "notes": null,
       "rating": 2.5,
@@ -2045,10 +1738,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Woody"
-      ],
+      "flavour": "Spicy, Woody",
       "finish": "Bitter",
       "notes": null,
       "rating": 3,
@@ -2066,11 +1756,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Caramel",
-        "Apple"
-      ],
+      "flavour": "Spicy, Caramel, Apple",
       "finish": "Spicy",
       "notes": null,
       "rating": 3,
@@ -2088,11 +1774,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Peaty",
-        "Nutty",
-        "Chocolate"
-      ],
+      "flavour": "Peaty, Nutty, Chocolate",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -2110,9 +1792,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Peaty"
-      ],
+      "flavour": "Peaty",
       "finish": "Bitter",
       "notes": null,
       "rating": 3,
@@ -2130,11 +1810,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Toffee",
-        "Raisins"
-      ],
+      "flavour": "Dark Fruit, Toffee, Raisins",
       "finish": "Sweet",
       "notes": null,
       "rating": 2,
@@ -2152,9 +1828,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Vanilla"
-      ],
+      "flavour": "Vanilla",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -2172,10 +1846,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Woody"
-      ],
+      "flavour": "Spicy, Woody",
       "finish": "Bitter",
       "notes": null,
       "rating": 2,
@@ -2193,10 +1864,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Peaty",
-        "Toffee"
-      ],
+      "flavour": "Peaty, Toffee",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -2214,9 +1882,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Peaty"
-      ],
+      "flavour": "Peaty",
       "finish": "Bitter",
       "notes": null,
       "rating": 2,
@@ -2234,10 +1900,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Spicy"
-      ],
+      "flavour": "Dark Fruit, Spicy",
       "finish": "Bitter",
       "notes": null,
       "rating": 2,
@@ -2255,9 +1918,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-04-29",
       "location": null,
-      "flavour": [
-        "Spicy"
-      ],
+      "flavour": "Spicy",
       "finish": "Bitter",
       "notes": null,
       "rating": 2,
@@ -2275,11 +1936,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-05-04",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Woody",
-        "Vanilla"
-      ],
+      "flavour": "Dark Fruit, Woody, Vanilla",
       "finish": "Spicy",
       "notes": null,
       "rating": 3.5,
@@ -2297,10 +1954,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-05-04",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Woody"
-      ],
+      "flavour": "Dark Fruit, Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -2318,11 +1972,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-05-04",
       "location": null,
-      "flavour": [
-        "Citrus",
-        "Vanilla",
-        "Honey"
-      ],
+      "flavour": "Citrus, Vanilla, Honey",
       "finish": "Salty",
       "notes": null,
       "rating": 2,
@@ -2340,10 +1990,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Peaty",
-        "Grassy"
-      ],
+      "flavour": "Peaty, Grassy",
       "finish": "Salty",
       "notes": null,
       "rating": 4,
@@ -2361,11 +2008,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-12-22",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Peaty",
-        "Malty"
-      ],
+      "flavour": "Dark Fruit, Peaty, Malty",
       "finish": "Salty",
       "notes": "",
       "rating": 3.5,
@@ -2383,10 +2026,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-12-23",
       "location": null,
-      "flavour": [
-        "Vanilla",
-        "Fruity"
-      ],
+      "flavour": "Vanilla, Fruity",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -2404,9 +2044,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-12-21",
       "location": null,
-      "flavour": [
-        "Fruity"
-      ],
+      "flavour": "Fruity",
       "finish": "Sweet",
       "notes": null,
       "rating": 2.5,
@@ -2424,11 +2062,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-12-20",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Floral",
-        "Spicy"
-      ],
+      "flavour": "Dark Fruit, Floral, Spicy",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -2446,10 +2080,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-09-12",
       "location": null,
-      "flavour": [
-        "Chocolate",
-        "Strawberry"
-      ],
+      "flavour": "Chocolate, Strawberry",
       "finish": "Sweet",
       "notes": null,
       "rating": 3,
@@ -2467,9 +2098,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Floral"
-      ],
+      "flavour": "Floral",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -2487,9 +2116,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Woody"
-      ],
+      "flavour": "Woody",
       "finish": "Clean",
       "notes": "Kentucky",
       "rating": 2,
@@ -2507,13 +2134,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Pomegranate",
-        "Apple",
-        "Mango",
-        "Passion Fruit",
-        "Bubble Tea"
-      ],
+      "flavour": "Pomegranate, Apple, Mango, Passion Fruit, Bubble Tea",
       "finish": "Sweet",
       "notes": null,
       "rating": 5,
@@ -2531,12 +2152,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Spicy",
-        "Peaty",
-        "Fish",
-        "Grassy"
-      ],
+      "flavour": "Spicy, Peaty, Fish, Grassy",
       "finish": "Salty",
       "notes": "Scotch malt whisky society",
       "rating": 4.5,
@@ -2554,13 +2170,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-12-21",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Spicy",
-        "Cereal",
-        "Woody",
-        "Pepper"
-      ],
+      "flavour": "Dark Fruit, Spicy, Cereal, Woody, Pepper",
       "finish": "Spicy",
       "notes": null,
       "rating": 4,
@@ -2578,11 +2188,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Cereal",
-        "Peaty"
-      ],
+      "flavour": "Dark Fruit, Cereal, Peaty",
       "finish": "Spicy",
       "notes": null,
       "rating": 4,
@@ -2600,11 +2206,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Dark Fruit",
-        "Peaty",
-        "Nutty"
-      ],
+      "flavour": "Dark Fruit, Peaty, Nutty",
       "finish": "Sweet",
       "notes": "",
       "rating": 5,
@@ -2622,11 +2224,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Apple",
-        "Cloves",
-        "Woody"
-      ],
+      "flavour": "Apple, Cloves, Woody",
       "finish": "Sweet",
       "notes": null,
       "rating": 3.5,
@@ -2644,10 +2242,7 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Cinnamon",
-        "Toffee"
-      ],
+      "flavour": "Cinnamon, Toffee",
       "finish": "Salty",
       "notes": null,
       "rating": 3,
@@ -2665,14 +2260,11 @@
       "cask_type": "",
       "date_of_tasting": "2023-10-07",
       "location": null,
-      "flavour": [
-        "Peaty",
-        "Fresh"
-      ],
+      "flavour": "Peaty, Fresh",
       "finish": "Salty",
       "notes": "One cask",
       "rating": 3.5,
       "distillery_id": 100,
       "tasting_would_buy": false
     }
-  ]
+]

@@ -39,12 +39,16 @@
 
     &::before {
         position: absolute;
-        top: 0.5em;
-        right: 0.5em;
-        bottom: 0.5em;
-        left: 0.5em;
-        background: linear-gradient($yellow 20%, transparent 20%, transparent 40%, $yellow 40%, $yellow 60%, transparent 60%, transparent 80%, $yellow 80%);
+        top: 0.6em;
+        right: 0.6em;
+        bottom: 0.6em;
+        left: 0.6em;
+        background: linear-gradient(#ffc91788 20%, transparent 20%, transparent 40%, #ffc917bb 40%, #ffc917bb 60%, transparent 60%, transparent 80%, #ffc917ee 80%);
         content: '';
+        //animation-name: fade;
+        //animation-duration: 3s;
+        //animation-iteration-count: infinite;
+        //animation-timing-function: ease-in-out;
     }
     &:hover {
         opacity: 0.6;
@@ -98,6 +102,22 @@
         margin-left: 24px;
     }
 }
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: .5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 .show-menu {
     .menu-wrap {
         transform: translate3d(0, 0, 0);

@@ -223,9 +223,7 @@ const Distilleries = () => {
                             <Geographies geography={geoUrl}>
                                 {({geographies}) =>
                                     geographies.map((geo) => {
-                                        console.log(geo.properties.name);
                                         const isHighlighted = visited.includes(geo.properties.name);
-                                        console.log(isHighlighted);
                                         return (<Geography
                                             style={{
                                                 hover: {
