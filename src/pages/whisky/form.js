@@ -1,10 +1,10 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 import ReactSlider from 'react-slider';
 import Head from 'next/head';
-import { Barrel, Footer, Menu } from '../../Components';
+import { Barrel, Code, Footer, Menu } from '../../Components';
 import  {
     whisky_cask_type,
     whisky_country,
@@ -20,23 +20,37 @@ const Whisky = () => {
 	const toggleMenu = () => {
         document.body.classList.remove('show-menu');
     };
-    
-    // Brand
+
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth() + 1;
+    let year = date.getFullYear();
+    if (month < 10) month = "0" + month;
+    if (day < 10) day = "0" + day;
+
+    const [ name, setName ] = useState('');
     const [ brand, setBrand ] = useState('');
+    const [ strength, setStrength ] = useState('');
+    const [ country, setCountry ] = useState('');
+    const [ isRegionVisible, setIsRegionVisible ] = useState(false);
+    const [ region, setRegion ] = useState('');
+    const [ type, setType ] = useState('');
+    const [ caskType, setCaskType ] = useState('');
+    const [ dateOfTasting, setDateOfTasting ] = useState(year + "-" + month + "-" + day);
+    const [ location, setLocation ] = useState('');
+    const [ flavour, setFlavour ] = useState('');
+    const [ flavourString, setFlavourString ] = useState('');
+    const [ finish, setFinish ] = useState('');
+    const [ notes, setNotes ] = useState('');
+    const [ rating, setRating ] = useState(2.5);
+    const [ input, setInput ] = useState('');
+
     const handleBrandChange = (inputValue) => {
         setBrand(inputValue);
     }
-    
-    // Name
-    const [ name, setName ] = useState('');
     const handleNameChange = (inputValue) => {
         setName(inputValue);
     }
-    
-    // Strength
-    const [ strength, setStrength ] = useState('');
-
-  
     const handleCreateCountry = (inputValue) => {
         setIsCountryLoading(true);
         setTimeout(() => {
@@ -46,8 +60,6 @@ const Whisky = () => {
             setValue(newColor);
         }, 1000);
     };
-
-    const [ isRegionVisible, setIsRegionVisible] = useState(false);
     const handleCountryChange = (input) => {
         if (input && input.value === 'Scotland') {
             setIsRegionVisible(true);
@@ -56,32 +68,6 @@ const Whisky = () => {
         }
         setCountry(input);
     }
-    const [ country, setCountry ] = useState('');
-    const [ region, setRegion ] = useState('');
-    const [ type, setType ] = useState('');
-    
-    // Cask type
-    const [ caskType, setCaskType ] = useState('');
-
-    // Date of Tasting
-    let date = new Date();
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    let year = date.getFullYear();
-
-    if (month < 10) month = "0" + month;
-    if (day < 10) day = "0" + day;
-    const [ dateOfTasting, setDateOfTasting ] = useState(year + "-" + month + "-" + day);
-
-    // Location
-    const [location, setLocation] = useState('');
-
-    // Flavour
-    const jsonFlavours = [
-        { value: "Single Malt", label: "Single Malt" },
-    ];
-    const [ flavour, setFlavour ] = useState('');
-  
     const handleCreateFlavour = (inputValue) => {
         setIsFlavourLoading(true);
         setTimeout(() => {
@@ -91,15 +77,16 @@ const Whisky = () => {
             setValue(newFlavour);
         }, 1000);
     };
+    const handleSetFlavour = (inputValue) => {
+        let flavours = [];
+        for (let i = 0; i < inputValue.length; i++) {
+            flavours.push(inputValue[i].label);
+        }
+        const flavoursJoined = flavours.join(', ');
+        setFlavour(inputValue);
+        setFlavourString(flavoursJoined);
+    };
 
-    // Finish
-    const jsonFinishes = [
-        { value: "Single Malt", label: "Single Malt" },
-    ];
-    const [ finish, setFinish ] = useState('');
-    const [ notes, setNotes ] = useState('');
-    const [ rating, setRating ] = useState(2.5);
-    const [ input, setInput ] = useState('');
     const submit = async (e) => {
         e.preventDefault();
 
@@ -118,8 +105,24 @@ const Whisky = () => {
             "notes": notes,
             "rating": rating
         };
-
-        setInput(JSON.stringify(jsonInput, null, 4));
+        let formatted = `{
+    "brand": "${brand}",
+    "name": "${name}",
+    "strength": "${strength}",
+    "country": "${country.value}",
+    "region": "${region.value}",
+    "type": "${type.value}",
+    "cask_type": "${caskType.value}",
+    "date_of_tasting": "${dateOfTasting}",
+    "location": "${location}",
+    "flavour": "${flavourString}",
+    "finish": "${finish}",
+    "notes": "${notes}",
+    "rating": "${rating}"
+}`;
+console.log(formatted)
+        // setInput(JSON.stringify(jsonInput, null, 4));
+        setInput(formatted);
     };
 
     return (<main>
@@ -130,19 +133,19 @@ const Whisky = () => {
                     <Head>
                         <title>Swimmer ♬ Whisky</title>
                     </Head>
-                    
+
                     <form onSubmit={submit}>
                         <Barrel/>
-                        
+
                         <h2>The whisky</h2>
 
-                        <input 
+                        <input
                             type="text"
                             name="brand"
                             placeholder="Brand / Distillery name"
                             value={brand}
                             onChange={(e) => handleBrandChange(e.target.value)}/>
-                        <input 
+                        <input
                             type="text"
                             name="name"
                             placeholder="Product name"
@@ -161,12 +164,12 @@ const Whisky = () => {
                             name="country"
                             className="select"
                             placeholder="Select country..."
-                            options={whisky_country} 
+                            options={whisky_country}
                             value={country}
                             onChange={(newCountry) => handleCountryChange(newCountry)}
                             isClearable
                             onCreateOption={handleCreateCountry}/>
-                        {isRegionVisible && 
+                        {isRegionVisible &&
                         <Select
                             name="region"
                             className="select"
@@ -201,7 +204,7 @@ const Whisky = () => {
                             placeholder="Location"
                             value={location}
                             onChange={(e) => setLocation(e.target.value)} />
-                        <input 
+                        <input
                             type="date"
                             name="date_of_tasting"
                             lang="nl-nl"
@@ -214,13 +217,13 @@ const Whisky = () => {
                             name="flavour"
                             className="select"
                             placeholder="Select flavours..."
-                            options={whisky_flavour} 
+                            options={whisky_flavour}
                             isClearable
                             isMulti
-                            onChange={(newValue) => setFlavour(newValue)}
+                            onChange={(newValue) => handleSetFlavour(newValue)}
                             onCreateOption={handleCreateFlavour}
                             value={flavour}/>
-                        <Select 
+                        <Select
                             name="finish"
                             className="select"
                             placeholder="Select finish..."
@@ -233,7 +236,7 @@ const Whisky = () => {
                             value={notes}
                             onChange={(e) => setNotes(e.target.value)}/>
 
-                        <ReactSlider 
+                        <ReactSlider
                             className="range-slider"
                             thumbClassName="slider-thumb"
                             trackClassName="slider-track"
@@ -246,7 +249,7 @@ const Whisky = () => {
 
                         <button type="submit">Copy JSON</button>
                     </form>
-                    <div className="json_output">{input}</div>
+                    <Code input={input} language="json" />
                     <Footer/>
 				</div>
 			</div>
