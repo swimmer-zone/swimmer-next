@@ -9,7 +9,38 @@ You can find the full readme file [here](public/README.md). Some shortcuts to th
 * [Resume](/resume)
 
 
-![Screenshot](/public/images/screenshot.png)
+Preview of latest version (v21):
+![Screenshot](/public/images/screenshots/v21.png)
+
+v20
+![Screenshot](/public/images/screenshots/v20.png)
+
+v19
+![Screenshot](/public/images/screenshots/v19.png)
+
+v18
+![Screenshot](/public/images/screenshots/v18.png)
+
+v14
+![Screenshot](/public/images/screenshots/v14.png)
+
+v13
+![Screenshot](/public/images/screenshots/v13.png)
+
+v12
+![Screenshot](/public/images/screenshots/v12.png)
+
+v11
+![Screenshot](/public/images/screenshots/v11.png)
+
+v10
+![Screenshot](/public/images/screenshots/v10.png)
+
+v9
+![Screenshot](/public/images/screenshots/v09.png)
+
+v7
+![Screenshot](/public/images/screenshots/v07.png)
 
 
 
