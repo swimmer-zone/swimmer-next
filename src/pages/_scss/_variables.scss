@@ -1,4 +1,15 @@
-@import './_fonts.scss';
+@font-face {
+  font-family: 'Afacad';
+  src: url('/fonts/afacad.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Indie Flower';
+  src: url('/fonts/indie-flower.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 $purple: #6c6eec;
 $purple-dark: #5c5edc;
