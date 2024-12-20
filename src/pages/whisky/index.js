@@ -19,7 +19,7 @@ const Whisky = () => {
 
     return (<main>
 		<div className="container">
-            <Menu active="travels"/>
+            <Menu active="whisky"/>
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">
                     <Head>
@@ -44,9 +44,48 @@ const Whisky = () => {
                         </p>
                         <p>A couple of resources to explore whisky</p>
                         <ul>
-                            <li><a href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-one-a-beginners-guide/">Whisky 101 - A beginner's guide</a></li>
-                            <li><a href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-two-whiskey-around-the-world/">Whisky 101 - Whisk(e)y around the world</a></li>
+                            <li><a
+                                href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-one-a-beginners-guide/">Whisky
+                                101 - A beginner's guide</a></li>
+                            <li><a
+                                href="https://blog.thewhiskyexchange.com/2022/11/whisky-101-part-two-whiskey-around-the-world/">Whisky
+                                101 - Whisk(e)y around the world</a></li>
                         </ul>
+
+                        <h2 id="whiskys">Whisky's</h2>
+
+                        {whisky_tasting.map(tasting => {
+                            return (<>
+                                <div className="title">
+                                    <h2 key={tasting.id + '_title'}>{tasting.brand}</h2>
+                                    <h3 key={tasting.id + '_name'}>{tasting.name}</h3>
+                                    <Rating value={tasting.rating}/>
+                                </div>
+
+                                <div className="whisky-wrapper" key={tasting.id + '_wrapper'}>
+                                    {tasting.region && <div className="whisky-map">
+                                        <img src={"/images/whisky/" + tasting.region + ".svg"} alt="" height="200"
+                                             className="map"/>
+                                    </div>}
+                                    {!tasting.region && <div className="whisky-map">
+                                        <img src={"/images/whisky/" + tasting.country + ".svg"} alt="" height="200"
+                                             className="map"/>
+                                    </div>}
+                                    <div className="whisky">
+                                        Origin: {tasting.country} {tasting.region && <>&gt; {tasting.region}</>}<br/>
+                                        Type: <strong>{tasting.type}</strong><br/>
+                                        Cask Type: <strong>{tasting.cask_type}</strong><br/>
+                                        <strong>{tasting.strength}% abv</strong><br/>
+
+                                        Tasted
+                                        @ <strong>{tasting.location}</strong> (<strong>{tasting.date_of_tasting}</strong>)<br/>
+                                        Flavour: <strong>{tasting.flavour}</strong> with <strong>{tasting.finish}</strong> finish<br/>
+                                        {tasting.notes && <>Other notes: <strong>{tasting.notes}</strong><br/></>}<br/>
+                                    </div>
+                                    <a href={tasting.url} className="buy">Buy</a>
+                                </div>
+                            </>);
+                        })}
 
                         <h2 id="cask_types">Possible cask types</h2>
                         <ul className="tags">
@@ -89,41 +128,6 @@ const Whisky = () => {
                                 return (<li key={type.id}>{type.label}</li>)
                             })}
                         </ul>
-
-                        <h2 id="whiskys">Whisky's</h2>
-
-                        {whisky_tasting.map(tasting => {
-                            return (<>
-                                <div className="title">
-                                    <h2 key={tasting.id + '_title'}>{tasting.brand}</h2>
-                                    <h3 key={tasting.id + '_name'}>{tasting.name}</h3>
-                                    <Rating value={tasting.rating}/>
-                                </div>
-
-                                <div className="whisky-wrapper" key={tasting.id + '_wrapper'}>
-                                    {tasting.region && <div className="whisky-map">
-                                        <img src={"/images/whisky/" + tasting.region + ".svg"} alt="" height="200"
-                                             className="map"/>
-                                    </div>}
-                                    {!tasting.region && <div className="whisky-map">
-                                        <img src={"/images/whisky/" + tasting.country + ".svg"} alt="" height="200"
-                                             className="map"/>
-                                    </div>}
-                                    <div className="whisky">
-                                        Origin: {tasting.country} {tasting.region && <>&gt; {tasting.region}</>}<br/>
-                                        Type: <strong>{tasting.type}</strong><br/>
-                                        Cask Type: <strong>{tasting.cask_type}</strong><br/>
-                                        <strong>{tasting.strength}% abv</strong><br/>
-
-                                        Tasted
-                                        @ <strong>{tasting.location}</strong> (<strong>{tasting.date_of_tasting}</strong>)<br/>
-                                        Flavour: <strong>{tasting.flavour}</strong> with <strong>{tasting.finish}</strong> finish<br/>
-                                        {tasting.notes && <>Other notes: <strong>{tasting.notes}</strong><br/></>}<br/>
-                                    </div>
-                                    <a href={tasting.url} className="buy">Buy</a>
-                                </div>
-                            </>);
-                        })}
                     </div>
                     <Footer/>
                 </div>

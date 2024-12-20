@@ -32,7 +32,7 @@ const Travels = () => {
             "description": ""
         },
         {
-            "title": "Edinburgh",
+            "title": "United Kingdom & Ireland",
             "destination": "uk",
             "images": 24,
             "posted": "ongoing",
