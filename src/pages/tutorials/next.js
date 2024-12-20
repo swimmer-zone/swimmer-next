@@ -85,11 +85,12 @@ const Blog = () => {
                 <Code input={codeString_4} language="bash" />
                 <h2 id="api">API's</h2>
                 <p>
-                    I'm using Supabase as my database, you could call this
-                    a <abbr title="Database as a Service">DaaS</abbr>. I might migrate to using my own API in the 
-                    future. I have some past experience with Laravel, you can also find a tutorial about that here.
-                    Back then I planned to use it as a CMS, but in this case I just want to use it as an API. I'm
-                    not sure yet if I will use full-blown Laravel, I might opt for Lumen.
+                    I used Supabase as my database, you could call this
+                    a <abbr title="Database as a Service">DaaS</abbr>, although I did replace it with JSON files stored
+                    locally. I might migrate to using my own API in the future. I have some past experience with
+                    Laravel, you can also find a tutorial about that here. Back then I planned to use it as a CMS, but
+                    in this case I just want to use it as an API. I'm not sure yet if I will use full-blown Laravel, I
+                    might opt for Lumen.
                 </p>
                 <p>
                     Another API that I'm using is SoundCloud to grab all of my albums and tracks and allow for those

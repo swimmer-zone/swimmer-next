@@ -45,10 +45,6 @@
         left: 0.6em;
         background: linear-gradient(#ffc91788 20%, transparent 20%, transparent 40%, #ffc917bb 40%, #ffc917bb 60%, transparent 60%, transparent 80%, #ffc917ee 80%);
         content: '';
-        //animation-name: fade;
-        //animation-duration: 3s;
-        //animation-iteration-count: infinite;
-        //animation-timing-function: ease-in-out;
     }
     &:hover {
         opacity: 0.6;
@@ -58,11 +54,11 @@
 	position: fixed;
 	z-index: 1001;
 	width: 340px;
-	height: 380px;
+	height: 420px;
 	background: $yellow;
 	color: $darkest;
 	padding: 2em;
-	transform: translate3d(-340px, -380px, 0);
+	transform: translate3d(-340px, -420px, 0);
 	transition: transform 0.3s;
 	box-sizing: border-box;
 }
@@ -101,21 +97,6 @@
     span {
         margin-left: 24px;
     }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: .5;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
 }
 
 .show-menu {
