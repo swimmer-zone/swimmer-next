@@ -16,12 +16,7 @@
       {"title": "Movie Sounds", "url": "https://movie-sounds.org/sci-fi-movie-samples/quotes-with-sound-clips-from-the-matrix/page-33"},
       {"title": "Vocodes", "url": "https://vo.codes/"},
       {"title": "Smoothstep", "url": "https://smoothstep.io/"},
-      {"title": "Tutorial", "url": "https://alda.io/tutorial/"}
-    ]
-  },
-  {
-    "title": "Audio Resources",
-    "links": [
+      {"title": "Tutorial", "url": "https://alda.io/tutorial/"},
       {"title": "Freesound", "url": "https://freesound.org/browse/"},
       {"title": "Looperman", "url": "https://www.looperman.com/loops/detail/68496/this-dream-by-adamms-free-120bpm-ambient-vocal-loop"},
       {"title": "Tutsplus - Vocal Samples And Loops", "url": "https://music.tutsplus.com/articles/15-sites-where-you-can-find-free-vocal-samples-and-loops--audio-4179"},
@@ -44,7 +39,12 @@
       {"title": "28 Ableton Live Tricks", "url": "https://www.musicradar.com/tuition/tech/28-ableton-live-tricks-you-didnt-know-229245"},
       {"title": "Find Notes", "url": "https://www.scales-chords.com/findnotes_en.php?n1=G&amp;n2=B&amp;n3=D&amp;n4=&amp;n5=&amp;n6=&amp;strict=1"},
       {"title": "Tonedear", "url": "https://tonedear.com/"},
-      {"title": "Wiki - Synthesizer", "url": "https://en.wikipedia.org/wiki/Synthesizer"}
+      {"title": "Wiki - Synthesizer", "url": "https://en.wikipedia.org/wiki/Synthesizer"},
+      {"title": "Gitori", "url": "https://www.gitori.com/"},
+      {"title": "Jamie O'Callaghan", "url": "https://colouroftime.com/"},
+      {"title": "Printing Music With CSS", "url": "https://cruncher.ch/blog/printing-music-with-css-grid/"},
+      {"title": "Somewhere Over The Rainbow - Tabs", "url": "https://ukutabs.com/i/israel-kamakawiwoole/over-the-rainbow/"},
+      {"title": "Trio", "url": "https://pbat.ch/recurse/demos/trio/"}
     ]
   },
   {
@@ -133,7 +133,24 @@
       {"title": "Wiki - Map", "url": "https://wikimap.wiki/?base=map&lat=0.0000&lon=-0.0000&showAll=true&wiki=enwiki&zoom=3"},
       {"title": "PHP - 25 Years", "url": "https://www.jetbrains.com/lp/php-25/"},
       {"title": "Andala", "url": "https://www.aliciaunderhill.xyz/Andala/"},
-      {"title": "Blondihacks - Furiosa's Cat Feeder", "url": "https://blondihacks.com/furiosas-cat-feeder/"}
+      {"title": "Blondihacks - Furiosa's Cat Feeder", "url": "https://blondihacks.com/furiosas-cat-feeder/"},
+      {"title": "One Minute Park", "url": "https://oneminutepark.tv/"},
+      {"title": "Akiyoshi's illusion pages", "url": "https://www.ritsumei.ac.jp/~akitaoka/index-e.html"},
+      {"title": "Eyecandy", "url": "https://eyecannndy.com/"},
+      {"title": "Boris", "url": "https://robert-leitl.github.io/boris/dist/"},
+      {"title": "David Alberto Adler", "url": "https://davidadler.pages.dev/"},
+      {"title": "Deuxfleurs", "url": "https://deuxfleurs.fr/"},
+      {"title": "Floor796", "url": "https://floor796.com/"},
+      {"title": "HTML Hacks", "url": "https://tedium.co/2023/11/24/weird-html-hacks-history/"},
+      {"title": "It's a(door)able", "url": "https://ncase.me/door/"},
+      {"title": "Keep Out", "url": "https://www.playkeepout.com/"},
+      {"title": "Lysterfield Lake", "url": "https://lysterfieldlake.com/"},
+      {"title": "Midjourney AI Styles Library", "url": "https://midlibrary.io/styles"},
+      {"title": "Planetarium", "url": "https://www.ivoyager.dev/app/planetarium.html"},
+      {"title": "Terms and Conditions Apply", "url": "https://www.termsandconditions.game/"},
+      {"title": "User Inyerface", "url": "https://userinyerface.com/game.html"},
+      {"title": "Woodworking as an escape from the absurdity of software", "url": "https://alinpanaitiu.com/blog/woodworking-escape-from-software-absurdity/"},
+      {"title": "xkcd: Machine", "url": "https://xkcd.com/2916/"}
     ]
   },
   {
@@ -574,6 +591,25 @@
     ]
   },
   {
+    "title": "Web: Laravel",
+    "links": [
+      {"title": "Laravel - Admin Dashboard Templates", "url": "https://themeselection.com/item/category/laravel-admin-templates/"},
+      {"title": "Laravel - Async", "url": "https://madewithlaravel.com/laravel-async"},
+      {"title": "Laravel - Breadcrumbs", "url": "https://madewithlaravel.com/laravel-breadcrumbs-package"},
+      {"title": "Laravel - Chat Widget", "url": "https://madewithlaravel.com/basement-chat"},
+      {"title": "Laravel - Country Information", "url": "https://madewithlaravel.com/countries"},
+      {"title": "Laravel - Dashboard Materio", "url": "https://demos.themeselection.com/materio-bootstrap-html-laravel-admin-template-free/demo/"},
+      {"title": "Laravel - Debug Bar", "url": "https://madewithlaravel.com/laravel-debugbar"},
+      {"title": "Laravel - Deployer", "url": "https://madewithlaravel.com/laravel-deployer"},
+      {"title": "Laravel - Forum", "url": "https://madewithlaravel.com/laravel-forum"},
+      {"title": "Laravel - Module Management", "url": "https://madewithlaravel.com/laravel-modules"},
+      {"title": "Laravel - Notifications", "url": "https://madewithlaravel.com/laravel-notify"},
+      {"title": "Laravel - oAuth", "url": "https://madewithlaravel.com/socialment"},
+      {"title": "Laravel - Pagebuilder", "url": "https://madewithlaravel.com/laravel-pagebuilder"},
+      {"title": "Laravel - Tutorial Create Module", "url": "https://laravelmodules.com/docs/v11/creating-a-module"}
+    ]
+  },
+  {
     "title": "Sites: Core 77",
     "links": [
       {"title": "How the Heck Does This Work? Julien Vidame's Convention-Defying Extendable Table", "url": "http://www.core77.com/blog/furniture_design/how_the_heck_does_this_work_julien_vidames_convention-defying_extendable_table_23834.asp"},
@@ -610,7 +646,9 @@
       {"title": "NIKE unveils the NIKE GO FlyEase, an easy-on, easy off no-lace sneaker", "url": "https://www.designboom.com/design/nike-go-flyease-hands-off-no-lace-02-02-2021/"},
       {"title": "davit and mary jilavyan envision tiny 'dolmen shelters' as hotels built into the stone", "url": "https://www.designboom.com/architecture/davit-mary-jilavyan-tiny-dolmen-shelters-hotel-stone-11-08-2020/"},
       {"title": "see UNESCO world heritage sites from above with these amazing aerial photographs", "url": "https://www.designboom.com/art/unesco-world-heritage-sites-aerial-photos-11-06-2020/"},
-      {"title": "Honeycomb House", "url": "https://www.designboom.com/architecture/peter-haimerl-architektur-honeycomb-clusterwohnen-wabenhaus-germany-04-07-2024/"}
+      {"title": "Honeycomb House", "url": "https://www.designboom.com/architecture/peter-haimerl-architektur-honeycomb-clusterwohnen-wabenhaus-germany-04-07-2024/"},
+      {"title": "Monolithic Skyscrapers", "url": "https://www.designboom.com/art/monoliths-skyscrapers-manuel-alvarez-diestro-photography-series-04-09-2024/"},
+      {"title": "Home Carpanese", "url": "https://www.designboom.com/design-directory/home-carpanese/"}
     ]
   },
   {
@@ -767,7 +805,10 @@
       {"title": "This hilariously functional keyboard helps fix the terrible UI/UX of video-calling apps", "url": "https://www.yankodesign.com/2021/08/31/this-hilariously-functional-keyboard-helps-fix-the-terrible-ui-ux-of-video-calling-apps/"},
       {"title": "Meet the A-Frame Club", "url": "https://www.yankodesign.com/2023/09/24/meet-the-a-frame-club-a-series-of-prefabricated-a-frame-cabins-in-a-snowflake-pattern/"},
       {"title": "Teenage Engineering Laptop", "url": "https://www.yankodesign.com/2024/03/16/this-teenage-engineering-inspired-laptop-is-a-creative-sound-engineers-dream-come-true/"},
-      {"title": "Tiny Rapid Deploy Pocket Knife", "url": "https://www.yankodesign.com/2024/04/12/this-tiny-rapid-deploy-tactical-pocket-knife-is-like-the-napoleon-of-edc/"}
+      {"title": "Tiny Rapid Deploy Pocket Knife", "url": "https://www.yankodesign.com/2024/04/12/this-tiny-rapid-deploy-tactical-pocket-knife-is-like-the-napoleon-of-edc/"},
+      {"title": "Foldable Mouse", "url": "https://www.yankodesign.com/2024/08/06/foldable-mouse-concept-takes-inspiration-from-foldable-phones/"},
+      {"title": "Laceless Sports Shoes", "url": "https://www.yankodesign.com/2024/07/21/on-vs-adidas-a-deep-dive-into-laceless-sports-shoe-technologies/"},
+      {"title": "Bathtope", "url": "https://www.yankodesign.com/2024/10/21/bathtope-lets-you-set-up-a-removable-bathtub-in-your-bathroom/"}
     ]
   }
 ]
