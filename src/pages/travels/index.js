@@ -18,6 +18,20 @@ const Travels = () => {
 
     const travels = [
         {
+            "title": "Cape Verde",
+            "destination": "cape-verde",
+            "images": 286,
+            "posted": "January 2025",
+            "description": ""
+        },
+        {
+            "title": "Iceland",
+            "destination": "iceland",
+            "images": 159,
+            "posted": "August 2024",
+            "description": ""
+        },
+        {
             "title": "Georgia",
             "destination": "georgia",
             "images": 367,
