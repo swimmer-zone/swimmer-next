@@ -13,7 +13,6 @@ const Home = () => {
 			<div className="content-wrap" onClick={toggleMenu}>
 				<div className="content">		
                     <Music />
-                    <Intro />
                     <Footer/>
 				</div>
 			</div>

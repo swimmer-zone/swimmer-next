@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
-import AudioPlayer from 'react-h5-audio-player';
 import Slider from './Slider';
 import './_scss/music.scss';
 import { albums } from '../json';
 
 function countDown(duration, time) {
     if (!isNaN(time)) {
-        let timeLeft = duration - time;
+        var timeLeft = duration - time;
         return (
             Math.floor(timeLeft / 60) + ":" + ("0" + Math.floor(timeLeft % 60)).slice(-2)
         );
@@ -14,116 +13,93 @@ function countDown(duration, time) {
 }
 
 const Music = () => {
-    const playlist = albums[0].tracks;
     const player = useRef(null);
-    const [ currentTrack, setCurrentTrack ] = useState('');
     const [ state, setState ] = useState({
+        currentTrack: null,
         currentTime: null,
         duration: null
     });
-    const handleClickNext = () => {
-        console.log('click next')
-        setCurrentTrack((currentTrack) =>
-            currentTrack < playlist.length - 1 ? currentTrack + 1 : 0
-        );
-    };
-
-    const handleEnd = () => {
-        console.log('end')
-        setCurrentTrack((currentTrack) =>
-            currentTrack < playlist.length - 1 ? currentTrack + 1 : 0
-        );
-    }
 
     let timeLeft = countDown(state.duration, state.currentTime);
 
     useEffect(() => {
-        if (currentTrack) {
-            player.current.audio.current.src = currentTrack;
-            player.current.audio.current.play();
+        if (state.currentTrack) {
+            player.current.src = state.currentTrack;
+            player.current.play();
         }
-        player.current.audio.current.addEventListener('timeupdate', e => {
+        player.current.addEventListener('timeupdate', e => {
             setState(prevState => ({
                 currentTime: e.target.currentTime,
-                duration: e.target.duration
+                duration: e.target.duration,
+                currentTrack: prevState.currentTrack
             }));
         });
     }, [state.currentTrack]);
 
-  	return (
-		<section className="music" id="music">
-			<Slider infinite={false}>
-	      		{Object.keys(albums).map(key => {
-	      			let album = albums[key];
-					let timer;
+    return (
+        <section className="music" id="music">
+            <Slider infinite={false}>
+                {Object.keys(albums).map(key => {
+                    let album = albums[key];
+                    let timer;
 
-	      			return(
-						<article key={"album_" + key} id={"album_" + key}>
-							<div className="cover-wrapper">
-								<img src={"/images/albums/" + album.title.toLowerCase().replace(/ /g, '-') + ".jpeg"} alt="cover" className="cover" />
-							</div>
-							<div className="tracklist" data-set={key}>
+                    return(
+                        <article key={"album_" + key} id={"album_" + key}>
+                            <div className="cover-wrapper" key={"cover_wrapper_" + key}>
+                                <img src={"/images/albums/" + album.title.toLowerCase().replace(/ /g, '-') + ".jpeg"} alt="cover" className="cover" key={"cover_" + key} />
+                            </div>
+                            <div className="tracklist" data-set={key} key={"tl_" + key}>
 
-								<h2 key={key}>
-									{album.title}
-								</h2>
+                                <h2 key={"h2_" + key}>
+                                    {album.title}
+                                </h2>
 
-								<p>{album.intro}</p>
+                                <p key={"p_" + key}>{album.intro}</p>
 
-								<ul>
-									{Object.keys(album.tracks).map(trackKey => {
-										let track = album.tracks[trackKey];
-                                        let fileName = '/audio/' + track.local;
+                                <ul key={"ul_" + key}>
+                                    {Object.keys(album.tracks).map(trackKey => {
+                                        let track = album.tracks[trackKey];
+                                        let scName = 'https://feeds.soundcloud.com/stream/' + track.filename + '.mp3';
+                                        scName = '/audio/' + track.local + '.mp3';
                                         let playTime = Math.floor(track.playtime / 60) + ":" + ("0" + Math.floor(track.playtime % 60)).slice(-2);
 
-										if (state.currentTime && state.currentTrack === track.local) {
-											timer = <span className="duration">{timeLeft}</span>
-										}
-										else {
-											timer = <span 
-													data-seconds="{track.playtime}" 
-													className="duration">{playTime}</span>
-										}
+                                        if (state.currentTime && state.currentTrack === scName) {
+                                            timer = <span key={key + '_timer_' + track.local} className="duration">{timeLeft}</span>
+                                        }
+                                        else {
+                                            timer = <span
+                                                key={key + '_timer_' + track.local}
+                                                data-seconds="{track.playtime}"
+                                                className="duration">{playTime}</span>
+                                        }
 
-										return (<>
-											<li key={key + track.local}>
-												<span className="a">
-													<button 
-														data-permalink={track.title}
-														onClick={() => {
-															if (currentTrack === fileName && !player.current.paused) {
-																player.current.pause();
-															} else if (currentTrack === fileName && player.current.paused) {
-																player.current.play();
-															} else {
-                                                                setCurrentTrack(fileName);
-															}
-														}}>
-														{track.title}
-													</button>
-												</span>
-												{timer}
-											</li>
-										</>);
-									})}
-								</ul>
-							</div>
-                            <AudioPlayer
-                                volume="0.5"
-                                src={'/audio/' + album.tracks[currentTrack].local}
-                                showSkipControls
-                                onClickNext={handleClickNext}
-                                onEnded={handleEnd}
-                                onError={() => {
-                                    console.log('play error')
-                                }}
-                                ref={player}
-                            />
-						</article>
-					)
-				})}
-			</Slider>
-			{currentTrack && <div id="progress" style={{width: ((state.currentTime / state.duration) * 100) + 'vw'}}></div>}
+                                        return (<li key={key + '_li_' + track.local}>
+                                            <span className="a" key={key + '_span_' + track.local}>
+                                                <button key={key + '_btn_' + track.local}
+                                                        data-permalink={track.title}
+                                                        onClick={() => {
+                                                            if (state.currentTrack === scName && !player.current.paused) {
+                                                                player.current.pause();
+                                                            } else if (state.currentTrack === scName && player.current.paused) {
+                                                                player.current.play();
+                                                            } else {
+                                                                setState({currentTrack: scName});
+                                                            }
+                                                        }}>
+                                                    {track.title}
+                                                </button>
+                                            </span>
+                                            {timer}
+                                        </li>);
+                                    })}
+                                </ul>
+                            </div>
+                        </article>
+                    )
+                })}
+            </Slider>
+            {state.currentTrack && <div id="progress" style={{width: ((state.currentTime / state.duration) * 100) + 'vw'}}></div>}
+            <audio ref={player} />
         </section>
     );
 };

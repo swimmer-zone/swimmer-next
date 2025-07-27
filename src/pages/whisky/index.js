@@ -13,15 +13,15 @@ import  {
 } from '../../json';
 
 const Whisky = () => {
-	const toggleMenu = () => {
+    const toggleMenu = () => {
         document.body.classList.remove('show-menu');
     };
 
     return (<main>
-		<div className="container">
+        <div className="container">
             <Menu active="whisky"/>
-			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content">
+            <div className="content-wrap" onClick={toggleMenu}>
+                <div className="content">
                     <Head>
                         <title>Swimmer ♬ Whisky</title>
                     </Head>
