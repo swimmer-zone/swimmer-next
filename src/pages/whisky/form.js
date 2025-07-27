@@ -4,7 +4,7 @@ import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 import ReactSlider from 'react-slider';
 import Head from 'next/head';
-import { Barrel, Code, Footer, Menu } from '../../Components';
+import { Code, Footer, Menu } from '../../Components';
 import  {
     whisky_cask_type,
     whisky_country,
@@ -17,7 +17,7 @@ import '../_scss/whisky.scss';
 import '../_scss/whisky-form.scss';
 
 const Whisky = () => {
-	const toggleMenu = () => {
+    const toggleMenu = () => {
         document.body.classList.remove('show-menu');
     };
 
@@ -120,23 +120,21 @@ const Whisky = () => {
     "notes": "${notes}",
     "rating": "${rating}"
 }`;
-console.log(formatted)
+        console.log(formatted)
         // setInput(JSON.stringify(jsonInput, null, 4));
         setInput(formatted);
     };
 
     return (<main>
-		<div className="container">
+        <div className="container">
             <Menu active="whisky"/>
-			<div className="content-wrap" onClick={toggleMenu}>
-				<div className="content">
+            <div className="content-wrap" onClick={toggleMenu}>
+                <div className="content">
                     <Head>
                         <title>Swimmer ♬ Whisky</title>
                     </Head>
 
                     <form onSubmit={submit}>
-                        <Barrel/>
-
                         <h2>The whisky</h2>
 
                         <input
@@ -170,13 +168,13 @@ console.log(formatted)
                             isClearable
                             onCreateOption={handleCreateCountry}/>
                         {isRegionVisible &&
-                        <Select
-                            name="region"
-                            className="select"
-                            placeholder="Select region..."
-                            options={whisky_region}
-                            value={region}
-                            onChange={(option) => setRegion(option)}/>}
+                            <Select
+                                name="region"
+                                className="select"
+                                placeholder="Select region..."
+                                options={whisky_region}
+                                value={region}
+                                onChange={(option) => setRegion(option)}/>}
 
                         <Select
                             name="type"
@@ -251,9 +249,9 @@ console.log(formatted)
                     </form>
                     <Code input={input} language="json" />
                     <Footer/>
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </div>
     </main>);
 }
 
