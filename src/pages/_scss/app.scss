@@ -10,3 +10,23 @@ header {
 	color: $black;
 	height: 10vh;
 }
+
+.popup-root {
+	.overlay {
+		background-color: #00000044;
+
+		.popup-content {
+			.modal {
+				background-color: $darker;
+				.close {
+					display: block;
+					width: 64px;
+					height: 64px;
+					border-radius: 50%;
+					color: $darker;
+					background-color: $purple;
+				}
+			}
+		}
+	}
+}
